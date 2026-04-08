@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Facilities Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --panel:  rgba(10,22,42,0.88);
+  --border: rgba(120,170,255,0.18);
+  --b2:     rgba(120,170,255,0.09);
+  --text:   #eef2ff;
+  --muted:  #7a9fc2;
+  --cyan:   #38d9f5;
+  --green:  #2fd17a;
+  --yellow: #f5c842;
+  --red:    #ff5f6e;
+  --purple: #a78bfa;
+  --r:      14px;
+  --sh:     0 16px 48px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{
+  width:100%;height:100%;overflow:hidden;
+  font-family:Inter,"Segoe UI",sans-serif;color:var(--text);
+  background:
+    radial-gradient(ellipse at 10% 0%,  rgba(56,120,255,.18) 0%,transparent 38%),
+    radial-gradient(ellipse at 90% 5%,  rgba(56,217,245,.12) 0%,transparent 35%),
+    radial-gradient(ellipse at 50% 95%, rgba(120,90,255,.10) 0%,transparent 40%),
+    linear-gradient(160deg,#07111f 0%,#060e1a 100%);
+}
+
+/* ───────────────────────────────
+   OVERALL SHELL
+   rows: header | content | footer
+──────────────────────────────── */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 12px;
+  gap: 9px;
+}
+
+/* ───────────────────────────────
+   HEADER
+──────────────────────────────── */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--sh);
+  position: relative; overflow: hidden;
+}
+header::before {
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(56,217,245,.05) 0%,transparent 55%);
+  pointer-events:none;
+}
+.hbrand{display:flex;align-items:center;gap:11px;}
+.hdot{width:9px;height:9px;border-radius:50%;flex-shrink:0;
+  background:var(--cyan);box-shadow:0 0 10px var(--cyan);
+  animation:pulse 2.4s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 8px var(--cyan);}50%{opacity:.4;box-shadow:0 0 20px var(--cyan);}}
+.htitle{font-size:clamp(15px,1.6vw,21px);font-weight:800;letter-spacing:.01em;}
+.hsub  {font-size:11px;color:var(--muted);margin-top:2px;}
+.hclock{text-align:right;}
+.ctime {font-size:clamp(24px,2.6vw,34px);font-weight:800;color:var(--cyan);letter-spacing:.04em;line-height:1;}
+.cdate {font-size:11px;color:var(--muted);margin-top:2px;}
+
+/* ───────────────────────────────
+   CONTENT: left sidebar + right area
+──────────────────────────────── */
+.content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 9px;
+  min-height: 0;
+}
+
+/* ── LEFT SIDEBAR: sede card ── */
+.card-sede {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--sh);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  position: relative;
+}
+.card-sede::before {
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at top right,rgba(56,217,245,.05) 0%,transparent 50%);
+  pointer-events:none;z-index:0;
+}
+
+/* ── RIGHT AREA: trend top, sunbursts bottom ── */
+.right-area {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 9px;
+  min-height: 0;
+}
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  min-height: 0;
+}
+
+/* ── GENERIC CARD ── */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--sh);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  position: relative;
+}
+.card::before {
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at top right,rgba(56,217,245,.06) 0%,transparent 50%);
+  pointer-events:none;z-index:0;
+}
+
+/* ── CARD HEADER ── */
+.ch {
+  padding: 10px 15px 5px;
+  position:relative;z-index:1;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+}
+.ct {
+  font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  display:flex;align-items:center;gap:6px;
+}
+.ct::before{
+  content:'';display:inline-block;width:5px;height:5px;border-radius:50%;flex-shrink:0;
+  background:var(--cyan);box-shadow:0 0 6px var(--cyan);
+}
+.cm{display:flex;gap:6px;flex-wrap:wrap;}
+.mp{
+  padding:2px 8px;border-radius:6px;
+  background:rgba(255,255,255,.04);border:1px solid var(--b2);
+  font-size:10px;font-weight:500;color:var(--muted);
+}
+.mp b{color:var(--text);font-weight:700;}
+
+/* ── CARD BODY ── */
+.cb{position:relative;z-index:1;padding:2px 12px 10px;min-height:0;}
+.cw{width:100%;height:100%;}
+
+/* ── LEGEND in sede card ── */
+.cl{
+  position:relative;z-index:1;
+  display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
+  padding:5px 10px 9px;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+.li{display:flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:var(--muted);}
+.ld{width:7px;height:7px;border-radius:2px;flex-shrink:0;}
+
+/* ───────────────────────────────
+   FOOTER
+──────────────────────────────── */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 8px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--sh);
+}
+.footer-update{font-size:10px;color:var(--muted);opacity:.65;white-space:nowrap;}
+.kpi-group{display:flex;gap:8px;}
+.kpf{
+  padding:5px 13px;border-radius:9px;
+  background:rgba(255,255,255,.05);border:1px solid var(--b2);
+  text-align:center;min-width:76px;
+}
+.kpf .v{display:block;font-size:17px;font-weight:800;line-height:1;}
+.kpf .l{display:block;font-size:9px;font-weight:600;color:var(--muted);letter-spacing:.08em;margin-top:2px;text-transform:uppercase;}
+.kpf.c .v{color:var(--cyan);}
+.kpf.g .v{color:var(--green);}
+.kpf.y .v{color:var(--yellow);}
+.kpf.r .v{color:var(--red);}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="hbrand">
+    <div class="hdot"></div>
+    <div>
+      <div class="htitle">Facilities Operations Dashboard</div>
+      <div class="hsub">Real Estate &amp; Building Services · Marzo – Aprile 2026</div>
+    </div>
+  </div>
+  <div class="hclock">
+    <div class="ctime" id="clk">--:--</div>
+    <div class="cdate" id="clkd">--</div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- LEFT: sede -->
+  <div class="card-sede">
+    <div class="ch" style="position:relative;z-index:1;">
+      <div class="ct">Operatività per Sede</div>
+    </div>
+    <div class="cb" style="position:relative;z-index:1;"><div class="cw" id="ch-sede"></div></div>
+    <div class="cl">
+      <div class="li"><div class="ld" style="background:#2fd17a"></div>Completed</div>
+      <div class="li"><div class="ld" style="background:#38d9f5"></div>Active</div>
+      <div class="li"><div class="ld" style="background:#ff5f6e"></div>Late</div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-area">
+
+    <!-- TOP: trend -->
+    <div class="card">
+      <div class="ch">
+        <div class="ct">Completamenti Giornalieri</div>
+        <div class="cm">
+          <div class="mp">Peak <b>63</b></div>
+          <div class="mp">Media <b>38</b></div>
+          <div class="mp">Marzo–Aprile <b>27 giorni</b></div>
+        </div>
+      </div>
+      <div class="cb"><div class="cw" id="ch-trend"></div></div>
+    </div>
+
+    <!-- BOTTOM: two sunbursts -->
+    <div class="bottom-row">
+      <div class="card">
+        <div class="ch">
+          <div class="ct">Manutenzioni Programmate</div>
+          <div class="cm"><div class="mp">Preventive <b>882</b></div></div>
+        </div>
+        <div class="cb"><div class="cw" id="ch-prev"></div></div>
+      </div>
+      <div class="card">
+        <div class="ch">
+          <div class="ct">Interventi Correttivi</div>
+          <div class="cm"><div class="mp">Corrective <b>191</b></div></div>
+        </div>
+        <div class="cb"><div class="cw" id="ch-corr"></div></div>
+      </div>
+    </div>
+
+  </div><!-- /right-area -->
+</div><!-- /content -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-update">Ultimo aggiornamento dati: 08-04-2026 15:27</div>
+  <div class="kpi-group">
+    <div class="kpf c"><span class="v">1.149</span><span class="l">Task Totali</span></div>
+    <div class="kpf g"><span class="v">1.042</span><span class="l">Completate</span></div>
+    <div class="kpf g"><span class="v">98,7%</span><span class="l">SLA On Time</span></div>
+    <div class="kpf y"><span class="v">106</span><span class="l">Attive</span></div>
+    <div class="kpf r"><span class="v">15</span><span class="l">In Ritardo</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+<script>
+/* CLOCK */
+(function tick(){
+  const n=new Date();
+  document.getElementById('clk').textContent=n.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('clkd').textContent=n.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  setTimeout(tick,1000);
+})();
+
+const CY='#38d9f5',GR='#2fd17a',YL='#f5c842',RE='#ff5f6e',PU='#a78bfa',MU='#7a9fc2',TX='#eef2ff',
+      GD='rgba(255,255,255,0.07)',PN='rgba(8,18,36,0.96)';
+const charts=[];
+function ec(id){const c=echarts.init(document.getElementById(id),null,{renderer:'canvas'});charts.push(c);return c;}
+
+/* ── 1. SEDE — barre verticali grouped ── */
+ec('ch-sede').setOption({
+  backgroundColor:'transparent',
+  tooltip:{
+    trigger:'axis',axisPointer:{type:'shadow'},
+    backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',
+    textStyle:{color:TX,fontSize:12}
+  },
+  grid:{left:10,right:10,top:10,bottom:30,containLabel:true},
+  xAxis:{
+    type:'category',
+    data:['Sede di Roma','Sede di Milano'],
+    axisLine:{show:false},axisTick:{show:false},
+    axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0}
+  },
+  yAxis:{
+    type:'value',
+    splitLine:{lineStyle:{color:GD}},
+    axisLabel:{color:MU,fontSize:9}
+  },
+  series:[
+    {
+      name:'Completed',type:'bar',stack:'t',barWidth:'52%',
+      data:[955,87],
+      itemStyle:{color:GR},
+      emphasis:{focus:'series'},
+      label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:11,fontWeight:'700',
+        formatter:v=>v.value>30?v.value:''}
+    },
+    {
+      name:'Active',type:'bar',stack:'t',
+      data:[97,8],
+      itemStyle:{color:CY},
+      label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:11,fontWeight:'700',
+        formatter:v=>v.value>6?v.value:''}
+    },
+    {
+      name:'Late',type:'bar',stack:'t',
+      data:[15,0],
+      itemStyle:{color:RE,borderRadius:[4,4,0,0]},
+      label:{show:true,position:'top',color:RE,fontSize:11,fontWeight:'700',
+        formatter:v=>v.value>0?v.value:''}
+    }
+  ]
+});
+
+/* ── 2. TREND COMPLETAMENTI ── */
+const dd=['03-02','03-03','03-04','03-05','03-06','03-09','03-10','03-11','03-12','03-13',
+          '03-16','03-17','03-18','03-19','03-20','03-23','03-24','03-25','03-26','03-27',
+          '03-30','03-31','04-01','04-02','04-03','04-07','04-08'];
+const dv=[33,39,37,46,54,45,38,43,36,53,51,37,63,34,34,41,29,35,26,44,30,35,22,35,21,43,38];
+
+ec('ch-trend').setOption({
+  backgroundColor:'transparent',
+  tooltip:{
+    trigger:'axis',
+    backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',
+    textStyle:{color:TX,fontSize:12},
+    formatter:p=>`${p[0].name}<br/>Completati: <b style="color:${CY}">${p[0].value}</b>`
+  },
+  grid:{left:0,right:16,top:14,bottom:0,containLabel:true},
+  xAxis:{
+    type:'category',data:dd,
+    axisLine:{lineStyle:{color:GD}},axisTick:{show:false},
+    axisLabel:{color:MU,fontSize:10,interval:3},
+    splitLine:{
+      show:true,
+      interval:idx=>idx===21,
+      lineStyle:{color:'rgba(255,255,255,.20)',width:1.5,type:'dashed'}
+    }
+  },
+  yAxis:{
+    type:'value',min:0,
+    splitLine:{lineStyle:{color:GD}},
+    axisLabel:{color:MU,fontSize:10}
+  },
+  series:[{
+    type:'line',data:dv,smooth:0.38,
+    symbol:'circle',symbolSize:4,
+    lineStyle:{width:2.5,color:CY},
+    itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
+    areaStyle:{color:{
+      type:'linear',x:0,y:0,x2:0,y2:1,
+      colorStops:[
+        {offset:0,  color:'rgba(56,217,245,.30)'},
+        {offset:.65,color:'rgba(56,217,245,.06)'},
+        {offset:1,  color:'rgba(56,217,245,.00)'}
+      ]
+    }},
+    markPoint:{
+      data:[{type:'max',name:'Peak'}],
+      label:{color:'#06101e',fontSize:11,fontWeight:'700'},
+      itemStyle:{color:YL},symbolSize:38
+    },
+    markLine:{
+      silent:true,symbol:'none',
+      data:[{type:'average'}],
+      lineStyle:{color:'rgba(245,200,66,.45)',type:'dashed',width:1.5},
+      label:{color:YL,fontSize:10,formatter:'Media: {c}'}
+    }
+  }]
+});
+
+/* ── 3. SUNBURST PROGRAMMATE ── */
+const sdPrev=[
+  {
+    name:'Manut.\nProgrammate',value:573,
+    itemStyle:{color:'rgba(56,217,245,.18)',borderColor:CY,borderWidth:1.5},
+    label:{color:CY},
+    children:[
+      {name:'Pulizie Preventive', value:394,itemStyle:{color:'rgba(56,217,245,.62)'}},
+      {name:'Elettrico - Prev.',  value:119,itemStyle:{color:'rgba(56,217,245,.44)'}},
+      {name:'Climatizzazione',    value:31, itemStyle:{color:'rgba(56,217,245,.30)'}},
+      {name:'Idraulico',          value:21, itemStyle:{color:'rgba(56,217,245,.22)'}},
+      {name:'Antincendio',        value:7,  itemStyle:{color:'rgba(56,217,245,.15)'}},
+      {name:'Edili',              value:1,  itemStyle:{color:'rgba(56,217,245,.10)'}}
+    ]
+  },
+  {
+    name:'Building\nServices',value:309,
+    itemStyle:{color:'rgba(47,209,122,.18)',borderColor:GR,borderWidth:1.5},
+    label:{color:GR},
+    children:[
+      {name:'Preventive Maint.',  value:301,itemStyle:{color:'rgba(47,209,122,.60)'}},
+      {name:'Meter Reading',      value:8,  itemStyle:{color:'rgba(47,209,122,.28)'}}
+    ]
+  }
+];
+ec('ch-prev').setOption({
+  backgroundColor:'transparent',
+  tooltip:{backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:12},
+    formatter:p=>`${p.name.replace('\n',' ')}: <b>${p.value}</b>`},
+  series:[{
+    type:'sunburst',data:sdPrev,radius:['16%','90%'],center:['50%','50%'],sort:null,
+    emphasis:{focus:'ancestor',itemStyle:{opacity:1}},
+    levels:[
+      {},
+      {r0:'18%',r:'50%',
+        label:{rotate:'tangential',fontSize:11,fontWeight:'700',color:TX,align:'right'},
+        itemStyle:{borderWidth:2,borderColor:'rgba(0,0,0,.25)'}},
+      {r0:'52%',r:'88%',
+        label:{position:'outside',fontSize:10,fontWeight:'500',color:MU,silent:true,overflow:'truncate',ellipsis:true},
+        itemStyle:{borderWidth:1,borderColor:'rgba(0,0,0,.20)'}}
+    ]
+  }]
+});
+
+/* ── 4. SUNBURST CORRETTIVE ── */
+const sdCorr=[
+  {
+    name:'Servizi\nUfficio',value:91,
+    itemStyle:{color:'rgba(167,139,250,.18)',borderColor:PU,borderWidth:1.5},label:{color:PU},
+    children:[
+      {name:'Badge aziendali',   value:26,itemStyle:{color:'rgba(167,139,250,.60)'}},
+      {name:'Allestimenti',      value:24,itemStyle:{color:'rgba(167,139,250,.48)'}},
+      {name:'Service Desk IT',   value:16,itemStyle:{color:'rgba(167,139,250,.38)'}},
+      {name:'Facchinaggio',      value:9, itemStyle:{color:'rgba(167,139,250,.28)'}},
+      {name:'Periferiche IT',    value:7, itemStyle:{color:'rgba(167,139,250,.20)'}},
+      {name:'Servizi Altro',     value:6, itemStyle:{color:'rgba(167,139,250,.14)'}},
+      {name:'Locker',            value:3, itemStyle:{color:'rgba(167,139,250,.10)'}}
+    ]
+  },
+  {
+    name:'Pulizia',value:39,
+    itemStyle:{color:'rgba(245,200,66,.18)',borderColor:YL,borderWidth:1.5},label:{color:YL},
+    children:[
+      {name:'Cleaning Altro',    value:29,itemStyle:{color:'rgba(245,200,66,.60)'}},
+      {name:'Uffici',            value:5, itemStyle:{color:'rgba(245,200,66,.38)'}},
+      {name:'Straordinaria',     value:2, itemStyle:{color:'rgba(245,200,66,.24)'}},
+      {name:'Servizi igienici',  value:2, itemStyle:{color:'rgba(245,200,66,.18)'}},
+      {name:'Disinfestazione',   value:1, itemStyle:{color:'rgba(245,200,66,.12)'}}
+    ]
+  },
+  {
+    name:'Spedizioni',value:16,
+    itemStyle:{color:'rgba(56,217,245,.18)',borderColor:CY,borderWidth:1.5},label:{color:CY},
+    children:[
+      {name:'Sped./Ric. IT',     value:16,itemStyle:{color:'rgba(56,217,245,.55)'}}
+    ]
+  },
+  {
+    name:'Tririga',value:15,
+    itemStyle:{color:'rgba(47,209,122,.18)',borderColor:GR,borderWidth:1.5},label:{color:GR},
+    children:[
+      {name:'Gestione Account',  value:13,itemStyle:{color:'rgba(47,209,122,.55)'}},
+      {name:'Reservation',       value:2, itemStyle:{color:'rgba(47,209,122,.28)'}}
+    ]
+  },
+  {
+    name:'Catering /\nVending',value:11,
+    itemStyle:{color:'rgba(255,95,110,.18)',borderColor:RE,borderWidth:1.5},label:{color:RE},
+    children:[
+      {name:'Catering/Vending',  value:11,itemStyle:{color:'rgba(255,95,110,.55)'}}
+    ]
+  },
+  {
+    name:'Segnala-\nzioni',value:8,
+    itemStyle:{color:'rgba(255,95,110,.12)',borderColor:'rgba(255,95,110,.45)',borderWidth:1},
+    label:{color:'rgba(255,95,110,.75)'},
+    children:[
+      {name:'Altro - S',         value:6, itemStyle:{color:'rgba(255,95,110,.40)'}},
+      {name:'Ascensori',         value:1, itemStyle:{color:'rgba(255,95,110,.25)'}},
+      {name:'Serramenti',        value:1, itemStyle:{color:'rgba(255,95,110,.20)'}}
+    ]
+  },
+  {
+    name:'Manut.\nEdili',value:6,
+    itemStyle:{color:'rgba(120,170,255,.15)',borderColor:'rgba(120,170,255,.45)',borderWidth:1},
+    label:{color:'rgba(160,200,255,.75)'},
+    children:[
+      {name:'Edili Altro',       value:4, itemStyle:{color:'rgba(120,170,255,.40)'}},
+      {name:'Opere murarie',     value:2, itemStyle:{color:'rgba(120,170,255,.22)'}}
+    ]
+  },
+  {
+    name:'Elettrico /\nDati',value:5,
+    itemStyle:{color:'rgba(245,200,66,.12)',borderColor:'rgba(245,200,66,.40)',borderWidth:1},
+    label:{color:'rgba(245,200,66,.70)'},
+    children:[
+      {name:'Illuminazione',     value:1, itemStyle:{color:'rgba(245,200,66,.38)'}},
+      {name:'Torrette prese',    value:1, itemStyle:{color:'rgba(245,200,66,.22)'}},
+      {name:'Mec./Altro',        value:3, itemStyle:{color:'rgba(245,200,66,.16)'}}
+    ]
+  }
+];
+ec('ch-corr').setOption({
+  backgroundColor:'transparent',
+  tooltip:{backgroundColor:PN,borderColor:'rgba(167,139,250,.4)',textStyle:{color:TX,fontSize:12},
+    formatter:p=>`${p.name.replace('\n',' ')}: <b>${p.value}</b>`},
+  series:[{
+    type:'sunburst',data:sdCorr,radius:['16%','90%'],center:['50%','50%'],sort:null,
+    emphasis:{focus:'ancestor',itemStyle:{opacity:1}},
+    levels:[
+      {},
+      {r0:'18%',r:'50%',
+        label:{rotate:'tangential',fontSize:10,fontWeight:'700',color:TX,align:'right'},
+        itemStyle:{borderWidth:2,borderColor:'rgba(0,0,0,.25)'}},
+      {r0:'52%',r:'88%',
+        label:{position:'outside',fontSize:9,fontWeight:'500',color:MU,silent:true,overflow:'truncate',ellipsis:true},
+        itemStyle:{borderWidth:1,borderColor:'rgba(0,0,0,.20)'}}
+    ]
+  }]
+});
+
+window.addEventListener('resize',()=>charts.forEach(c=>c.resize()));
+</script>
+</body>
+</html>
