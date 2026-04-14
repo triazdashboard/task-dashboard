@@ -218,8 +218,10 @@ footer{
   </div>
 </footer>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
 <script>
+/* ── Clock ── */
 (function tick(){
   const n=new Date();
   document.getElementById('clk').textContent=n.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
@@ -231,212 +233,166 @@ const CY='#38d9f5',GR='#2fd17a',YL='#f5c842',RE='#ff5f6e',PU='#a78bfa',
       MU='#7a9fc2',TX='#eef2ff',GD='rgba(255,255,255,0.07)',PN='rgba(8,18,36,0.96)';
 const charts=[];
 function ec(id){const c=echarts.init(document.getElementById(id),null,{renderer:'canvas'});charts.push(c);return c;}
-
-/* ── 1. SEDE ── */
-ec('ch-sede').setOption({
-  backgroundColor:'transparent',
-  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-    borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
-  grid:{left:12,right:14,top:8,bottom:42,containLabel:true},
-  xAxis:{type:'category',data:['Roma','Milano'],
-    axisLine:{show:false},axisTick:{show:false},
-    axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0}},
-  yAxis:{type:'value',splitLine:{lineStyle:{color:GD}},
-    axisLabel:{color:MU,fontSize:8},max:1100},
-  series:[
-    {name:'Completed',type:'bar',stack:'t',barWidth:'55%',data:[955,87],
-      itemStyle:{color:GR},
-      label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:11,fontWeight:'700',
-        formatter:v=>v.value>60?v.value:''}},
-    {name:'Active',type:'bar',stack:'t',data:[97,8],
-      itemStyle:{color:CY},
-      label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:10,fontWeight:'700',
-        formatter:v=>v.value>10?v.value:''}},
-    {name:'Late',type:'bar',stack:'t',data:[15,0],
-      itemStyle:{color:RE,borderRadius:[4,4,0,0]},
-      label:{show:true,position:'top',color:RE,fontSize:11,fontWeight:'700',
-        formatter:v=>v.value>0?v.value:''}}
-  ]
-});
-
-/* ── 2. TREND ── */
-const dd=['03-02','03-03','03-04','03-05','03-06','03-09','03-10','03-11','03-12','03-13',
-          '03-16','03-17','03-18','03-19','03-20','03-23','03-24','03-25','03-26','03-27',
-          '03-30','03-31','04-01','04-02','04-03','04-07','04-08'];
-const dv=[33,39,37,46,54,45,38,43,36,53,51,37,63,34,34,41,29,35,26,44,30,35,22,35,21,43,38];
-ec('ch-trend').setOption({
-  backgroundColor:'transparent',
-  tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',
-    textStyle:{color:TX,fontSize:12},
-    formatter:p=>`${p[0].name}<br/>Completati: <b style="color:${CY}">${p[0].value}</b>`},
-  grid:{left:34,right:14,top:12,bottom:28},
-  xAxis:{type:'category',data:dd,
-    axisLine:{lineStyle:{color:GD}},axisTick:{show:false},
-    axisLabel:{color:MU,fontSize:9,interval:3}},
-  yAxis:{type:'value',min:0,splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:9}},
-  series:[{
-    type:'line',data:dv,smooth:0.38,symbol:'circle',symbolSize:4,
-    lineStyle:{width:2.5,color:CY},itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
-    areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[
-      {offset:0,color:'rgba(56,217,245,.28)'},{offset:.65,color:'rgba(56,217,245,.05)'},{offset:1,color:'rgba(56,217,245,0)'}]}},
-    markPoint:{data:[{type:'max',name:'Peak'}],
-      label:{color:'#06101e',fontSize:11,fontWeight:'700'},itemStyle:{color:YL},symbolSize:36},
-    markLine:{silent:true,symbol:'none',data:[
-      {type:'average',lineStyle:{color:'rgba(245,200,66,.45)',type:'dashed',width:1.5},
-        label:{color:YL,fontSize:9,formatter:'Media: {c}',position:'end'}},
-      {xAxis:'04-01',lineStyle:{color:'rgba(255,255,255,.22)',type:'dashed',width:1.5},label:{show:false}}
-    ]}
-  }]
-});
-
-/* ── 3. PROGRAMMATE — bar orizzontale, label pulite ── */
-const progItems=[
-  {label:'Edili',             value:1,  color:'rgba(22,105,145,.85)'},
-  {label:'Antincendio',       value:7,  color:'rgba(30,130,170,.85)'},
-  {label:'Meter Reading',     value:8,  color:'rgba(47,180,92,.85)'},
-  {label:'Idraulico',         value:21, color:'rgba(40,145,185,.85)'},
-  {label:'Climatizzazione',   value:31, color:'rgba(50,165,200,.85)'},
-  {label:'Elettrico',         value:119,color:'rgba(56,195,225,.85)'},
-  {label:'Manutenzioni',      value:301,color:'rgba(47,209,122,.90)'},
-  {label:'Pulizie',           value:394,color:'rgba(56,217,245,.92)'}
-];
-ec('ch-prog').setOption({
-  backgroundColor:'transparent',
-  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-    borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
-  grid:{left:6,right:50,top:6,bottom:6,containLabel:true},
-  xAxis:{type:'value',show:false},
-  yAxis:{type:'category',data:progItems.map(d=>d.label),
-    axisLine:{show:false},axisTick:{show:false},
-    axisLabel:{color:MU,fontSize:10,fontWeight:'500'}},
-  series:[{
-    type:'bar',barWidth:13,
-    data:progItems.map(d=>({value:d.value,itemStyle:{color:d.color,borderRadius:[0,5,5,0]}})),
-    showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:[0,5,5,0]},
-    label:{show:true,position:'right',color:TX,fontSize:11,fontWeight:'700'}
-  }]
-});
-
-/* ── 4. SUNBURST CORRETTIVE ──
-   Strategia label definitiva:
-   - Inner ring: show:false → usiamo grafica post-render con graphic[]
-     per label testuali centrate manualmente su ogni spicchio
-   - Outer ring: position:'outside', rotate:'tangential', minAngle:20
-     → solo i settori grandi abbastanza mostrano il testo
-──────────────────────────────── */
-const corrData=[
-  {name:'Servizi Ufficio',      value:91,  color:'rgba(120,90,210,.42)',  border:'rgba(167,139,250,.40)',
-    children:[
-      {name:'Badge aziendali',   value:26, color:'rgba(167,139,250,.62)'},
-      {name:'Allestimenti',      value:24, color:'rgba(150,120,240,.57)'},
-      {name:'Service Desk IT',   value:16, color:'rgba(130,100,225,.52)'},
-      {name:'Facchinaggio',      value:9,  color:'rgba(110,82,200,.46)'},
-      {name:'Periferiche IT',    value:7,  color:'rgba(95,68,185,.42)'},
-      {name:'Servizi Altro',     value:6,  color:'rgba(82,56,170,.38)'},
-      {name:'Locker',            value:3,  color:'rgba(68,46,155,.34)'}
-    ]},
-  {name:'Pulizia',              value:39,  color:'rgba(165,128,15,.42)', border:'rgba(245,200,66,.40)',
-    children:[
-      {name:'Cleaning Altro',    value:29, color:'rgba(245,200,66,.62)'},
-      {name:'Uffici',            value:5,  color:'rgba(220,178,48,.50)'},
-      {name:'Straordinaria',     value:2,  color:'rgba(192,156,36,.42)'},
-      {name:'Serv. igienici',    value:2,  color:'rgba(165,134,26,.36)'},
-      {name:'Disinfestazione',   value:1,  color:'rgba(138,112,18,.30)'}
-    ]},
-  {name:'Gest. Spedizioni',     value:16,  color:'rgba(20,140,170,.42)', border:'rgba(56,217,245,.40)',
-    children:[
-      {name:'Sped./Ric. IT',     value:16, color:'rgba(56,217,245,.62)'}
-    ]},
-  {name:'Ass. Tecn. Tririga',   value:13,  color:'rgba(18,125,72,.42)',  border:'rgba(47,209,122,.40)',
-    children:[
-      {name:'Gestione Account',  value:13, color:'rgba(47,209,122,.62)'}
-    ]},
-  {name:'Catering/Vending',     value:11,  color:'rgba(185,80,15,.42)',  border:'rgba(249,115,22,.40)',
-    children:[
-      {name:'Catering/Vend.',    value:11, color:'rgba(249,115,22,.62)'}
-    ]},
-  {name:'Segnalazione',         value:8,   color:'rgba(165,35,50,.42)',  border:'rgba(255,95,110,.40)',
-    children:[
-      {name:'Altro - S',         value:6,  color:'rgba(255,95,110,.60)'},
-      {name:'Ascensori - S',     value:1,  color:'rgba(228,78,92,.46)'},
-      {name:'Serramenti - S',    value:1,  color:'rgba(200,62,76,.38)'}
-    ]},
-  {name:'Manut. Edili',         value:6,   color:'rgba(80,100,128,.42)', border:'rgba(148,163,184,.40)',
-    children:[
-      {name:'Edili Altro',       value:4,  color:'rgba(148,163,184,.58)'},
-      {name:'Opere murarie',     value:2,  color:'rgba(118,135,158,.46)'}
-    ]},
-  {name:'Int. Esterni',         value:3,   color:'rgba(140,108,15,.42)', border:'rgba(251,191,36,.40)',
-    children:[
-      {name:'Altro',             value:2,  color:'rgba(251,191,36,.58)'},
-      {name:'Manut. meccan.',    value:1,  color:'rgba(218,164,26,.44)'}
-    ]},
-  {name:'Ass. Ut. Tririga',     value:2,   color:'rgba(18,140,108,.42)', border:'rgba(52,211,153,.40)',
-    children:[
-      {name:'Reservation',       value:2,  color:'rgba(52,211,153,.58)'}
-    ]},
-  {name:'Elettrico/Dati',       value:2,   color:'rgba(36,82,185,.42)',  border:'rgba(96,165,250,.40)',
-    children:[
-      {name:'Illuminazione',     value:1,  color:'rgba(96,165,250,.58)'},
-      {name:'Torrette',          value:1,  color:'rgba(70,138,222,.46)'}
-    ]}
-];
-
-const sdCorr = corrData.map(d=>({
-  name:d.name, value:d.value,
-  itemStyle:{color:d.color, borderColor:d.border||'rgba(6,16,30,.6)', borderWidth:1.5},
-  children:d.children.map(c=>({
-    name:c.name, value:c.value,
-    itemStyle:{color:c.color, borderColor:'rgba(6,16,30,.5)', borderWidth:1}
-  }))
-}));
-
-ec('ch-corr').setOption({
-  backgroundColor:'transparent',
-  tooltip:{backgroundColor:PN,borderColor:'rgba(167,139,250,.4)',
-    textStyle:{color:TX,fontSize:12},formatter:p=>`${p.name}: <b>${p.value}</b>`},
-  series:[{
-    type:'sunburst',
-    data:sdCorr,
-    radius:['18%','86%'],
-    center:['50%','50%'],
-    sort:null,
-    nodeClick:false,
-    emphasis:{focus:'ancestor',itemStyle:{opacity:1}},
-    levels:[
-      {},
-      {
-        r0:'20%', r:'52%',
-        label:{
-          rotate:'radial',        /* ← nativo ECharts: testo radiale, punta verso esterno */
-          fontSize:10,
-          fontWeight:'600',
-          color:TX,
-          minAngle:10,            /* nasconde label solo se < 10° */
-          overflow:'truncate',
-          ellipsis:true
-        },
-        itemStyle:{borderWidth:2, borderColor:'rgba(6,16,30,.70)'}
-      },
-      {
-        r0:'54%', r:'84%',
-        label:{
-          rotate:'radial',
-          fontSize:9,
-          fontWeight:'500',
-          color:TX,
-          silent:true,
-          minAngle:22,
-          overflow:'truncate',
-          ellipsis:true
-        },
-        itemStyle:{borderWidth:1, borderColor:'rgba(6,16,30,.55)'}
-      }
-    ]
-  }]
-});
-
 window.addEventListener('resize',()=>charts.forEach(c=>c.resize()));
+
+/* ── Colori sunburst per padre classe ── */
+const PADRE_COLORS={
+  'Servizi Ufficio':      {c:'rgba(120,90,210,.42)',  b:'rgba(167,139,250,.40)', ch:[167,139,250]},
+  'Pulizia':              {c:'rgba(165,128,15,.42)',  b:'rgba(245,200,66,.40)',  ch:[245,200,66]},
+  'Gest. Spedizioni':     {c:'rgba(20,140,170,.42)',  b:'rgba(56,217,245,.40)',  ch:[56,217,245]},
+  'Ass. Tecn. Tririga':   {c:'rgba(18,125,72,.42)',   b:'rgba(47,209,122,.40)',  ch:[47,209,122]},
+  'Catering/Vending':     {c:'rgba(185,80,15,.42)',   b:'rgba(249,115,22,.40)',  ch:[249,115,22]},
+  'Segnalazione':         {c:'rgba(165,35,50,.42)',   b:'rgba(255,95,110,.40)',  ch:[255,95,110]},
+  'Manut. Edili':         {c:'rgba(80,100,128,.42)',  b:'rgba(148,163,184,.40)', ch:[148,163,184]},
+  'Int. Esterni':         {c:'rgba(140,108,15,.42)',  b:'rgba(251,191,36,.40)',  ch:[251,191,36]},
+  'Ass. Ut. Tririga':     {c:'rgba(18,140,108,.42)',  b:'rgba(52,211,153,.40)',  ch:[52,211,153]},
+  'Elettrico/Dati':       {c:'rgba(36,82,185,.42)',   b:'rgba(96,165,250,.40)',  ch:[96,165,250]},
+  'Building Services':    {c:'rgba(60,100,160,.42)',  b:'rgba(100,160,240,.40)', ch:[100,160,240]},
+};
+function defaultColors(idx){
+  const palette=[[167,139,250],[56,217,245],[47,209,122],[249,115,22],[255,95,110],[148,163,184],[245,200,66],[52,211,153]];
+  const rgb=palette[idx%palette.length];
+  return{c:`rgba(${rgb[0]},${rgb[1]},${rgb[2]},.42)`,b:`rgba(${rgb[0]},${rgb[1]},${rgb[2]},.40)`,ch:rgb};
+}
+
+function render(data){
+  /* ── header subtitle ── */
+  document.querySelector('.hsub').textContent=`Real Estate & Building Services · ${data.period_label}`;
+
+  /* ── footer ── */
+  document.querySelector('.fupdate').textContent=`Ultimo aggiornamento dati: ${data.updated_at}`;
+  const kpis=document.querySelectorAll('.kpf .v');
+  const k=data.kpi;
+  const fmt=v=>v>=1000?(v/1000).toFixed(3).replace('.','.'):String(v);
+  kpis[0].textContent=fmt(k.total);
+  kpis[1].textContent=fmt(k.completed);
+  kpis[2].textContent=k.sla_on_time_pct.toFixed(1).replace('.',',')+'%';
+  kpis[3].textContent=k.active;
+  kpis[4].textContent=k.late;
+
+  /* ── 1. SEDE ── */
+  const sedeNames=data.sede.map(s=>s.name);
+  const maxY=Math.ceil(data.sede.reduce((m,s)=>Math.max(m,s.completed+s.active+s.late),0)/100)*100+100;
+  ec('ch-sede').setOption({
+    backgroundColor:'transparent',
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
+      borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
+    grid:{left:12,right:14,top:8,bottom:42,containLabel:true},
+    xAxis:{type:'category',data:sedeNames,axisLine:{show:false},axisTick:{show:false},
+      axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0}},
+    yAxis:{type:'value',splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:8},max:maxY},
+    series:[
+      {name:'Completed',type:'bar',stack:'t',barWidth:'55%',data:data.sede.map(s=>s.completed),
+        itemStyle:{color:GR},
+        label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:11,fontWeight:'700',
+          formatter:v=>v.value>60?v.value:''}},
+      {name:'Active',type:'bar',stack:'t',data:data.sede.map(s=>s.active),
+        itemStyle:{color:CY},
+        label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:10,fontWeight:'700',
+          formatter:v=>v.value>10?v.value:''}},
+      {name:'Late',type:'bar',stack:'t',data:data.sede.map(s=>s.late),
+        itemStyle:{color:RE,borderRadius:[4,4,0,0]},
+        label:{show:true,position:'top',color:RE,fontSize:11,fontWeight:'700',
+          formatter:v=>v.value>0?v.value:''}}
+    ]
+  });
+
+  /* ── 2. TREND ── */
+  const dd=data.trend.dates, dv=data.trend.values;
+  const peak=Math.max(...dv), avg=Math.round(dv.reduce((s,v)=>s+v,0)/dv.length);
+  // Update chip
+  document.querySelector('#ch-trend').closest('.card').querySelector('.cm').innerHTML=
+    `<div class="mp">Peak <b>${peak}</b></div><div class="mp">Media <b>${avg}</b></div><div class="mp">Giorni <b>${dd.length}</b></div>`;
+  ec('ch-trend').setOption({
+    backgroundColor:'transparent',
+    tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',
+      textStyle:{color:TX,fontSize:12},formatter:p=>`${p[0].name}<br/>Completati: <b style="color:${CY}">${p[0].value}</b>`},
+    grid:{left:34,right:14,top:12,bottom:28},
+    xAxis:{type:'category',data:dd,axisLine:{lineStyle:{color:GD}},axisTick:{show:false},
+      axisLabel:{color:MU,fontSize:9,interval:Math.floor(dd.length/8)}},
+    yAxis:{type:'value',min:0,splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:9}},
+    series:[{
+      type:'line',data:dv,smooth:0.38,symbol:'circle',symbolSize:4,
+      lineStyle:{width:2.5,color:CY},itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
+      areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[
+        {offset:0,color:'rgba(56,217,245,.28)'},{offset:.65,color:'rgba(56,217,245,.05)'},{offset:1,color:'rgba(56,217,245,0)'}]}},
+      markPoint:{data:[{type:'max',name:'Peak'}],
+        label:{color:'#06101e',fontSize:11,fontWeight:'700'},itemStyle:{color:YL},symbolSize:36},
+      markLine:{silent:true,symbol:'none',data:[
+        {type:'average',lineStyle:{color:'rgba(245,200,66,.45)',type:'dashed',width:1.5},
+          label:{color:YL,fontSize:9,formatter:'Media: {c}',position:'end'}}
+      ]}
+    }]
+  });
+
+  /* ── 3. PROGRAMMATE ── */
+  const pi=data.programmate;
+  document.querySelector('#ch-prog').closest('.card').querySelector('.cm').innerHTML=
+    `<div class="mp">Preventive <b>${pi.reduce((s,i)=>s+i.value,0)}</b></div>`;
+  const progColors=['rgba(22,105,145,.85)','rgba(30,130,170,.85)','rgba(47,180,92,.85)',
+    'rgba(40,145,185,.85)','rgba(50,165,200,.85)','rgba(56,195,225,.85)',
+    'rgba(47,209,122,.90)','rgba(56,217,245,.92)'];
+  ec('ch-prog').setOption({
+    backgroundColor:'transparent',
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
+      borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
+    grid:{left:6,right:50,top:6,bottom:6,containLabel:true},
+    xAxis:{type:'value',show:false},
+    yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
+      axisLabel:{color:MU,fontSize:10,fontWeight:'500'}},
+    series:[{
+      type:'bar',barWidth:13,
+      data:pi.map((d,i)=>({value:d.value,itemStyle:{color:progColors[i%progColors.length],borderRadius:[0,5,5,0]}})),
+      showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:[0,5,5,0]},
+      label:{show:true,position:'right',color:TX,fontSize:11,fontWeight:'700'}
+    }]
+  });
+
+  /* ── 4. SUNBURST CORRETTIVE ── */
+  document.querySelector('#ch-corr').closest('.card').querySelector('.cm').innerHTML=
+    `<div class="mp">Correttive+Supporto <b>${data.correttive.total}</b></div>`;
+  const sdCorr=data.correttive.items.map((d,i)=>{
+    const col=PADRE_COLORS[d.name]||defaultColors(i);
+    return{
+      name:d.name, value:d.value,
+      itemStyle:{color:col.c, borderColor:col.b, borderWidth:1.5},
+      children:d.children.map((c,j)=>{
+        const a=[0.62,0.57,0.52,0.46,0.42,0.38,0.34];
+        return{name:c.name, value:c.value,
+          itemStyle:{color:`rgba(${col.ch[0]},${col.ch[1]},${col.ch[2]},${a[j]||0.32})`,
+            borderColor:'rgba(6,16,30,.5)',borderWidth:1}};
+      })
+    };
+  });
+  ec('ch-corr').setOption({
+    backgroundColor:'transparent',
+    tooltip:{backgroundColor:PN,borderColor:'rgba(167,139,250,.4)',
+      textStyle:{color:TX,fontSize:12},formatter:p=>`${p.name}: <b>${p.value}</b>`},
+    series:[{
+      type:'sunburst', data:sdCorr, radius:['18%','86%'], center:['50%','50%'],
+      sort:null, nodeClick:false,
+      emphasis:{focus:'ancestor',itemStyle:{opacity:1}},
+      levels:[
+        {},
+        {r0:'20%',r:'52%',
+          label:{rotate:'radial',fontSize:10,fontWeight:'600',color:TX,minAngle:10,overflow:'truncate',ellipsis:true},
+          itemStyle:{borderWidth:2,borderColor:'rgba(6,16,30,.70)'}},
+        {r0:'54%',r:'84%',
+          label:{rotate:'radial',fontSize:9,fontWeight:'500',color:TX,silent:true,minAngle:22,overflow:'truncate',ellipsis:true},
+          itemStyle:{borderWidth:1,borderColor:'rgba(6,16,30,.55)'}}
+      ]
+    }]
+  });
+}
+
+/* ── Fetch data ── */
+fetch('data/data_tasks.json')
+  .then(r=>r.json())
+  .then(render)
+  .catch(err=>{
+    console.error('Errore caricamento data_tasks.json:',err);
+    document.querySelector('.fupdate').textContent='⚠ Errore caricamento dati – '+err.message;
+  });
 </script>
 </body>
 </html>
