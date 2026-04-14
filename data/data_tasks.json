@@ -1,1 +1,304 @@
-
+{
+  "updated_at": "2026-04-14 09:44",
+  "period_label": "Mar – Apr 2026",
+  "kpi": {
+    "total": 1229,
+    "completed": 1134,
+    "sla_on_time_pct": 98.4,
+    "active": 95,
+    "late": 2
+  },
+  "sede": [
+    {
+      "name": "Roma",
+      "completed": 1036,
+      "active": 84,
+      "late": 2
+    },
+    {
+      "name": "Milano",
+      "completed": 82,
+      "active": 4,
+      "late": 0
+    }
+  ],
+  "trend": {
+    "dates": [
+      "03-02",
+      "03-03",
+      "03-04",
+      "03-05",
+      "03-06",
+      "03-09",
+      "03-10",
+      "03-11",
+      "03-12",
+      "03-13",
+      "03-16",
+      "03-17",
+      "03-18",
+      "03-19",
+      "03-20",
+      "03-23",
+      "03-24",
+      "03-25",
+      "03-26",
+      "03-27",
+      "03-30",
+      "03-31",
+      "04-01",
+      "04-02",
+      "04-03",
+      "04-07",
+      "04-08",
+      "04-09",
+      "04-10"
+    ],
+    "values": [
+      33,
+      39,
+      37,
+      46,
+      54,
+      45,
+      38,
+      43,
+      36,
+      53,
+      51,
+      37,
+      63,
+      34,
+      34,
+      41,
+      29,
+      35,
+      26,
+      44,
+      30,
+      35,
+      22,
+      35,
+      21,
+      43,
+      45,
+      40,
+      45
+    ]
+  },
+  "programmate": [
+    {
+      "label": "Edili",
+      "value": 1
+    },
+    {
+      "label": "Antincendio",
+      "value": 7
+    },
+    {
+      "label": "Meter Reading",
+      "value": 8
+    },
+    {
+      "label": "Idraulico",
+      "value": 21
+    },
+    {
+      "label": "Climatizzazione",
+      "value": 31
+    },
+    {
+      "label": "Elettrico",
+      "value": 129
+    },
+    {
+      "label": "Manutenzioni",
+      "value": 323
+    },
+    {
+      "label": "Pulizie",
+      "value": 420
+    }
+  ],
+  "correttive": {
+    "total": 289,
+    "items": [
+      {
+        "name": "Servizi Ufficio",
+        "value": 177,
+        "children": [
+          {
+            "name": "Servizi Altro",
+            "value": 40
+          },
+          {
+            "name": "Badge aziendali",
+            "value": 27
+          },
+          {
+            "name": "Allestimenti",
+            "value": 26
+          },
+          {
+            "name": "Periferiche IT",
+            "value": 24
+          },
+          {
+            "name": "Service Desk IT",
+            "value": 23
+          },
+          {
+            "name": "Locker",
+            "value": 9
+          },
+          {
+            "name": "Facchinaggio",
+            "value": 9
+          },
+          {
+            "name": "Fonia",
+            "value": 9
+          },
+          {
+            "name": "Stampanti",
+            "value": 7
+          },
+          {
+            "name": "Mouse/Tastiera",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "name": "Pulizia",
+        "value": 41,
+        "children": [
+          {
+            "name": "Cleaning Altro",
+            "value": 31
+          },
+          {
+            "name": "Uffici",
+            "value": 5
+          },
+          {
+            "name": "Straordinaria",
+            "value": 2
+          },
+          {
+            "name": "Serv. igienici",
+            "value": 2
+          },
+          {
+            "name": "Disinfestazione",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 18,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "name": "Catering/Vending",
+        "value": 16,
+        "children": [
+          {
+            "name": "Catering/Vend.",
+            "value": 14
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Ass. Tecn. Tririga",
+        "value": 14,
+        "children": [
+          {
+            "name": "Gestione Account",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "name": "Segnalazione",
+        "value": 9,
+        "children": [
+          {
+            "name": "Altro - S",
+            "value": 7
+          },
+          {
+            "name": "Ascensori - S",
+            "value": 1
+          },
+          {
+            "name": "Serramenti - S",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Manut. Edili",
+        "value": 7,
+        "children": [
+          {
+            "name": "Edili Altro",
+            "value": 5
+          },
+          {
+            "name": "Opere murarie",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Int. Esterni",
+        "value": 3,
+        "children": [
+          {
+            "name": "Altro",
+            "value": 2
+          },
+          {
+            "name": "Manut. meccan.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Elettrico/Dati",
+        "value": 2,
+        "children": [
+          {
+            "name": "Torrette/Prese",
+            "value": 1
+          },
+          {
+            "name": "Illuminazione",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Ass. Ut. Tririga",
+        "value": 2,
+        "children": [
+          {
+            "name": "Reservation",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  }
+}
