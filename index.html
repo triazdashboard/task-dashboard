@@ -202,7 +202,7 @@ function render(data){
   });
 
   /* ── 2. TREND ── */
-  const dd=data.trend.dates, dv=data.trend.values;
+  const dd=data.trend.dates.map(d=>{const p=d.split('-');return p.length===2?`${p[1]}/${p[0]}`:d;}), dv=data.trend.values;
   const peak=Math.max(...dv), avg=Math.round(dv.reduce((s,v)=>s+v,0)/dv.length);
   document.getElementById('meta-trend').innerHTML=
     `<span class="badge">Picco <strong>${peak}</strong></span><span class="badge">Media <strong>${avg}</strong></span><span class="badge">Giorni <strong>${dd.length}</strong></span>`;
