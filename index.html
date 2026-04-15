@@ -175,9 +175,9 @@ function render(data){
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
       borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
-    grid:{left:12,right:14,top:8,bottom:42,containLabel:true},
+    grid:{left:12,right:14,top:8,bottom:8,containLabel:true},
     xAxis:{type:'category',data:sedeNames,axisLine:{show:false},axisTick:{show:false},
-      axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0,rotate:-35}},
+      axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0,rotate:55,align:'right',margin:8}},
     yAxis:{type:'value',splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:8},max:maxY},
     series:[
       {name:'Completate',type:'bar',stack:'t',barWidth:'55%',data:data.sede.map(s=>s.completed),
