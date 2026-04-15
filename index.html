@@ -239,10 +239,10 @@ function render(data){
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
       borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
-    grid:{left:6,right:50,top:6,bottom:6,containLabel:true},
+    grid:{left:20,right:50,top:6,bottom:6,containLabel:true},
     xAxis:{type:'value',show:false},
     yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
-      axisLabel:{color:MU,fontSize:10,fontWeight:'500'}},
+      axisLabel:{color:MU,fontSize:10,fontWeight:'500',align:'right',margin:12}},
     series:[{
       type:'bar',barWidth:13,
       data:pi.map((d,i)=>({value:d.value,itemStyle:{color:progColors[i%progColors.length],borderRadius:[0,5,5,0]}})),
