@@ -253,7 +253,7 @@ function render(data){
 
   /* ── 4. SUNBURST CORRETTIVE ── */
   document.getElementById('meta-corr').innerHTML=
-    `<span class="badge">Correttive+Supporto <strong>${data.correttive.total}</strong></span>`;
+    `<span class="badge">Totale Interventi: <strong>${data.correttive.total}</strong></span>`;
   const sdCorr=data.correttive.items.map((d,i)=>{
     const col=PADRE_COLORS[d.name]||defaultColors(i);
     return{
