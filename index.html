@@ -60,13 +60,13 @@
 
   <div class="card-sede">
     <div class="card-head" style="height:34px;padding:0 10px;">
-      <span class="card-title" style="font-size:9px;">Per Sede</span>
+      <span class="card-title">Per Sede</span>
     </div>
     <div class="sede-body"><div class="sede-cw" id="ch-sede"></div></div>
-    <div class="legend" style="gap:8px;flex-wrap:wrap;padding:4px 8px 8px;">
-      <div class="legend-item"><div class="legend-dot" style="background:#33d17a"></div>Done</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#45d4ff"></div>Active</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#ff5f6d"></div>Late</div>
+    <div class="legend" style="flex-direction:column;align-items:flex-start;gap:6px;padding:6px 14px 10px;">
+      <div class="legend-item"><div class="legend-dot" style="background:#33d17a"></div>Completate</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#45d4ff"></div>Attive</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff5f6d"></div>In Ritardo</div>
     </div>
   </div>
 
@@ -86,7 +86,7 @@
         <div class="card-head">
           <span class="card-title">Completamenti Giornalieri</span>
           <div class="card-meta" id="meta-trend">
-            <span class="badge">Peak <strong>63</strong></span>
+            <span class="badge">Picco <strong>63</strong></span>
             <span class="badge">Media <strong>38</strong></span>
             <span class="badge">Mar–Apr <strong>27gg</strong></span>
           </div>
@@ -111,7 +111,7 @@
   <div class="t-kpis">
     <div class="kpi c"><span class="kpi-value" id="kTotal">1.149</span><span class="kpi-label">Task Totali</span></div>
     <div class="kpi g"><span class="kpi-value" id="kComp">1.042</span><span class="kpi-label">Completate</span></div>
-    <div class="kpi g"><span class="kpi-value" id="kSla">98,7%</span><span class="kpi-label">SLA On Time</span></div>
+    <div class="kpi g"><span class="kpi-value" id="kSla">98,7%</span><span class="kpi-label">SLA Puntuale</span></div>
     <div class="kpi y"><span class="kpi-value" id="kAct">106</span><span class="kpi-label">Attive</span></div>
     <div class="kpi r"><span class="kpi-value" id="kLate">15</span><span class="kpi-label">In Ritardo</span></div>
   </div>
@@ -177,18 +177,18 @@ function render(data){
       borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
     grid:{left:12,right:14,top:8,bottom:42,containLabel:true},
     xAxis:{type:'category',data:sedeNames,axisLine:{show:false},axisTick:{show:false},
-      axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0}},
+      axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0,rotate:-35}},
     yAxis:{type:'value',splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:8},max:maxY},
     series:[
-      {name:'Completed',type:'bar',stack:'t',barWidth:'55%',data:data.sede.map(s=>s.completed),
+      {name:'Completate',type:'bar',stack:'t',barWidth:'55%',data:data.sede.map(s=>s.completed),
         itemStyle:{color:GR},
         label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:11,fontWeight:'700',
           formatter:v=>v.value>60?v.value:''}},
-      {name:'Active',type:'bar',stack:'t',data:data.sede.map(s=>s.active),
+      {name:'Attive',type:'bar',stack:'t',data:data.sede.map(s=>s.active),
         itemStyle:{color:CY},
         label:{show:true,position:'inside',rotate:90,color:'#06101e',fontSize:10,fontWeight:'700',
           formatter:v=>v.value>10?v.value:''}},
-      {name:'Late',type:'bar',stack:'t',data:data.sede.map(s=>s.late),
+      {name:'In Ritardo',type:'bar',stack:'t',data:data.sede.map(s=>s.late),
         itemStyle:{color:RE,borderRadius:[4,4,0,0]},
         label:{show:true,position:'top',color:RE,fontSize:11,fontWeight:'700',
           formatter:v=>v.value>0?v.value:''}}
@@ -199,7 +199,7 @@ function render(data){
   const dd=data.trend.dates, dv=data.trend.values;
   const peak=Math.max(...dv), avg=Math.round(dv.reduce((s,v)=>s+v,0)/dv.length);
   document.getElementById('meta-trend').innerHTML=
-    `<span class="badge">Peak <strong>${peak}</strong></span><span class="badge">Media <strong>${avg}</strong></span><span class="badge">Giorni <strong>${dd.length}</strong></span>`;
+    `<span class="badge">Picco <strong>${peak}</strong></span><span class="badge">Media <strong>${avg}</strong></span><span class="badge">Giorni <strong>${dd.length}</strong></span>`;
   ec('ch-trend').setOption({
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(69,212,255,.3)',
@@ -213,7 +213,7 @@ function render(data){
       lineStyle:{width:2.5,color:CY},itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
       areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[
         {offset:0,color:'rgba(69,212,255,.28)'},{offset:.65,color:'rgba(69,212,255,.05)'},{offset:1,color:'rgba(69,212,255,0)'}]}},
-      markPoint:{data:[{type:'max',name:'Peak'}],
+      markPoint:{data:[{type:'max',name:'Picco'}],
         label:{color:'#06101e',fontSize:11,fontWeight:'700'},itemStyle:{color:YL},symbolSize:36},
       markLine:{silent:true,symbol:'none',data:[
         {type:'average',lineStyle:{color:'rgba(246,195,68,.45)',type:'dashed',width:1.5},
