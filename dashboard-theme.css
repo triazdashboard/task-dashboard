@@ -1,0 +1,87 @@
+/* ══════════════════════════════════════════════════════════════════
+   TRIAZ DASHBOARD — SHARED DESIGN THEME  v1.0
+
+   Questo file è condiviso tra tutte le dashboard. Modificalo qui
+   e copialo nella root di ciascuna repo:
+     • occupancy-dashboard/dashboard-theme.css
+     • sensor-dashboard/dashboard-theme.css
+     • task-dashboard/dashboard-theme.css
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Design Tokens ─────────────────────────────────────────────── */
+:root {
+  /* Sfondo */
+  --bg: #07111f;
+
+  /* Pannelli / Card */
+  --panel:          rgba(11, 24, 43, 0.91);
+  --panel-border:   rgba(130, 175, 255, 0.22);
+  --panel-border-2: rgba(130, 175, 255, 0.09);
+  --panel-inner:    rgba(255, 255, 255, 0.04);
+
+  /* Tipografia */
+  --text:  #f4f8ff;
+  --muted: #b2c3de;
+
+  /* Colori accentuazione */
+  --cyan:   #45d4ff;
+  --green:  #33d17a;
+  --yellow: #f6c344;
+  --red:    #ff5f6d;
+  --blue:   #4c7dff;
+  --purple: #a78bfa;
+  --orange: #ff9f43;
+  --violet: #9b6dff;
+
+  /* Griglia grafici ECharts */
+  --grid-line: rgba(255, 255, 255, 0.12);
+
+  /* Elevazione & forma */
+  --shadow: 0 14px 36px rgba(0, 0, 0, 0.32);
+  --radius: 16px;
+}
+
+/* ── Reset ──────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ───────────────────────────────────────────────────────── */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left,      rgba(76, 125, 255, 0.18), transparent 24%),
+    radial-gradient(circle at top right,     rgba(69, 212, 255, 0.12), transparent 22%),
+    radial-gradient(circle at bottom center, rgba(155, 109, 255, 0.10), transparent 28%),
+    linear-gradient(180deg, #081120 0%, var(--bg) 100%);
+}
+
+/* ── Card — stili visivi condivisi ──────────────────────────────── */
+/* Il layout (display, flex/grid, min-height) è definito in ogni dashboard */
+.card {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%),
+    radial-gradient(circle at top right, rgba(76, 125, 255, 0.15), transparent 30%);
+  pointer-events: none;
+  z-index: 0;
+}
