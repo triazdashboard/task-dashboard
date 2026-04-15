@@ -7,29 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="dashboard-theme.css"/>
 <style>
-body{display:grid;grid-template-rows:52px 1fr 38px;height:100vh;padding:10px;gap:8px;}
-
-/* ── HEADER ── */
-header{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 20px;
-  background:var(--panel);border:1px solid var(--panel-border);border-radius:var(--radius);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  box-shadow:var(--shadow);position:relative;overflow:hidden;
-}
-header::before{content:'';position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(56,217,245,.05) 0%,transparent 55%);pointer-events:none;}
-.hbrand{display:flex;align-items:center;gap:11px;flex:1;min-width:0;}
-.hdot{width:8px;height:8px;border-radius:50%;flex-shrink:0;
-  background:var(--cyan);box-shadow:0 0 8px var(--cyan);
-  animation:pulse 2.4s ease-in-out infinite;}
-@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 8px var(--cyan);}50%{opacity:.4;box-shadow:0 0 18px var(--cyan);}}
-.htitle{font-size:clamp(14px,1.5vw,20px);font-weight:800;white-space:nowrap;}
-.hsub{font-size:10px;color:var(--muted);margin-top:1px;white-space:nowrap;}
-.hclock{text-align:right;flex-shrink:0;margin-left:24px;}
-.ctime{font-size:clamp(22px,2.4vw,32px);font-weight:800;color:var(--cyan);letter-spacing:.04em;line-height:1;}
-.cdate{font-size:10px;color:var(--muted);margin-top:1px;white-space:nowrap;}
-
 /* ── CONTENT ── */
 .content{display:grid;grid-template-columns:148px 1fr;gap:8px;min-height:0;}
 
@@ -40,169 +17,119 @@ header::before{content:'';position:absolute;inset:0;
   display:flex;flex-direction:column;overflow:hidden;position:relative;
 }
 .card-sede::before{content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at top right,rgba(56,217,245,.05) 0%,transparent 50%);
+  background:radial-gradient(circle at top right,rgba(69,212,255,.05) 0%,transparent 50%);
   pointer-events:none;z-index:0;}
-
-/* sede card title — abbreviato per stare nei 148px */
-.sede-head{
-  height:34px;padding:0 10px;position:relative;z-index:1;
-  display:flex;align-items:center;
-  border-bottom:1px solid rgba(255,255,255,.04);flex-shrink:0;
-}
-.sede-title{
-  font-size:9px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--muted);
-  display:flex;align-items:center;gap:5px;white-space:nowrap;overflow:hidden;
-}
-.sede-title::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;flex-shrink:0;
-  background:var(--cyan);box-shadow:0 0 5px var(--cyan);}
 .sede-body{flex:1;position:relative;z-index:1;overflow:hidden;padding:6px 8px 4px;}
 .sede-cw{width:100%;height:100%;}
-.sede-leg{
-  position:relative;z-index:1;flex-shrink:0;
-  display:flex;gap:8px;justify-content:center;flex-wrap:wrap;
-  padding:4px 8px 8px;border-top:1px solid rgba(255,255,255,.05);
-}
-.li{display:flex;align-items:center;gap:4px;font-size:9px;font-weight:600;color:var(--muted);}
-.ld{width:6px;height:6px;border-radius:2px;flex-shrink:0;}
 
 /* ── MAIN AREA ── */
 .main-area{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-height:0;}
 .right-col{display:grid;grid-template-rows:1fr 1fr;gap:8px;min-height:0;}
 
 /* ── GENERIC CARD ── */
-.card{
-  display:flex;flex-direction:column;min-height:0;
-}
-
-/* ── CARD HEADER ── */
-.ch{
-  height:34px;padding:0 14px;flex-shrink:0;
-  position:relative;z-index:1;
-  display:flex;align-items:center;justify-content:space-between;gap:8px;
-  border-bottom:1px solid rgba(255,255,255,.04);
-}
-.ct{
-  font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;
-}
-.ct::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;flex-shrink:0;
-  background:var(--cyan);box-shadow:0 0 5px var(--cyan);}
-.cm{display:flex;gap:5px;overflow:hidden;}
-.mp{
-  padding:2px 8px;border-radius:5px;
-  background:rgba(255,255,255,.04);border:1px solid var(--panel-border-2);
-  font-size:10px;font-weight:500;color:var(--muted);white-space:nowrap;
-}
-.mp b{color:var(--text);font-weight:700;}
+.card{ display:flex;flex-direction:column;min-height:0; }
 
 /* ── CARD BODY ── */
-.cb{flex:1;position:relative;z-index:1;overflow:hidden;min-height:0;}
-.cw{width:100%;height:100%;}
+.card-body{flex:1;position:relative;z-index:1;overflow:hidden;min-height:0;}
+.chart{width:100%;height:100%;}
 
-/* ── FOOTER ── */
-footer{
-  display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 18px;
-  background:var(--panel);border:1px solid var(--panel-border);border-radius:var(--radius);
-  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:var(--shadow);
-}
-.fupdate{font-size:9px;color:var(--muted);opacity:.6;white-space:nowrap;}
-.kpi-row{display:flex;gap:7px;}
-.kpf{padding:3px 12px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--panel-border-2);text-align:center;min-width:72px;}
-.kpf .v{display:block;font-size:15px;font-weight:800;line-height:1.2;}
-.kpf .l{display:block;font-size:8px;font-weight:600;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;}
-.kpf.c .v{color:var(--cyan);}.kpf.g .v{color:var(--green);}.kpf.y .v{color:var(--yellow);}.kpf.r .v{color:var(--red);}
+/* ── KPI colors ── */
+.kpi.c .kpi-value{color:var(--cyan);}
+.kpi.g .kpi-value{color:var(--green);}
+.kpi.y .kpi-value{color:var(--yellow);}
+.kpi.r .kpi-value{color:var(--red);}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="hbrand">
-    <div class="hdot"></div>
-    <div>
-      <div class="htitle">Facilities Operations Dashboard</div>
-      <div class="hsub">Real Estate &amp; Building Services · Marzo – Aprile 2026</div>
+<header class="t-header">
+  <div class="t-brand">
+    <div class="t-dot"></div>
+    <div class="t-titles">
+      <div class="t-title">Facilities Operations Dashboard</div>
+      <div class="t-sub" id="tSub">Real Estate &amp; Building Services · Marzo – Aprile 2026</div>
     </div>
   </div>
-  <div class="hclock">
-    <div class="ctime" id="clk">--:--</div>
-    <div class="cdate" id="clkd">--</div>
+  <div class="t-clock">
+    <div class="t-clock-time" id="tTime">--:--</div>
+    <div class="t-clock-date" id="tDate">--</div>
   </div>
 </header>
 
 <div class="content">
 
   <div class="card-sede">
-    <div class="sede-head">
-      <div class="sede-title">Per Sede</div>
+    <div class="card-head" style="height:34px;padding:0 10px;">
+      <span class="card-title" style="font-size:9px;">Per Sede</span>
     </div>
     <div class="sede-body"><div class="sede-cw" id="ch-sede"></div></div>
-    <div class="sede-leg">
-      <div class="li"><div class="ld" style="background:#2fd17a"></div>Done</div>
-      <div class="li"><div class="ld" style="background:#38d9f5"></div>Active</div>
-      <div class="li"><div class="ld" style="background:#ff5f6e"></div>Late</div>
+    <div class="legend" style="gap:8px;flex-wrap:wrap;padding:4px 8px 8px;">
+      <div class="legend-item"><div class="legend-dot" style="background:#33d17a"></div>Done</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#45d4ff"></div>Active</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff5f6d"></div>Late</div>
     </div>
   </div>
 
   <div class="main-area">
 
     <div class="card">
-      <div class="ch">
-        <div class="ct">Interventi Correttivi</div>
-        <div class="cm"><div class="mp">Corrective <b>191</b></div></div>
+      <div class="card-head">
+        <span class="card-title">Interventi Correttivi</span>
+        <div class="card-meta" id="meta-corr"><span class="badge">Correttive <strong>191</strong></span></div>
       </div>
-      <div class="cb"><div class="cw" id="ch-corr"></div></div>
+      <div class="card-body"><div class="chart" id="ch-corr"></div></div>
     </div>
 
     <div class="right-col">
 
       <div class="card">
-        <div class="ch">
-          <div class="ct">Completamenti Giornalieri</div>
-          <div class="cm">
-            <div class="mp">Peak <b>63</b></div>
-            <div class="mp">Media <b>38</b></div>
-            <div class="mp">Mar–Apr <b>27gg</b></div>
+        <div class="card-head">
+          <span class="card-title">Completamenti Giornalieri</span>
+          <div class="card-meta" id="meta-trend">
+            <span class="badge">Peak <strong>63</strong></span>
+            <span class="badge">Media <strong>38</strong></span>
+            <span class="badge">Mar–Apr <strong>27gg</strong></span>
           </div>
         </div>
-        <div class="cb"><div class="cw" id="ch-trend"></div></div>
+        <div class="card-body"><div class="chart" id="ch-trend"></div></div>
       </div>
 
       <div class="card">
-        <div class="ch">
-          <div class="ct">Manutenzioni Programmate</div>
-          <div class="cm"><div class="mp">Preventive <b>882</b></div></div>
+        <div class="card-head">
+          <span class="card-title">Manutenzioni Programmate</span>
+          <div class="card-meta" id="meta-prog"><span class="badge">Preventive <strong>882</strong></span></div>
         </div>
-        <div class="cb"><div class="cw" id="ch-prog"></div></div>
+        <div class="card-body"><div class="chart" id="ch-prog"></div></div>
       </div>
 
     </div>
   </div>
 </div>
 
-<footer>
-  <div class="fupdate">Ultimo aggiornamento dati: 08-04-2026 15:27</div>
-  <div class="kpi-row">
-    <div class="kpf c"><span class="v">1.149</span><span class="l">Task Totali</span></div>
-    <div class="kpf g"><span class="v">1.042</span><span class="l">Completate</span></div>
-    <div class="kpf g"><span class="v">98,7%</span><span class="l">SLA On Time</span></div>
-    <div class="kpf y"><span class="v">106</span><span class="l">Attive</span></div>
-    <div class="kpf r"><span class="v">15</span><span class="l">In Ritardo</span></div>
+<footer class="t-footer">
+  <div class="t-update" id="tUpdate">Ultimo aggiornamento dati: 08-04-2026 15:27</div>
+  <div class="t-kpis">
+    <div class="kpi c"><span class="kpi-value" id="kTotal">1.149</span><span class="kpi-label">Task Totali</span></div>
+    <div class="kpi g"><span class="kpi-value" id="kComp">1.042</span><span class="kpi-label">Completate</span></div>
+    <div class="kpi g"><span class="kpi-value" id="kSla">98,7%</span><span class="kpi-label">SLA On Time</span></div>
+    <div class="kpi y"><span class="kpi-value" id="kAct">106</span><span class="kpi-label">Attive</span></div>
+    <div class="kpi r"><span class="kpi-value" id="kLate">15</span><span class="kpi-label">In Ritardo</span></div>
   </div>
 </footer>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5"></script>
 <script>
 /* ── Clock ── */
 (function tick(){
   const n=new Date();
-  document.getElementById('clk').textContent=n.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
-  document.getElementById('clkd').textContent=n.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('tTime').textContent=n.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('tDate').textContent=n.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   setTimeout(tick,1000);
 })();
 
-const CY='#38d9f5',GR='#2fd17a',YL='#f5c842',RE='#ff5f6e',PU='#a78bfa',
-      MU='#7a9fc2',TX='#eef2ff',GD='rgba(255,255,255,0.07)',PN='rgba(8,18,36,0.96)';
+const CY='#45d4ff',GR='#33d17a',YL='#f6c344',RE='#ff5f6d',PU='#a78bfa',
+      MU='#b2c3de',TX='#f4f8ff',GD='rgba(255,255,255,0.07)',PN='rgba(8,18,36,0.96)';
 const charts=[];
 function ec(id){const c=echarts.init(document.getElementById(id),null,{renderer:'canvas'});charts.push(c);return c;}
 window.addEventListener('resize',()=>charts.forEach(c=>c.resize()));
@@ -229,18 +156,17 @@ function defaultColors(idx){
 
 function render(data){
   /* ── header subtitle ── */
-  document.querySelector('.hsub').textContent=`Real Estate & Building Services · ${data.period_label}`;
+  document.getElementById('tSub').textContent=`Real Estate & Building Services · ${data.period_label}`;
 
   /* ── footer ── */
-  document.querySelector('.fupdate').textContent=`Ultimo aggiornamento dati: ${data.updated_at}`;
-  const kpis=document.querySelectorAll('.kpf .v');
+  document.getElementById('tUpdate').textContent=`Ultimo aggiornamento dati: ${data.updated_at}`;
   const k=data.kpi;
   const fmt=v=>v>=1000?(v/1000).toFixed(3).replace('.','.'):String(v);
-  kpis[0].textContent=fmt(k.total);
-  kpis[1].textContent=fmt(k.completed);
-  kpis[2].textContent=k.sla_on_time_pct.toFixed(1).replace('.',',')+'%';
-  kpis[3].textContent=k.active;
-  kpis[4].textContent=k.late;
+  document.getElementById('kTotal').textContent=fmt(k.total);
+  document.getElementById('kComp').textContent=fmt(k.completed);
+  document.getElementById('kSla').textContent=k.sla_on_time_pct.toFixed(1).replace('.',',')+'%';
+  document.getElementById('kAct').textContent=k.active;
+  document.getElementById('kLate').textContent=k.late;
 
   /* ── 1. SEDE ── */
   const sedeNames=data.sede.map(s=>s.name);
@@ -248,7 +174,7 @@ function render(data){
   ec('ch-sede').setOption({
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-      borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
+      borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
     grid:{left:12,right:14,top:8,bottom:42,containLabel:true},
     xAxis:{type:'category',data:sedeNames,axisLine:{show:false},axisTick:{show:false},
       axisLabel:{color:TX,fontSize:11,fontWeight:'600',interval:0}},
@@ -272,12 +198,11 @@ function render(data){
   /* ── 2. TREND ── */
   const dd=data.trend.dates, dv=data.trend.values;
   const peak=Math.max(...dv), avg=Math.round(dv.reduce((s,v)=>s+v,0)/dv.length);
-  // Update chip
-  document.querySelector('#ch-trend').closest('.card').querySelector('.cm').innerHTML=
-    `<div class="mp">Peak <b>${peak}</b></div><div class="mp">Media <b>${avg}</b></div><div class="mp">Giorni <b>${dd.length}</b></div>`;
+  document.getElementById('meta-trend').innerHTML=
+    `<span class="badge">Peak <strong>${peak}</strong></span><span class="badge">Media <strong>${avg}</strong></span><span class="badge">Giorni <strong>${dd.length}</strong></span>`;
   ec('ch-trend').setOption({
     backgroundColor:'transparent',
-    tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(56,217,245,.3)',
+    tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(69,212,255,.3)',
       textStyle:{color:TX,fontSize:12},formatter:p=>`${p[0].name}<br/>Completati: <b style="color:${CY}">${p[0].value}</b>`},
     grid:{left:34,right:14,top:12,bottom:28},
     xAxis:{type:'category',data:dd,axisLine:{lineStyle:{color:GD}},axisTick:{show:false},
@@ -287,11 +212,11 @@ function render(data){
       type:'line',data:dv,smooth:0.38,symbol:'circle',symbolSize:4,
       lineStyle:{width:2.5,color:CY},itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
       areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[
-        {offset:0,color:'rgba(56,217,245,.28)'},{offset:.65,color:'rgba(56,217,245,.05)'},{offset:1,color:'rgba(56,217,245,0)'}]}},
+        {offset:0,color:'rgba(69,212,255,.28)'},{offset:.65,color:'rgba(69,212,255,.05)'},{offset:1,color:'rgba(69,212,255,0)'}]}},
       markPoint:{data:[{type:'max',name:'Peak'}],
         label:{color:'#06101e',fontSize:11,fontWeight:'700'},itemStyle:{color:YL},symbolSize:36},
       markLine:{silent:true,symbol:'none',data:[
-        {type:'average',lineStyle:{color:'rgba(245,200,66,.45)',type:'dashed',width:1.5},
+        {type:'average',lineStyle:{color:'rgba(246,195,68,.45)',type:'dashed',width:1.5},
           label:{color:YL,fontSize:9,formatter:'Media: {c}',position:'end'}}
       ]}
     }]
@@ -299,15 +224,15 @@ function render(data){
 
   /* ── 3. PROGRAMMATE ── */
   const pi=data.programmate;
-  document.querySelector('#ch-prog').closest('.card').querySelector('.cm').innerHTML=
-    `<div class="mp">Preventive <b>${pi.reduce((s,i)=>s+i.value,0)}</b></div>`;
+  document.getElementById('meta-prog').innerHTML=
+    `<span class="badge">Preventive <strong>${pi.reduce((s,i)=>s+i.value,0)}</strong></span>`;
   const progColors=['rgba(22,105,145,.85)','rgba(30,130,170,.85)','rgba(47,180,92,.85)',
     'rgba(40,145,185,.85)','rgba(50,165,200,.85)','rgba(56,195,225,.85)',
-    'rgba(47,209,122,.90)','rgba(56,217,245,.92)'];
+    'rgba(47,209,122,.90)','rgba(69,212,255,.92)'];
   ec('ch-prog').setOption({
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-      borderColor:'rgba(56,217,245,.3)',textStyle:{color:TX,fontSize:11}},
+      borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
     grid:{left:6,right:50,top:6,bottom:6,containLabel:true},
     xAxis:{type:'value',show:false},
     yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
@@ -321,8 +246,8 @@ function render(data){
   });
 
   /* ── 4. SUNBURST CORRETTIVE ── */
-  document.querySelector('#ch-corr').closest('.card').querySelector('.cm').innerHTML=
-    `<div class="mp">Correttive+Supporto <b>${data.correttive.total}</b></div>`;
+  document.getElementById('meta-corr').innerHTML=
+    `<span class="badge">Correttive+Supporto <strong>${data.correttive.total}</strong></span>`;
   const sdCorr=data.correttive.items.map((d,i)=>{
     const col=PADRE_COLORS[d.name]||defaultColors(i);
     return{
@@ -358,13 +283,15 @@ function render(data){
 }
 
 /* ── Fetch data ── */
-fetch('data/data_tasks.json')
+fetch('data/data_tasks.json?v=' + Date.now())
   .then(r=>r.json())
   .then(render)
   .catch(err=>{
     console.error('Errore caricamento data_tasks.json:',err);
-    document.querySelector('.fupdate').textContent='⚠ Errore caricamento dati – '+err.message;
+    document.getElementById('tUpdate').textContent='⚠ Errore caricamento dati – '+err.message;
   });
+
+setTimeout(()=>location.reload(), 60*60*1000);
 </script>
 </body>
 </html>
