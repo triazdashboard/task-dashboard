@@ -235,20 +235,26 @@ function render(data){
   const pi=data.programmate;
   document.getElementById('meta-prog').innerHTML=
     `<span class="badge">Preventive <strong>${pi.reduce((s,i)=>s+i.value,0)}</strong></span>`;
-  const progColors=['rgba(22,105,145,.85)','rgba(30,130,170,.85)','rgba(47,180,92,.85)',
-    'rgba(40,145,185,.85)','rgba(50,165,200,.85)','rgba(56,195,225,.85)',
-    'rgba(47,209,122,.90)','rgba(69,212,255,.92)'];
+  const piMax=Math.max(...pi.map(d=>d.value),1);
+  function progColor(val){
+    const t=val/piMax;
+    const r=Math.round(18+t*(47-18));
+    const g=Math.round(88+t*(209-88));
+    const b=Math.round(48+t*(98-48));
+    const a=(0.68+t*0.27).toFixed(2);
+    return `rgba(${r},${g},${b},${a})`;
+  }
   ec('ch-prog').setOption({
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-      borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
+      borderColor:'rgba(47,209,122,.3)',textStyle:{color:TX,fontSize:11}},
     grid:{left:20,right:50,top:6,bottom:6,containLabel:true},
     xAxis:{type:'value',show:false},
     yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
       axisLabel:{color:MU,fontSize:10,fontWeight:'500',align:'right',margin:12}},
     series:[{
       type:'bar',barWidth:13,
-      data:pi.map((d,i)=>({value:d.value,itemStyle:{color:progColors[i%progColors.length],borderRadius:[0,5,5,0]}})),
+      data:pi.map(d=>({value:d.value,itemStyle:{color:progColor(d.value),borderRadius:[0,5,5,0]}})),
       showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:[0,5,5,0]},
       label:{show:true,position:'right',color:TX,fontSize:11,fontWeight:'700'}
     }]
