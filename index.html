@@ -148,6 +148,16 @@ const PADRE_COLORS={
   'Elettrico/Dati':       {c:'rgba(36,82,185,.42)',   b:'rgba(96,165,250,.40)',  ch:[96,165,250]},
   'Building Services':    {c:'rgba(60,100,160,.42)',  b:'rgba(100,160,240,.40)', ch:[100,160,240]},
 };
+const DISPLAY_NAMES={
+  'Gest. Spedizioni':   'Spedizioni',
+  'Catering/Vending':   'Catering',
+  'Ass. Tecn. Tririga': 'Tririga Tecnica',
+  'Manut. Edili':       'Edilizia',
+  'Int. Esterni':       'Esterni',
+  'Elettrico/Dati':     'Elettrico',
+  'Ass. Ut. Tririga':   'Tririga Utenza',
+  'Idraulico':          'Idraulica',
+};
 function defaultColors(idx){
   const palette=[[167,139,250],[56,217,245],[47,209,122],[249,115,22],[255,95,110],[148,163,184],[245,200,66],[52,211,153]];
   const rgb=palette[idx%palette.length];
@@ -257,7 +267,7 @@ function render(data){
   const sdCorr=data.correttive.items.map((d,i)=>{
     const col=PADRE_COLORS[d.name]||defaultColors(i);
     return{
-      name:d.name, value:d.value,
+      name:DISPLAY_NAMES[d.name]||d.name, value:d.value,
       itemStyle:{color:col.c, borderColor:col.b, borderWidth:1.5}
     };
   });
