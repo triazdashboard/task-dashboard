@@ -238,16 +238,16 @@ function render(data){
   const piMax=Math.max(...pi.map(d=>d.value),1);
   function progColor(val){
     const t=val/piMax;
-    const r=Math.round(18+t*(47-18));
-    const g=Math.round(88+t*(209-88));
-    const b=Math.round(48+t*(98-48));
+    const r=Math.round(8+t*(69-8));
+    const g=Math.round(80+t*(212-80));
+    const b=Math.round(110+t*(255-110));
     const a=(0.68+t*0.27).toFixed(2);
     return `rgba(${r},${g},${b},${a})`;
   }
   ec('ch-prog').setOption({
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:PN,
-      borderColor:'rgba(47,209,122,.3)',textStyle:{color:TX,fontSize:11}},
+      borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:11}},
     grid:{left:20,right:50,top:6,bottom:6,containLabel:true},
     xAxis:{type:'value',show:false},
     yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
