@@ -180,7 +180,6 @@ function render(data){
   document.getElementById('kComp').textContent=fmt(k.completed);
   document.getElementById('kSla').textContent=k.sla_on_time_pct.toFixed(1).replace('.',',')+'%';
   document.getElementById('kAct').textContent=k.active;
-  document.getElementById('kLate').textContent=k.late;
 
   /* ── 1. SEDE ── */
   const sedeNames=data.sede.map(s=>s.name);
