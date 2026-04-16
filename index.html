@@ -258,13 +258,7 @@ function render(data){
     const col=PADRE_COLORS[d.name]||defaultColors(i);
     return{
       name:d.name, value:d.value,
-      itemStyle:{color:col.c, borderColor:col.b, borderWidth:1.5},
-      children:d.children.map((c,j)=>{
-        const a=[0.62,0.57,0.52,0.46,0.42,0.38,0.34];
-        return{name:c.name, value:c.value,
-          itemStyle:{color:`rgba(${col.ch[0]},${col.ch[1]},${col.ch[2]},${a[j]||0.32})`,
-            borderColor:'rgba(6,16,30,.5)',borderWidth:1}};
-      })
+      itemStyle:{color:col.c, borderColor:col.b, borderWidth:1.5}
     };
   });
   ec('ch-corr').setOption({
@@ -274,15 +268,12 @@ function render(data){
     series:[{
       type:'sunburst', data:sdCorr, radius:['18%','86%'], center:['50%','50%'],
       sort:null, nodeClick:false,
-      emphasis:{focus:'ancestor',itemStyle:{opacity:1}},
+      emphasis:{focus:'self',itemStyle:{opacity:1}},
       levels:[
         {},
-        {r0:'20%',r:'52%',
+        {r0:'20%',r:'84%',
           label:{rotate:'radial',fontSize:10,fontWeight:'600',color:TX,minAngle:10,overflow:'truncate',ellipsis:true},
-          itemStyle:{borderWidth:2,borderColor:'rgba(6,16,30,.70)'}},
-        {r0:'54%',r:'84%',
-          label:{rotate:'radial',fontSize:9,fontWeight:'500',color:TX,silent:true,minAngle:22,overflow:'truncate',ellipsis:true},
-          itemStyle:{borderWidth:1,borderColor:'rgba(6,16,30,.55)'}}
+          itemStyle:{borderWidth:2,borderColor:'rgba(6,16,30,.70)'}}
       ]
     }]
   });
