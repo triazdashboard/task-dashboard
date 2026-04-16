@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-04-15 19:19",
+  "updated_at": "2026-04-16 03:00",
   "period_label": "Mar – Apr 2026",
   "kpi": {
-    "total": 1320,
-    "completed": 1208,
-    "sla_on_time_pct": 98.3,
-    "active": 112,
-    "late": 1
+    "total": 1359,
+    "completed": 1249,
+    "sla_on_time_pct": 98.4,
+    "active": 110,
+    "late": 0
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1100,
-      "active": 102,
-      "late": 1
+      "completed": 1135,
+      "active": 101,
+      "late": 0
     },
     {
       "name": "Milano",
-      "completed": 90,
+      "completed": 95,
       "active": 4,
       "late": 0
     }
@@ -54,7 +54,8 @@
       "04-09",
       "04-10",
       "04-13",
-      "04-14"
+      "04-14",
+      "04-15"
     ],
     "values": [
       33,
@@ -87,7 +88,8 @@
       40,
       45,
       42,
-      32
+      33,
+      40
     ]
   },
   "programmate": [
@@ -113,23 +115,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 143
+      "value": 148
     },
     {
       "label": "Manutenzioni",
-      "value": 343
+      "value": 353
     },
     {
       "label": "Pulizie",
-      "value": 455
+      "value": 466
     }
   ],
   "correttive": {
-    "total": 310,
+    "total": 323,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 184,
+        "value": 188,
         "children": [
           {
             "name": "Servizi Altro",
@@ -137,7 +139,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 28
+            "value": 29
           },
           {
             "name": "Badge aziendali",
@@ -145,19 +147,19 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 26
+            "value": 27
           },
           {
             "name": "Service Desk IT",
-            "value": 23
+            "value": 24
+          },
+          {
+            "name": "Locker",
+            "value": 10
           },
           {
             "name": "Facchinaggio",
             "value": 10
-          },
-          {
-            "name": "Locker",
-            "value": 9
           },
           {
             "name": "Fonia",
@@ -201,53 +203,53 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 20,
+        "value": 21,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 20
+            "value": 21
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 17,
+        "value": 20,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 15
+            "value": 16
           },
           {
             "name": "Distr. Automatici",
-            "value": 2
+            "value": 4
           }
         ]
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 15,
+        "value": 17,
         "children": [
           {
             "name": "Gestione Account",
-            "value": 15
+            "value": 17
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 10,
+        "value": 13,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 7
+            "value": 8
+          },
+          {
+            "name": "Riparazione Arredi/Infissi",
+            "value": 3
           },
           {
             "name": "Opere murarie",
             "value": 2
-          },
-          {
-            "name": "Riparazione Arredi/Infissi",
-            "value": 1
           }
         ]
       },
