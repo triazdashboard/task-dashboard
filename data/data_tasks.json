@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-04-16 10:38",
-  "period_label": "Mar – Apr 2026",
+  "updated_at": "2026-04-20 12:38",
+  "period_label": "Mar - Apr 2026",
   "kpi": {
-    "total": 1320,
-    "completed": 1208,
+    "total": 1434,
+    "completed": 1347,
     "sla_on_time_pct": 98.3,
-    "active": 112,
-    "late": 1
+    "active": 86,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1100,
-      "active": 102,
+      "completed": 1221,
+      "active": 77,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 90,
-      "active": 4,
+      "completed": 105,
+      "active": 3,
       "late": 0
     }
   ],
@@ -54,7 +54,10 @@
       "04-09",
       "04-10",
       "04-13",
-      "04-14"
+      "04-14",
+      "04-15",
+      "04-16",
+      "04-17"
     ],
     "values": [
       33,
@@ -87,7 +90,10 @@
       40,
       45,
       42,
-      32
+      33,
+      40,
+      47,
+      51
     ]
   },
   "programmate": [
@@ -109,55 +115,55 @@
     },
     {
       "label": "Climatizzazione",
-      "value": 31
+      "value": 32
     },
     {
       "label": "Elettrico",
-      "value": 143
+      "value": 158
     },
     {
       "label": "Manutenzioni",
-      "value": 343
+      "value": 373
     },
     {
       "label": "Pulizie",
-      "value": 455
+      "value": 488
     }
   ],
   "correttive": {
-    "total": 310,
+    "total": 345,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 184,
+        "value": 199,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 42
+            "value": 43
+          },
+          {
+            "name": "Periferiche IT",
+            "value": 35
           },
           {
             "name": "Allestimenti",
-            "value": 28
+            "value": 31
           },
           {
             "name": "Badge aziendali",
             "value": 27
           },
           {
-            "name": "Periferiche IT",
-            "value": 26
+            "name": "Service Desk IT",
+            "value": 24
           },
           {
-            "name": "Service Desk IT",
-            "value": 23
+            "name": "Locker",
+            "value": 10
           },
           {
             "name": "Facchinaggio",
             "value": 10
-          },
-          {
-            "name": "Locker",
-            "value": 9
           },
           {
             "name": "Fonia",
@@ -175,11 +181,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 45,
+        "value": 48,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 34
+            "value": 37
           },
           {
             "name": "Uffici",
@@ -201,63 +207,63 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 20,
+        "value": 23,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 20
+            "value": 23
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 17,
+        "value": 21,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 15
+            "value": 17
           },
           {
             "name": "Distr. Automatici",
-            "value": 2
+            "value": 4
           }
         ]
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 15,
+        "value": 17,
         "children": [
           {
             "name": "Gestione Account",
-            "value": 15
+            "value": 17
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 10,
+        "value": 16,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 7
+            "value": 10
+          },
+          {
+            "name": "Riparazione Arredi/Infissi",
+            "value": 4
           },
           {
             "name": "Opere murarie",
             "value": 2
-          },
-          {
-            "name": "Riparazione Arredi/Infissi",
-            "value": 1
           }
         ]
       },
       {
         "name": "Segnalazione",
-        "value": 10,
+        "value": 11,
         "children": [
           {
             "name": "Altro - S",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Ascensori - S",
@@ -317,10 +323,14 @@
       },
       {
         "name": "Idraulico",
-        "value": 1,
+        "value": 2,
         "children": [
           {
             "name": "Idraulico - Altro",
+            "value": 1
+          },
+          {
+            "name": "Mancanza acqua calda",
             "value": 1
           }
         ]
