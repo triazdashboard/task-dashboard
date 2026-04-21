@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-04-21 08:03",
+  "updated_at": "2026-04-21 08:05",
   "period_label": "Mar - Apr 2026",
   "kpi": {
-    "total": 1434,
-    "completed": 1347,
-    "sla_on_time_pct": 98.3,
-    "active": 86,
+    "total": 1486,
+    "completed": 1394,
+    "sla_on_time_pct": 98.4,
+    "active": 91,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1221,
-      "active": 77,
+      "completed": 1263,
+      "active": 82,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 105,
+      "completed": 109,
       "active": 3,
       "late": 0
     }
@@ -57,7 +57,8 @@
       "04-14",
       "04-15",
       "04-16",
-      "04-17"
+      "04-17",
+      "04-20"
     ],
     "values": [
       33,
@@ -93,7 +94,8 @@
       33,
       40,
       47,
-      51
+      52,
+      46
     ]
   },
   "programmate": [
@@ -111,7 +113,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 22
+      "value": 23
     },
     {
       "label": "Climatizzazione",
@@ -119,23 +121,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 158
+      "value": 167
     },
     {
       "label": "Manutenzioni",
-      "value": 373
+      "value": 383
     },
     {
       "label": "Pulizie",
-      "value": 488
+      "value": 514
     }
   ],
   "correttive": {
-    "total": 345,
+    "total": 351,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 199,
+        "value": 202,
         "children": [
           {
             "name": "Servizi Altro",
@@ -143,11 +145,11 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 35
+            "value": 36
           },
           {
             "name": "Allestimenti",
-            "value": 31
+            "value": 32
           },
           {
             "name": "Badge aziendali",
@@ -171,7 +173,7 @@
           },
           {
             "name": "Stampanti",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Mouse/Tastiera",
@@ -207,21 +209,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 23,
+        "value": 24,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 23
+            "value": 24
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 21,
+        "value": 22,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Distr. Automatici",
@@ -231,11 +233,11 @@
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 17,
+        "value": 18,
         "children": [
           {
             "name": "Gestione Account",
-            "value": 17
+            "value": 18
           }
         ]
       },
