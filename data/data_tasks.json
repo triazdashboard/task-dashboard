@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-04-21 08:23",
+  "updated_at": "2026-04-22 03:00",
   "period_label": "Mar - Apr 2026",
   "kpi": {
-    "total": 1486,
-    "completed": 1394,
+    "total": 1524,
+    "completed": 1433,
     "sla_on_time_pct": 98.4,
     "active": 91,
-    "late": 2
+    "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1263,
-      "active": 82,
+      "completed": 1296,
+      "active": 83,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 109,
-      "active": 3,
+      "completed": 114,
+      "active": 2,
       "late": 0
     }
   ],
@@ -58,7 +58,8 @@
       "04-15",
       "04-16",
       "04-17",
-      "04-20"
+      "04-20",
+      "04-21"
     ],
     "values": [
       33,
@@ -95,7 +96,8 @@
       40,
       47,
       52,
-      46
+      46,
+      39
     ]
   },
   "programmate": [
@@ -121,23 +123,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 167
+      "value": 172
     },
     {
       "label": "Manutenzioni",
-      "value": 383
+      "value": 393
     },
     {
       "label": "Pulizie",
-      "value": 514
+      "value": 525
     }
   ],
   "correttive": {
-    "total": 351,
+    "total": 363,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 202,
+        "value": 206,
         "children": [
           {
             "name": "Servizi Altro",
@@ -145,11 +147,11 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 36
+            "value": 39
           },
           {
             "name": "Allestimenti",
-            "value": 32
+            "value": 33
           },
           {
             "name": "Badge aziendali",
@@ -183,11 +185,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 48,
+        "value": 50,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 37
+            "value": 39
           },
           {
             "name": "Uffici",
@@ -209,25 +211,43 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 24,
+        "value": 25,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 24
+            "value": 25
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 18
+            "value": 19
           },
           {
             "name": "Distr. Automatici",
             "value": 4
+          }
+        ]
+      },
+      {
+        "name": "Manut. Edili",
+        "value": 19,
+        "children": [
+          {
+            "name": "Edili Altro",
+            "value": 13
+          },
+          {
+            "name": "Riparazione Arredi/Infissi",
+            "value": 4
+          },
+          {
+            "name": "Opere murarie",
+            "value": 2
           }
         ]
       },
@@ -238,24 +258,6 @@
           {
             "name": "Gestione Account",
             "value": 18
-          }
-        ]
-      },
-      {
-        "name": "Manut. Edili",
-        "value": 16,
-        "children": [
-          {
-            "name": "Edili Altro",
-            "value": 10
-          },
-          {
-            "name": "Riparazione Arredi/Infissi",
-            "value": 4
-          },
-          {
-            "name": "Opere murarie",
-            "value": 2
           }
         ]
       },
@@ -282,6 +284,24 @@
         ]
       },
       {
+        "name": "Elettrico/Dati",
+        "value": 4,
+        "children": [
+          {
+            "name": "Illuminazione",
+            "value": 2
+          },
+          {
+            "name": "Torrette/Prese",
+            "value": 1
+          },
+          {
+            "name": "Elettrico/Dati - Altro",
+            "value": 1
+          }
+        ]
+      },
+      {
         "name": "Int. Esterni",
         "value": 3,
         "children": [
@@ -291,24 +311,6 @@
           },
           {
             "name": "Manut. meccan.",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Elettrico/Dati",
-        "value": 3,
-        "children": [
-          {
-            "name": "Torrette/Prese",
-            "value": 1
-          },
-          {
-            "name": "Illuminazione",
-            "value": 1
-          },
-          {
-            "name": "Elettrico/Dati - Altro",
             "value": 1
           }
         ]
