@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-04-22 03:00",
+  "updated_at": "2026-04-23 18:30",
   "period_label": "Mar - Apr 2026",
   "kpi": {
-    "total": 1524,
-    "completed": 1433,
+    "total": 1556,
+    "completed": 1466,
     "sla_on_time_pct": 98.4,
-    "active": 91,
-    "late": 3
+    "active": 90,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1296,
-      "active": 83,
+      "completed": 1323,
+      "active": 82,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 114,
+      "completed": 119,
       "active": 2,
       "late": 0
     }
@@ -59,7 +59,8 @@
       "04-16",
       "04-17",
       "04-20",
-      "04-21"
+      "04-21",
+      "04-22"
     ],
     "values": [
       33,
@@ -97,7 +98,8 @@
       47,
       52,
       46,
-      39
+      39,
+      33
     ]
   },
   "programmate": [
@@ -123,23 +125,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 172
+      "value": 177
     },
     {
       "label": "Manutenzioni",
-      "value": 393
+      "value": 403
     },
     {
       "label": "Pulizie",
-      "value": 525
+      "value": 536
     }
   ],
   "correttive": {
-    "total": 363,
+    "total": 369,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 206,
+        "value": 210,
         "children": [
           {
             "name": "Servizi Altro",
@@ -147,11 +149,11 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 39
+            "value": 40
           },
           {
             "name": "Allestimenti",
-            "value": 33
+            "value": 34
           },
           {
             "name": "Badge aziendali",
@@ -162,11 +164,11 @@
             "value": 24
           },
           {
-            "name": "Locker",
-            "value": 10
+            "name": "Facchinaggio",
+            "value": 11
           },
           {
-            "name": "Facchinaggio",
+            "name": "Locker",
             "value": 10
           },
           {
@@ -179,7 +181,7 @@
           },
           {
             "name": "Mouse/Tastiera",
-            "value": 3
+            "value": 4
           }
         ]
       },
@@ -211,21 +213,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 25,
+        "value": 26,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 25
+            "value": 26
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 23,
+        "value": 24,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 19
+            "value": 20
           },
           {
             "name": "Distr. Automatici",
