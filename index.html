@@ -213,7 +213,7 @@ function render(data){
     backgroundColor:'transparent',
     tooltip:{trigger:'axis',backgroundColor:PN,borderColor:'rgba(69,212,255,.3)',
       textStyle:{color:TX,fontSize:12},formatter:p=>`${p[0].name}<br/>Completati: <b style="color:${CY}">${p[0].value}</b>`},
-    grid:{left:34,right:14,top:12,bottom:28},
+    grid:{left:34,right:72,top:12,bottom:28},
     xAxis:{type:'category',data:dd,axisLine:{lineStyle:{color:GD}},axisTick:{show:false},
       axisLabel:{color:MU,fontSize:9,interval:Math.floor(dd.length/8)}},
     yAxis:{type:'value',min:0,splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:9}},
@@ -251,12 +251,12 @@ function render(data){
     grid:{left:20,right:50,top:6,bottom:6,containLabel:true},
     xAxis:{type:'value',show:false},
     yAxis:{type:'category',data:pi.map(d=>d.label),axisLine:{show:false},axisTick:{show:false},
-      axisLabel:{color:MU,fontSize:10,fontWeight:'500',align:'right',margin:12}},
+      axisLabel:{color:MU,fontSize:12,fontWeight:'500',align:'right',margin:12}},
     series:[{
-      type:'bar',barWidth:13,
+      type:'bar',barWidth:16,
       data:pi.map(d=>({value:d.value,itemStyle:{color:progColor(d.value),borderRadius:[0,5,5,0]}})),
       showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:[0,5,5,0]},
-      label:{show:true,position:'right',color:TX,fontSize:11,fontWeight:'700'}
+      label:{show:true,position:'right',color:TX,fontSize:13,fontWeight:'700'}
     }]
   });
 
