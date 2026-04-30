@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-04-29 03:00",
+  "updated_at": "2026-04-30 03:00",
   "period_label": "Mar - Apr 2026",
   "kpi": {
-    "total": 1719,
-    "completed": 1630,
-    "sla_on_time_pct": 98,
-    "active": 89,
-    "late": 7
+    "total": 1765,
+    "completed": 1685,
+    "sla_on_time_pct": 97.9,
+    "active": 73,
+    "late": 13
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1467,
-      "active": 77,
-      "late": 3
+      "completed": 1514,
+      "active": 56,
+      "late": 8
     },
     {
       "name": "Milano",
-      "completed": 137,
+      "completed": 143,
       "active": 2,
-      "late": 0
+      "late": 1
     }
   ],
   "trend": {
@@ -64,7 +64,8 @@
       "04-23",
       "04-24",
       "04-27",
-      "04-28"
+      "04-28",
+      "04-29"
     ],
     "values": [
       33,
@@ -107,7 +108,8 @@
       29,
       32,
       63,
-      40
+      40,
+      55
     ]
   },
   "programmate": [
@@ -133,39 +135,39 @@
     },
     {
       "label": "Elettrico",
-      "value": 201
+      "value": 206
     },
     {
       "label": "Manutenzioni",
-      "value": 445
+      "value": 455
     },
     {
       "label": "Pulizie",
-      "value": 593
+      "value": 604
     }
   ],
   "correttive": {
-    "total": 408,
+    "total": 428,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 234,
+        "value": 249,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 45
+            "value": 50
           },
           {
             "name": "Periferiche IT",
-            "value": 45
+            "value": 50
           },
           {
             "name": "Allestimenti",
-            "value": 38
+            "value": 39
           },
           {
             "name": "Badge aziendali",
-            "value": 35
+            "value": 36
           },
           {
             "name": "Service Desk IT",
@@ -173,7 +175,7 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 13
+            "value": 15
           },
           {
             "name": "Locker",
@@ -190,16 +192,20 @@
           {
             "name": "Mouse/Tastiera",
             "value": 5
+          },
+          {
+            "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
+            "value": 1
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 54,
+        "value": 55,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 43
+            "value": 44
           },
           {
             "name": "Uffici",
@@ -221,21 +227,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 30,
+        "value": 31,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 30
+            "value": 31
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 29,
+        "value": 30,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 24
+            "value": 25
           },
           {
             "name": "Distr. Automatici",
@@ -245,7 +251,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 21,
+        "value": 23,
         "children": [
           {
             "name": "Edili Altro",
@@ -253,7 +259,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 5
+            "value": 7
           },
           {
             "name": "Opere murarie",
