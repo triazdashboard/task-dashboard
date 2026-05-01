@@ -1,51 +1,29 @@
 {
-  "updated_at": "2026-04-30 03:00",
-  "period_label": "Mar - Apr 2026",
+  "updated_at": "2026-05-01 08:51",
+  "period_label": "Apr 2026",
   "kpi": {
-    "total": 1765,
-    "completed": 1685,
-    "sla_on_time_pct": 97.9,
-    "active": 73,
-    "late": 13
+    "total": 886,
+    "completed": 815,
+    "sla_on_time_pct": 97.2,
+    "active": 69,
+    "late": 33
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1514,
-      "active": 56,
-      "late": 8
+      "completed": 720,
+      "active": 33,
+      "late": 28
     },
     {
       "name": "Milano",
-      "completed": 143,
-      "active": 2,
+      "completed": 78,
+      "active": 1,
       "late": 1
     }
   ],
   "trend": {
     "dates": [
-      "03-02",
-      "03-03",
-      "03-04",
-      "03-05",
-      "03-06",
-      "03-09",
-      "03-10",
-      "03-11",
-      "03-12",
-      "03-13",
-      "03-16",
-      "03-17",
-      "03-18",
-      "03-19",
-      "03-20",
-      "03-23",
-      "03-24",
-      "03-25",
-      "03-26",
-      "03-27",
-      "03-30",
-      "03-31",
       "04-01",
       "04-02",
       "04-03",
@@ -65,40 +43,19 @@
       "04-24",
       "04-27",
       "04-28",
-      "04-29"
+      "04-29",
+      "04-30"
     ],
     "values": [
-      33,
-      39,
-      37,
-      46,
-      54,
-      45,
-      38,
-      43,
-      36,
-      53,
-      51,
-      37,
-      63,
+      9,
       34,
+      17,
       34,
-      41,
-      29,
-      35,
-      26,
-      44,
-      30,
-      35,
-      22,
-      35,
-      21,
-      43,
       45,
       40,
       45,
-      42,
-      33,
+      40,
+      32,
       40,
       47,
       52,
@@ -109,7 +66,8 @@
       32,
       63,
       40,
-      55
+      55,
+      43
     ]
   },
   "programmate": [
@@ -119,79 +77,79 @@
     },
     {
       "label": "Antincendio",
-      "value": 7
+      "value": 3
     },
     {
       "label": "Meter Reading",
-      "value": 8
+      "value": 4
     },
     {
       "label": "Idraulico",
-      "value": 24
+      "value": 12
     },
     {
       "label": "Climatizzazione",
-      "value": 32
+      "value": 16
     },
     {
       "label": "Elettrico",
-      "value": 206
+      "value": 138
     },
     {
       "label": "Manutenzioni",
-      "value": 455
+      "value": 219
     },
     {
       "label": "Pulizie",
-      "value": 604
+      "value": 293
     }
   ],
   "correttive": {
-    "total": 428,
+    "total": 200,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 249,
+        "value": 105,
         "children": [
           {
-            "name": "Servizi Altro",
-            "value": 50
+            "name": "Periferiche IT",
+            "value": 31
           },
           {
-            "name": "Periferiche IT",
-            "value": 50
+            "name": "Servizi Altro",
+            "value": 22
           },
           {
             "name": "Allestimenti",
-            "value": 39
+            "value": 17
           },
           {
             "name": "Badge aziendali",
-            "value": 36
-          },
-          {
-            "name": "Service Desk IT",
-            "value": 24
+            "value": 16
           },
           {
             "name": "Facchinaggio",
-            "value": 15
-          },
-          {
-            "name": "Locker",
-            "value": 12
-          },
-          {
-            "name": "Fonia",
-            "value": 9
-          },
-          {
-            "name": "Stampanti",
             "value": 8
           },
           {
+            "name": "Locker",
+            "value": 4
+          },
+          {
             "name": "Mouse/Tastiera",
-            "value": 5
+            "value": 3
+          },
+          {
+            "name": "Fonia",
+            "value": 1
+          },
+          {
+            "name": "Service Desk IT",
+            "value": 1
+          },
+          {
+            "name": "Stampanti",
+            "value": 1
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
@@ -201,57 +159,33 @@
       },
       {
         "name": "Pulizia",
-        "value": 55,
+        "value": 22,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 44
-          },
-          {
-            "name": "Uffici",
-            "value": 5
+            "value": 17
           },
           {
             "name": "Serv. igienici",
-            "value": 3
-          },
-          {
-            "name": "Straordinaria",
             "value": 2
           },
           {
+            "name": "Straordinaria",
+            "value": 1
+          },
+          {
             "name": "Disinfestazione",
+            "value": 1
+          },
+          {
+            "name": "Uffici",
             "value": 1
           }
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 31,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 31
-          }
-        ]
-      },
-      {
-        "name": "Catering/Vending",
-        "value": 30,
-        "children": [
-          {
-            "name": "Catering/Vend.",
-            "value": 25
-          },
-          {
-            "name": "Distr. Automatici",
-            "value": 5
-          }
-        ]
-      },
-      {
         "name": "Manut. Edili",
-        "value": 23,
+        "value": 21,
         "children": [
           {
             "name": "Edili Altro",
@@ -260,34 +194,40 @@
           {
             "name": "Riparazione Arredi/Infissi",
             "value": 7
-          },
-          {
-            "name": "Opere murarie",
-            "value": 2
           }
         ]
       },
       {
-        "name": "Ass. Tecn. Tririga",
+        "name": "Catering/Vending",
         "value": 18,
         "children": [
           {
-            "name": "Gestione Account",
-            "value": 18
+            "name": "Catering/Vend.",
+            "value": 14
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 17,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 17
           }
         ]
       },
       {
         "name": "Segnalazione",
-        "value": 11,
+        "value": 6,
         "children": [
           {
             "name": "Altro - S",
-            "value": 8
-          },
-          {
-            "name": "Ascensori - S",
-            "value": 1
+            "value": 4
           },
           {
             "name": "Serramenti - S",
@@ -300,16 +240,22 @@
         ]
       },
       {
+        "name": "Ass. Tecn. Tririga",
+        "value": 5,
+        "children": [
+          {
+            "name": "Gestione Account",
+            "value": 5
+          }
+        ]
+      },
+      {
         "name": "Elettrico/Dati",
-        "value": 4,
+        "value": 3,
         "children": [
           {
             "name": "Illuminazione",
             "value": 2
-          },
-          {
-            "name": "Torrette/Prese",
-            "value": 1
           },
           {
             "name": "Elettrico/Dati - Altro",
@@ -318,36 +264,12 @@
         ]
       },
       {
-        "name": "Int. Esterni",
+        "name": "Idraulico",
         "value": 3,
         "children": [
           {
-            "name": "Altro",
-            "value": 2
-          },
-          {
-            "name": "Manut. meccan.",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Ass. Ut. Tririga",
-        "value": 2,
-        "children": [
-          {
-            "name": "Reservation",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 2,
-        "children": [
-          {
             "name": "Idraulico - Altro",
-            "value": 1
+            "value": 2
           },
           {
             "name": "Mancanza acqua calda",
