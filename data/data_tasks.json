@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-05-04 03:00",
+  "updated_at": "2026-05-05 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1018,
-    "completed": 815,
-    "sla_on_time_pct": 97.2,
-    "active": 201,
-    "late": 33
+    "total": 1066,
+    "completed": 886,
+    "sla_on_time_pct": 96.8,
+    "active": 176,
+    "late": 29
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 720,
-      "active": 163,
-      "late": 28
+      "completed": 786,
+      "active": 143,
+      "late": 24
     },
     {
       "name": "Milano",
-      "completed": 78,
-      "active": 1,
+      "completed": 82,
+      "active": 0,
       "late": 1
     }
   ],
@@ -44,7 +44,8 @@
       "04-27",
       "04-28",
       "04-29",
-      "04-30"
+      "04-30",
+      "05-04"
     ],
     "values": [
       9,
@@ -67,7 +68,8 @@
       63,
       40,
       55,
-      43
+      44,
+      70
     ]
   },
   "programmate": [
@@ -89,7 +91,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 24
+      "value": 25
     },
     {
       "label": "Climatizzazione",
@@ -97,7 +99,7 @@
     },
     {
       "label": "Elettrico",
-      "value": 159
+      "value": 164
     },
     {
       "label": "Manutenzioni",
@@ -105,31 +107,31 @@
     },
     {
       "label": "Pulizie",
-      "value": 313
+      "value": 333
     }
   ],
   "correttive": {
-    "total": 200,
+    "total": 222,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 105,
+        "value": 119,
         "children": [
           {
             "name": "Periferiche IT",
-            "value": 31
+            "value": 37
           },
           {
             "name": "Servizi Altro",
-            "value": 22
+            "value": 24
           },
           {
             "name": "Allestimenti",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Badge aziendali",
-            "value": 16
+            "value": 17
           },
           {
             "name": "Facchinaggio",
@@ -137,11 +139,11 @@
           },
           {
             "name": "Locker",
-            "value": 4
+            "value": 6
           },
           {
             "name": "Mouse/Tastiera",
-            "value": 3
+            "value": 5
           },
           {
             "name": "Fonia",
@@ -163,11 +165,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Serv. igienici",
@@ -189,21 +191,21 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 21,
+        "value": 23,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 7
+            "value": 8
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 18,
+        "value": 19,
         "children": [
           {
             "name": "Catering/Vend.",
@@ -211,17 +213,17 @@
           },
           {
             "name": "Distr. Automatici",
-            "value": 4
+            "value": 5
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 17,
+        "value": 18,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 17
+            "value": 18
           }
         ]
       },
@@ -245,11 +247,25 @@
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 5,
+        "value": 6,
         "children": [
           {
             "name": "Gestione Account",
-            "value": 5
+            "value": 6
+          }
+        ]
+      },
+      {
+        "name": "Idraulico",
+        "value": 4,
+        "children": [
+          {
+            "name": "Idraulico - Altro",
+            "value": 3
+          },
+          {
+            "name": "Mancanza acqua calda",
+            "value": 1
           }
         ]
       },
@@ -268,15 +284,11 @@
         ]
       },
       {
-        "name": "Idraulico",
-        "value": 3,
+        "name": "Giardinaggio",
+        "value": 1,
         "children": [
           {
-            "name": "Idraulico - Altro",
-            "value": 2
-          },
-          {
-            "name": "Mancanza acqua calda",
+            "name": "Problema spazi verdi",
             "value": 1
           }
         ]
