@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-05-05 03:00",
+  "updated_at": "2026-05-06 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1066,
-    "completed": 886,
-    "sla_on_time_pct": 96.8,
-    "active": 176,
-    "late": 29
+    "total": 1098,
+    "completed": 938,
+    "sla_on_time_pct": 96.6,
+    "active": 157,
+    "late": 26
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 786,
-      "active": 143,
-      "late": 24
+      "completed": 832,
+      "active": 127,
+      "late": 21
     },
     {
       "name": "Milano",
-      "completed": 82,
+      "completed": 87,
       "active": 0,
       "late": 1
     }
@@ -45,7 +45,8 @@
       "04-28",
       "04-29",
       "04-30",
-      "05-04"
+      "05-04",
+      "05-05"
     ],
     "values": [
       9,
@@ -66,10 +67,11 @@
       29,
       32,
       63,
-      40,
+      45,
       55,
       44,
-      70
+      70,
+      47
     ]
   },
   "programmate": [
@@ -99,23 +101,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 164
+      "value": 169
     },
     {
       "label": "Manutenzioni",
-      "value": 246
+      "value": 255
     },
     {
       "label": "Pulizie",
-      "value": 333
+      "value": 344
     }
   ],
   "correttive": {
-    "total": 222,
+    "total": 229,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 119,
+        "value": 123,
         "children": [
           {
             "name": "Periferiche IT",
@@ -127,7 +129,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 18
+            "value": 19
           },
           {
             "name": "Badge aziendali",
@@ -135,7 +137,7 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 8
+            "value": 10
           },
           {
             "name": "Locker",
@@ -146,11 +148,11 @@
             "value": 5
           },
           {
-            "name": "Fonia",
-            "value": 1
+            "name": "Service Desk IT",
+            "value": 2
           },
           {
-            "name": "Service Desk IT",
+            "name": "Fonia",
             "value": 1
           },
           {
@@ -205,11 +207,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 19,
+        "value": 20,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Distr. Automatici",
@@ -219,21 +221,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 18,
+        "value": 19,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 18
+            "value": 19
           }
         ]
       },
       {
         "name": "Segnalazione",
-        "value": 6,
+        "value": 7,
         "children": [
           {
             "name": "Altro - S",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Serramenti - S",
