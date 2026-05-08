@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-05-07 03:00",
+  "updated_at": "2026-05-08 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1140,
-    "completed": 974,
-    "sla_on_time_pct": 96.7,
-    "active": 162,
-    "late": 26
+    "total": 1173,
+    "completed": 1032,
+    "sla_on_time_pct": 95.2,
+    "active": 138,
+    "late": 8
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 867,
-      "active": 126,
-      "late": 21
+      "completed": 915,
+      "active": 121,
+      "late": 7
     },
     {
       "name": "Milano",
-      "completed": 87,
-      "active": 6,
+      "completed": 92,
+      "active": 5,
       "late": 1
     }
   ],
@@ -47,7 +47,8 @@
       "04-30",
       "05-04",
       "05-05",
-      "05-06"
+      "05-06",
+      "05-07"
     ],
     "values": [
       9,
@@ -73,7 +74,8 @@
       44,
       70,
       47,
-      36
+      36,
+      58
     ]
   },
   "programmate": [
@@ -103,27 +105,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 174
+      "value": 179
     },
     {
       "label": "Manutenzioni",
-      "value": 265
+      "value": 275
     },
     {
       "label": "Pulizie",
-      "value": 355
+      "value": 366
     }
   ],
   "correttive": {
-    "total": 245,
+    "total": 252,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 136,
+        "value": 138,
         "children": [
           {
             "name": "Periferiche IT",
-            "value": 37
+            "value": 38
           },
           {
             "name": "Servizi Altro",
@@ -135,7 +137,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Facchinaggio",
@@ -168,26 +170,12 @@
         ]
       },
       {
-        "name": "Manut. Edili",
-        "value": 24,
-        "children": [
-          {
-            "name": "Edili Altro",
-            "value": 15
-          },
-          {
-            "name": "Riparazione Arredi/Infissi",
-            "value": 9
-          }
-        ]
-      },
-      {
         "name": "Pulizia",
-        "value": 23,
+        "value": 26,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 18
+            "value": 20
           },
           {
             "name": "Serv. igienici",
@@ -204,16 +192,34 @@
           {
             "name": "Uffici",
             "value": 1
+          },
+          {
+            "name": "Reintegro consumabili",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Manut. Edili",
+        "value": 24,
+        "children": [
+          {
+            "name": "Edili Altro",
+            "value": 15
+          },
+          {
+            "name": "Riparazione Arredi/Infissi",
+            "value": 9
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 21,
+        "value": 22,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 15
+            "value": 16
           },
           {
             "name": "Distr. Automatici",
@@ -223,11 +229,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 19,
+        "value": 20,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 19
+            "value": 20
           }
         ]
       },
