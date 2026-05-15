@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-05-14 03:00",
+  "updated_at": "2026-05-15 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1349,
-    "completed": 1218,
-    "sla_on_time_pct": 95.6,
-    "active": 129,
+    "total": 1384,
+    "completed": 1268,
+    "sla_on_time_pct": 96.1,
+    "active": 113,
     "late": 6
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1074,
-      "active": 119,
-      "late": 5
+      "completed": 1118,
+      "active": 104,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 115,
+      "completed": 120,
       "active": 1,
       "late": 0
     }
@@ -52,7 +52,8 @@
       "05-08",
       "05-11",
       "05-12",
-      "05-13"
+      "05-13",
+      "05-14"
     ],
     "values": [
       9,
@@ -65,8 +66,8 @@
       40,
       32,
       40,
-      47,
-      52,
+      49,
+      50,
       46,
       39,
       33,
@@ -74,8 +75,8 @@
       32,
       64,
       45,
-      55,
-      44,
+      56,
+      43,
       70,
       47,
       36,
@@ -83,7 +84,8 @@
       61,
       38,
       39,
-      47
+      47,
+      50
     ]
   },
   "programmate": [
@@ -113,39 +115,39 @@
     },
     {
       "label": "Elettrico",
-      "value": 203
+      "value": 208
     },
     {
       "label": "Manutenzioni",
-      "value": 317
+      "value": 327
     },
     {
       "label": "Pulizie",
-      "value": 423
+      "value": 434
     }
   ],
   "correttive": {
-    "total": 304,
+    "total": 313,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 167,
+        "value": 173,
         "children": [
           {
             "name": "Periferiche IT",
-            "value": 45
+            "value": 47
           },
           {
             "name": "Servizi Altro",
-            "value": 36
+            "value": 38
           },
           {
             "name": "Allestimenti",
-            "value": 26
+            "value": 27
           },
           {
             "name": "Badge aziendali",
-            "value": 24
+            "value": 25
           },
           {
             "name": "Facchinaggio",
@@ -209,11 +211,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 29,
+        "value": 30,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 18
+            "value": 19
           },
           {
             "name": "Distr. Automatici",
@@ -223,7 +225,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 27,
+        "value": 28,
         "children": [
           {
             "name": "Edili Altro",
@@ -231,17 +233,17 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 9
+            "value": 10
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 24,
+        "value": 25,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 24
+            "value": 25
           }
         ]
       },
