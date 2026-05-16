@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-05-15 03:00",
+  "updated_at": "2026-05-16 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1384,
-    "completed": 1268,
+    "total": 1420,
+    "completed": 1323,
     "sla_on_time_pct": 96.1,
-    "active": 113,
-    "late": 6
+    "active": 95,
+    "late": 5
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1118,
-      "active": 104,
-      "late": 4
+      "completed": 1168,
+      "active": 87,
+      "late": 3
     },
     {
       "name": "Milano",
-      "completed": 120,
+      "completed": 124,
       "active": 1,
       "late": 0
     }
@@ -53,7 +53,8 @@
       "05-11",
       "05-12",
       "05-13",
-      "05-14"
+      "05-14",
+      "05-15"
     ],
     "values": [
       9,
@@ -85,7 +86,8 @@
       38,
       39,
       47,
-      50
+      50,
+      55
     ]
   },
   "programmate": [
@@ -115,27 +117,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 208
+      "value": 213
     },
     {
       "label": "Manutenzioni",
-      "value": 327
+      "value": 338
     },
     {
       "label": "Pulizie",
-      "value": 434
+      "value": 445
     }
   ],
   "correttive": {
-    "total": 313,
+    "total": 322,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 173,
+        "value": 178,
         "children": [
           {
             "name": "Periferiche IT",
-            "value": 47
+            "value": 48
           },
           {
             "name": "Servizi Altro",
@@ -143,7 +145,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 27
+            "value": 28
           },
           {
             "name": "Badge aziendali",
@@ -154,12 +156,12 @@
             "value": 14
           },
           {
-            "name": "Service Desk IT",
-            "value": 7
+            "name": "Locker",
+            "value": 8
           },
           {
-            "name": "Locker",
-            "value": 6
+            "name": "Service Desk IT",
+            "value": 8
           },
           {
             "name": "Mouse/Tastiera",
@@ -181,11 +183,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 33,
+        "value": 36,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 27
+            "value": 30
           },
           {
             "name": "Serv. igienici",
@@ -239,11 +241,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 25,
+        "value": 26,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 25
+            "value": 26
           }
         ]
       },
