@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-05-17 03:00",
+  "updated_at": "2026-05-18 03:00",
   "period_label": "Apr - Mag 2026",
   "kpi": {
-    "total": 1420,
+    "total": 1421,
     "completed": 1323,
     "sla_on_time_pct": 96.1,
-    "active": 95,
+    "active": 96,
     "late": 5
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 1168,
-      "active": 87,
+      "active": 88,
       "late": 3
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "label": "Climatizzazione",
-      "value": 46
+      "value": 47
     },
     {
       "label": "Elettrico",
