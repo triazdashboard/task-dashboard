@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-06-01 03:00",
+  "updated_at": "2026-06-02 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 930,
-    "completed": 879,
-    "sla_on_time_pct": 99.7,
-    "active": 51,
-    "late": 27
+    "total": 1068,
+    "completed": 935,
+    "sla_on_time_pct": 96.9,
+    "active": 133,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 773,
-      "active": 21,
-      "late": 27
+      "completed": 825,
+      "active": 106,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 85,
-      "active": 2,
+      "completed": 88,
+      "active": 20,
       "late": 0
     }
   ],
@@ -43,7 +43,8 @@
       "05-26",
       "05-27",
       "05-28",
-      "05-29"
+      "05-29",
+      "06-01"
     ],
     "values": [
       55,
@@ -65,21 +66,22 @@
       39,
       36,
       42,
-      54
+      54,
+      56
     ]
   },
   "programmate": [
     {
       "label": "Edili",
-      "value": 1
-    },
-    {
-      "label": "Antincendio",
-      "value": 4
+      "value": 2
     },
     {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
+    },
+    {
+      "label": "Antincendio",
+      "value": 13
     },
     {
       "label": "Sicurezza - Preventive",
@@ -87,31 +89,31 @@
     },
     {
       "label": "Idraulico",
-      "value": 16
+      "value": 24
     },
     {
       "label": "Climatizzazione",
-      "value": 32
+      "value": 47
     },
     {
       "label": "Elettrico",
-      "value": 133
+      "value": 163
     },
     {
       "label": "Manutenzioni",
-      "value": 222
+      "value": 253
     },
     {
       "label": "Pulizie",
-      "value": 290
+      "value": 325
     }
   ],
   "correttive": {
-    "total": 215,
+    "total": 220,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 109,
+        "value": 113,
         "children": [
           {
             "name": "Periferiche IT",
@@ -119,19 +121,19 @@
           },
           {
             "name": "Servizi Altro",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Allestimenti",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Service Desk IT",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Badge aziendali",
-            "value": 11
+            "value": 12
           },
           {
             "name": "Facchinaggio",
@@ -185,11 +187,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 19,
+        "value": 20,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 19
+            "value": 20
           }
         ]
       },
