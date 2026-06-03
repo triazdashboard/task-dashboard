@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-02 03:00",
+  "updated_at": "2026-06-03 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1068,
+    "total": 1094,
     "completed": 935,
     "sla_on_time_pct": 96.9,
-    "active": 133,
+    "active": 159,
     "late": 4
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 825,
-      "active": 106,
+      "active": 131,
       "late": 4
     },
     {
@@ -97,15 +97,15 @@
     },
     {
       "label": "Elettrico",
-      "value": 163
+      "value": 168
     },
     {
       "label": "Manutenzioni",
-      "value": 253
+      "value": 263
     },
     {
       "label": "Pulizie",
-      "value": 325
+      "value": 336
     }
   ],
   "correttive": {
