@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-06-05 14:54",
+  "updated_at": "2026-06-06 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1146,
-    "completed": 1001,
-    "sla_on_time_pct": 97.1,
-    "active": 141,
-    "late": 17
+    "total": 1182,
+    "completed": 1092,
+    "sla_on_time_pct": 95.5,
+    "active": 90,
+    "late": 9
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 882,
-      "active": 98,
-      "late": 17
+      "completed": 969,
+      "active": 55,
+      "late": 9
     },
     {
       "name": "Milano",
       "completed": 97,
-      "active": 20,
+      "active": 23,
       "late": 0
     }
   ],
@@ -46,7 +46,8 @@
       "05-29",
       "06-01",
       "06-03",
-      "06-04"
+      "06-04",
+      "06-05"
     ],
     "values": [
       55,
@@ -71,7 +72,8 @@
       54,
       56,
       31,
-      35
+      35,
+      91
     ]
   },
   "programmate": [
@@ -101,43 +103,43 @@
     },
     {
       "label": "Elettrico",
-      "value": 174
+      "value": 179
     },
     {
       "label": "Manutenzioni",
-      "value": 273
+      "value": 283
     },
     {
       "label": "Pulizie",
-      "value": 353
+      "value": 364
     }
   ],
   "correttive": {
-    "total": 239,
+    "total": 249,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 126,
+        "value": 129,
         "children": [
           {
             "name": "Servizi Altro",
             "value": 26
           },
           {
+            "name": "Allestimenti",
+            "value": 25
+          },
+          {
             "name": "Periferiche IT",
             "value": 24
           },
           {
-            "name": "Allestimenti",
-            "value": 24
-          },
-          {
             "name": "Service Desk IT",
-            "value": 16
+            "value": 17
           },
           {
             "name": "Badge aziendali",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Facchinaggio",
@@ -163,14 +165,18 @@
       },
       {
         "name": "Pulizia",
-        "value": 37,
+        "value": 40,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 36
+            "value": 38
           },
           {
             "name": "Reintegro consumabili",
+            "value": 1
+          },
+          {
+            "name": "Uffici",
             "value": 1
           }
         ]
@@ -191,21 +197,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 22
+            "value": 23
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 17,
+        "value": 19,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 8
+            "value": 10
           },
           {
             "name": "Riparazione Arredi/Infissi",
@@ -219,7 +225,7 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 4,
+        "value": 5,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
@@ -227,6 +233,10 @@
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
+            "value": 1
+          },
+          {
+            "name": "Illuminazione",
             "value": 1
           }
         ]
