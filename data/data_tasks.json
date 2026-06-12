@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-06-11 03:00",
+  "updated_at": "2026-06-12 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1321,
-    "completed": 1213,
+    "total": 1365,
+    "completed": 1266,
     "sla_on_time_pct": 95.8,
-    "active": 108,
-    "late": 17
+    "active": 99,
+    "late": 19
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1074,
-      "active": 66,
-      "late": 17
+      "completed": 1121,
+      "active": 56,
+      "late": 19
     },
     {
       "name": "Milano",
-      "completed": 113,
+      "completed": 117,
       "active": 19,
       "late": 0
     }
@@ -50,7 +50,8 @@
       "06-05",
       "06-08",
       "06-09",
-      "06-10"
+      "06-10",
+      "06-11"
     ],
     "values": [
       55,
@@ -79,7 +80,8 @@
       91,
       51,
       33,
-      37
+      37,
+      53
     ]
   },
   "programmate": [
@@ -109,42 +111,42 @@
     },
     {
       "label": "Elettrico",
-      "value": 198
+      "value": 203
     },
     {
       "label": "Manutenzioni",
-      "value": 315
+      "value": 325
     },
     {
       "label": "Pulizie",
-      "value": 410
+      "value": 421
     }
   ],
   "correttive": {
-    "total": 290,
+    "total": 308,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 155,
+        "value": 160,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 39
+            "value": 42
           },
           {
             "name": "Allestimenti",
-            "value": 28
+            "value": 29
           },
           {
             "name": "Periferiche IT",
             "value": 25
           },
           {
-            "name": "Badge aziendali",
-            "value": 19
+            "name": "Service Desk IT",
+            "value": 20
           },
           {
-            "name": "Service Desk IT",
+            "name": "Badge aziendali",
             "value": 19
           },
           {
@@ -171,11 +173,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 46,
+        "value": 47,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 43
+            "value": 44
           },
           {
             "name": "Reintegro consumabili",
@@ -192,40 +194,16 @@
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 26,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 26
-          }
-        ]
-      },
-      {
-        "name": "Catering/Vending",
-        "value": 26,
-        "children": [
-          {
-            "name": "Catering/Vend.",
-            "value": 17
-          },
-          {
-            "name": "Distr. Automatici",
-            "value": 9
-          }
-        ]
-      },
-      {
         "name": "Manut. Edili",
-        "value": 22,
+        "value": 28,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 12
+            "value": 17
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Opere murarie",
@@ -234,19 +212,57 @@
         ]
       },
       {
+        "name": "Catering/Vending",
+        "value": 28,
+        "children": [
+          {
+            "name": "Catering/Vend.",
+            "value": 18
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 27,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 27
+          }
+        ]
+      },
+      {
         "name": "Elettrico/Dati",
-        "value": 5,
+        "value": 7,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 3
+            "value": 4
+          },
+          {
+            "name": "Illuminazione",
+            "value": 2
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
             "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Idraulico",
+        "value": 3,
+        "children": [
+          {
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 2
           },
           {
-            "name": "Illuminazione",
+            "name": "Idraulico - Altro",
             "value": 1
           }
         ]
@@ -268,20 +284,6 @@
           {
             "name": "Problema spazi verdi",
             "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 2,
-        "children": [
-          {
-            "name": "Idraulico - Altro",
-            "value": 1
-          },
-          {
-            "name": "Riparazioni WC/Rubinetterie",
-            "value": 1
           }
         ]
       },
