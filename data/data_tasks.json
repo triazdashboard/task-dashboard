@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-06-15 16:53",
+  "updated_at": "2026-06-16 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1403,
-    "completed": 1345,
-    "sla_on_time_pct": 94.6,
-    "active": 58,
+    "total": 1468,
+    "completed": 1383,
+    "sla_on_time_pct": 94.8,
+    "active": 85,
     "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1190,
-      "active": 35,
+      "completed": 1224,
+      "active": 61,
       "late": 4
     },
     {
       "name": "Milano",
-      "completed": 121,
+      "completed": 125,
       "active": 19,
       "late": 0
     }
@@ -52,7 +52,8 @@
       "06-09",
       "06-10",
       "06-11",
-      "06-12"
+      "06-12",
+      "06-15"
     ],
     "values": [
       55,
@@ -83,7 +84,8 @@
       33,
       37,
       53,
-      79
+      79,
+      38
     ]
   },
   "programmate": [
@@ -105,7 +107,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 25
+      "value": 26
     },
     {
       "label": "Climatizzazione",
@@ -113,31 +115,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 208
+      "value": 217
     },
     {
       "label": "Manutenzioni",
-      "value": 335
+      "value": 345
     },
     {
       "label": "Pulizie",
-      "value": 432
+      "value": 458
     }
   ],
   "correttive": {
-    "total": 320,
+    "total": 339,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 166,
+        "value": 178,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 46
+            "value": 49
           },
           {
             "name": "Allestimenti",
-            "value": 30
+            "value": 31
           },
           {
             "name": "Periferiche IT",
@@ -145,23 +147,23 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Badge aziendali",
-            "value": 19
+            "value": 20
+          },
+          {
+            "name": "Mouse/Tastiera",
+            "value": 10
+          },
+          {
+            "name": "Locker",
+            "value": 10
           },
           {
             "name": "Facchinaggio",
             "value": 9
-          },
-          {
-            "name": "Mouse/Tastiera",
-            "value": 7
-          },
-          {
-            "name": "Locker",
-            "value": 7
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 49,
+        "value": 53,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 46
+            "value": 50
           },
           {
             "name": "Reintegro consumabili",
@@ -192,6 +194,20 @@
           {
             "name": "Straordinaria",
             "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Catering/Vending",
+        "value": 30,
+        "children": [
+          {
+            "name": "Catering/Vend.",
+            "value": 20
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 10
           }
         ]
       },
@@ -214,32 +230,18 @@
         ]
       },
       {
-        "name": "Catering/Vending",
+        "name": "Gest. Spedizioni",
         "value": 29,
         "children": [
           {
-            "name": "Catering/Vend.",
-            "value": 19
-          },
-          {
-            "name": "Distr. Automatici",
-            "value": 10
-          }
-        ]
-      },
-      {
-        "name": "Gest. Spedizioni",
-        "value": 28,
-        "children": [
-          {
             "name": "Sped./Ric. IT",
-            "value": 28
+            "value": 29
           }
         ]
       },
       {
         "name": "Elettrico/Dati",
-        "value": 7,
+        "value": 8,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
@@ -251,6 +253,10 @@
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
+            "value": 1
+          },
+          {
+            "name": "Torrette/Prese",
             "value": 1
           }
         ]
