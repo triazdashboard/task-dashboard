@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-06-16 14:42",
+  "updated_at": "2026-06-17 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1468,
-    "completed": 1383,
-    "sla_on_time_pct": 94.8,
-    "active": 85,
-    "late": 4
+    "total": 1506,
+    "completed": 1415,
+    "sla_on_time_pct": 94.9,
+    "active": 90,
+    "late": 8
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1224,
-      "active": 61,
-      "late": 4
+      "completed": 1252,
+      "active": 60,
+      "late": 8
     },
     {
       "name": "Milano",
-      "completed": 125,
-      "active": 19,
+      "completed": 129,
+      "active": 20,
       "late": 0
     }
   ],
@@ -53,7 +53,8 @@
       "06-10",
       "06-11",
       "06-12",
-      "06-15"
+      "06-15",
+      "06-16"
     ],
     "values": [
       55,
@@ -85,7 +86,8 @@
       37,
       53,
       79,
-      38
+      38,
+      32
     ]
   },
   "programmate": [
@@ -115,31 +117,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 217
+      "value": 222
     },
     {
       "label": "Manutenzioni",
-      "value": 345
+      "value": 355
     },
     {
       "label": "Pulizie",
-      "value": 458
+      "value": 469
     }
   ],
   "correttive": {
-    "total": 339,
+    "total": 351,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 178,
+        "value": 183,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 49
+            "value": 51
           },
           {
             "name": "Allestimenti",
-            "value": 31
+            "value": 32
           },
           {
             "name": "Periferiche IT",
@@ -147,7 +149,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Badge aziendali",
@@ -166,22 +168,22 @@
             "value": 9
           },
           {
-            "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
-            "value": 1
+            "name": "Stampanti",
+            "value": 2
           },
           {
-            "name": "Stampanti",
+            "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
             "value": 1
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 53,
+        "value": 56,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 50
+            "value": 53
           },
           {
             "name": "Reintegro consumabili",
@@ -199,15 +201,25 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 30,
+        "value": 31,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 20
+            "value": 21
           },
           {
             "name": "Distr. Automatici",
             "value": 10
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 30,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 30
           }
         ]
       },
@@ -230,16 +242,6 @@
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 29,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 29
-          }
-        ]
-      },
-      {
         "name": "Elettrico/Dati",
         "value": 8,
         "children": [
@@ -257,6 +259,20 @@
           },
           {
             "name": "Torrette/Prese",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Segnalazione",
+        "value": 4,
+        "children": [
+          {
+            "name": "Altro - S",
+            "value": 3
+          },
+          {
+            "name": "Clima - S",
             "value": 1
           }
         ]
@@ -291,16 +307,6 @@
         "children": [
           {
             "name": "Problema spazi verdi",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Segnalazione",
-        "value": 2,
-        "children": [
-          {
-            "name": "Altro - S",
             "value": 2
           }
         ]
