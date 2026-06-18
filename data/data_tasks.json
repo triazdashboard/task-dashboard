@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-06-17 03:00",
+  "updated_at": "2026-06-18 03:00",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1506,
-    "completed": 1415,
-    "sla_on_time_pct": 94.9,
-    "active": 90,
-    "late": 8
+    "total": 1540,
+    "completed": 1451,
+    "sla_on_time_pct": 95,
+    "active": 88,
+    "late": 12
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1252,
-      "active": 60,
-      "late": 8
+      "completed": 1284,
+      "active": 53,
+      "late": 12
     },
     {
       "name": "Milano",
-      "completed": 129,
+      "completed": 133,
       "active": 20,
       "late": 0
     }
@@ -54,7 +54,8 @@
       "06-11",
       "06-12",
       "06-15",
-      "06-16"
+      "06-16",
+      "06-17"
     ],
     "values": [
       55,
@@ -87,7 +88,8 @@
       53,
       79,
       38,
-      32
+      32,
+      36
     ]
   },
   "programmate": [
@@ -117,31 +119,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 222
+      "value": 227
     },
     {
       "label": "Manutenzioni",
-      "value": 355
+      "value": 365
     },
     {
       "label": "Pulizie",
-      "value": 469
+      "value": 480
     }
   ],
   "correttive": {
-    "total": 351,
+    "total": 359,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 183,
+        "value": 187,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 51
+            "value": 53
           },
           {
             "name": "Allestimenti",
-            "value": 32
+            "value": 33
           },
           {
             "name": "Periferiche IT",
@@ -149,7 +151,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 23
+            "value": 24
           },
           {
             "name": "Badge aziendali",
@@ -179,11 +181,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 56,
+        "value": 58,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 53
+            "value": 55
           },
           {
             "name": "Reintegro consumabili",
@@ -201,11 +203,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 31,
+        "value": 32,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Distr. Automatici",
@@ -215,11 +217,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 30,
+        "value": 31,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 30
+            "value": 31
           }
         ]
       },
