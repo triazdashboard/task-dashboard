@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-06-18 03:00",
+  "updated_at": "2026-06-19 03:01",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1540,
-    "completed": 1451,
-    "sla_on_time_pct": 95,
-    "active": 88,
-    "late": 12
+    "total": 1579,
+    "completed": 1500,
+    "sla_on_time_pct": 94.4,
+    "active": 77,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1284,
-      "active": 53,
-      "late": 12
+      "completed": 1326,
+      "active": 52,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 133,
+      "completed": 137,
       "active": 20,
       "late": 0
     }
@@ -55,7 +55,8 @@
       "06-12",
       "06-15",
       "06-16",
-      "06-17"
+      "06-17",
+      "06-18"
     ],
     "values": [
       55,
@@ -89,7 +90,8 @@
       79,
       38,
       32,
-      36
+      36,
+      49
     ]
   },
   "programmate": [
@@ -119,31 +121,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 227
+      "value": 232
     },
     {
       "label": "Manutenzioni",
-      "value": 365
+      "value": 375
     },
     {
       "label": "Pulizie",
-      "value": 480
+      "value": 491
     }
   ],
   "correttive": {
-    "total": 359,
+    "total": 372,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 187,
+        "value": 195,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 53
+            "value": 59
           },
           {
             "name": "Allestimenti",
-            "value": 33
+            "value": 34
           },
           {
             "name": "Periferiche IT",
@@ -167,7 +169,7 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Stampanti",
@@ -181,11 +183,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 58,
+        "value": 61,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 55
+            "value": 58
           },
           {
             "name": "Reintegro consumabili",
@@ -202,6 +204,16 @@
         ]
       },
       {
+        "name": "Gest. Spedizioni",
+        "value": 32,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 32
+          }
+        ]
+      },
+      {
         "name": "Catering/Vending",
         "value": 32,
         "children": [
@@ -212,16 +224,6 @@
           {
             "name": "Distr. Automatici",
             "value": 10
-          }
-        ]
-      },
-      {
-        "name": "Gest. Spedizioni",
-        "value": 31,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 31
           }
         ]
       },
@@ -320,6 +322,16 @@
           {
             "name": "Altro",
             "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Condizionamento",
+        "value": 1,
+        "children": [
+          {
+            "name": "Perdita acqua",
+            "value": 1
           }
         ]
       }
