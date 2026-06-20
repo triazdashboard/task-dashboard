@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-06-19 03:01",
+  "updated_at": "2026-06-20 03:01",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1579,
-    "completed": 1500,
+    "total": 1619,
+    "completed": 1560,
     "sla_on_time_pct": 94.4,
-    "active": 77,
+    "active": 57,
     "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1326,
-      "active": 52,
+      "completed": 1378,
+      "active": 35,
       "late": 4
     },
     {
       "name": "Milano",
-      "completed": 137,
-      "active": 20,
+      "completed": 143,
+      "active": 18,
       "late": 0
     }
   ],
@@ -56,7 +56,8 @@
       "06-15",
       "06-16",
       "06-17",
-      "06-18"
+      "06-18",
+      "06-19"
     ],
     "values": [
       55,
@@ -91,7 +92,8 @@
       38,
       32,
       36,
-      49
+      49,
+      60
     ]
   },
   "programmate": [
@@ -121,31 +123,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 232
+      "value": 237
     },
     {
       "label": "Manutenzioni",
-      "value": 375
+      "value": 385
     },
     {
       "label": "Pulizie",
-      "value": 491
+      "value": 502
     }
   ],
   "correttive": {
-    "total": 372,
+    "total": 386,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 195,
+        "value": 203,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 59
+            "value": 64
           },
           {
             "name": "Allestimenti",
-            "value": 34
+            "value": 35
           },
           {
             "name": "Periferiche IT",
@@ -153,18 +155,18 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 24
+            "value": 25
           },
           {
             "name": "Badge aziendali",
             "value": 20
           },
           {
-            "name": "Mouse/Tastiera",
-            "value": 10
+            "name": "Locker",
+            "value": 11
           },
           {
-            "name": "Locker",
+            "name": "Mouse/Tastiera",
             "value": 10
           },
           {
@@ -183,11 +185,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 61,
+        "value": 65,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 58
+            "value": 61
           },
           {
             "name": "Reintegro consumabili",
@@ -200,26 +202,30 @@
           {
             "name": "Straordinaria",
             "value": 1
+          },
+          {
+            "name": "Aree esterne",
+            "value": 1
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 32,
+        "value": 33,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 32
+            "value": 33
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 32,
+        "value": 33,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Distr. Automatici",
