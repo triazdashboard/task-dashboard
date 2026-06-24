@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-06-23 03:01",
+  "updated_at": "2026-06-24 03:01",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1673,
-    "completed": 1595,
-    "sla_on_time_pct": 94.5,
-    "active": 76,
-    "late": 4
+    "total": 1706,
+    "completed": 1629,
+    "sla_on_time_pct": 94.4,
+    "active": 75,
+    "late": 5
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1409,
-      "active": 53,
-      "late": 4
+      "completed": 1440,
+      "active": 50,
+      "late": 5
     },
     {
       "name": "Milano",
-      "completed": 147,
+      "completed": 150,
       "active": 18,
       "late": 0
     }
@@ -58,7 +58,8 @@
       "06-17",
       "06-18",
       "06-19",
-      "06-22"
+      "06-22",
+      "06-23"
     ],
     "values": [
       55,
@@ -95,7 +96,8 @@
       36,
       49,
       60,
-      35
+      35,
+      34
     ]
   },
   "programmate": [
@@ -125,23 +127,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 246
+      "value": 251
     },
     {
       "label": "Manutenzioni",
-      "value": 395
+      "value": 405
     },
     {
       "label": "Pulizie",
-      "value": 526
+      "value": 537
     }
   ],
   "correttive": {
-    "total": 396,
+    "total": 403,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 207,
+        "value": 209,
         "children": [
           {
             "name": "Servizi Altro",
@@ -149,14 +151,14 @@
           },
           {
             "name": "Allestimenti",
-            "value": 36
-          },
-          {
-            "name": "Periferiche IT",
-            "value": 26
+            "value": 37
           },
           {
             "name": "Service Desk IT",
+            "value": 27
+          },
+          {
+            "name": "Periferiche IT",
             "value": 26
           },
           {
@@ -187,11 +189,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 68,
+        "value": 71,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 64
+            "value": 67
           },
           {
             "name": "Reintegro consumabili",
@@ -213,11 +215,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 34,
+        "value": 35,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 34
+            "value": 35
           }
         ]
       },
@@ -276,6 +278,24 @@
         ]
       },
       {
+        "name": "Idraulico",
+        "value": 4,
+        "children": [
+          {
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 2
+          },
+          {
+            "name": "Idraulico - Altro",
+            "value": 1
+          },
+          {
+            "name": "Infiltrazione/Perdita tubazione",
+            "value": 1
+          }
+        ]
+      },
+      {
         "name": "Segnalazione",
         "value": 4,
         "children": [
@@ -285,20 +305,6 @@
           },
           {
             "name": "Clima - S",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 3,
-        "children": [
-          {
-            "name": "Riparazioni WC/Rubinetterie",
-            "value": 2
-          },
-          {
-            "name": "Idraulico - Altro",
             "value": 1
           }
         ]
