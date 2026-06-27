@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-06-26 03:01",
+  "updated_at": "2026-06-27 03:01",
   "period_label": "Mag - Giu 2026",
   "kpi": {
-    "total": 1804,
-    "completed": 1766,
+    "total": 1833,
+    "completed": 1786,
     "sla_on_time_pct": 94.2,
-    "active": 35,
-    "late": 1
+    "active": 41,
+    "late": 6
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1551,
-      "active": 33,
-      "late": 1
+      "completed": 1570,
+      "active": 34,
+      "late": 6
     },
     {
       "name": "Milano",
@@ -61,7 +61,8 @@
       "06-22",
       "06-23",
       "06-24",
-      "06-25"
+      "06-25",
+      "06-26"
     ],
     "values": [
       55,
@@ -101,7 +102,8 @@
       35,
       34,
       63,
-      74
+      74,
+      20
     ]
   },
   "programmate": [
@@ -131,19 +133,19 @@
     },
     {
       "label": "Elettrico",
-      "value": 261
+      "value": 266
     },
     {
       "label": "Manutenzioni",
-      "value": 427
+      "value": 437
     },
     {
       "label": "Pulizie",
-      "value": 559
+      "value": 570
     }
   ],
   "correttive": {
-    "total": 447,
+    "total": 450,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -193,11 +195,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 77,
+        "value": 80,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 72
+            "value": 75
           },
           {
             "name": "Straordinaria",
