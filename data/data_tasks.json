@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-07-01 03:01",
-  "period_label": "Giu 2026",
+  "updated_at": "2026-07-02 03:01",
+  "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 994,
-    "completed": 939,
-    "sla_on_time_pct": 91.9,
-    "active": 52,
-    "late": 1
+    "total": 1125,
+    "completed": 1000,
+    "sla_on_time_pct": 91.7,
+    "active": 121,
+    "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 827,
-      "active": 49,
-      "late": 0
+      "completed": 885,
+      "active": 107,
+      "late": 2
     },
     {
       "name": "Milano",
-      "completed": 90,
-      "active": 0,
+      "completed": 91,
+      "active": 4,
       "late": 1
     }
   ],
@@ -43,7 +43,8 @@
       "06-24",
       "06-25",
       "06-26",
-      "06-30"
+      "06-30",
+      "07-01"
     ],
     "values": [
       25,
@@ -65,49 +66,50 @@
       63,
       74,
       22,
-      73
+      73,
+      61
     ]
   },
   "programmate": [
     {
       "label": "Edili",
-      "value": 1
+      "value": 2
     },
     {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
     },
     {
       "label": "Antincendio",
-      "value": 9
+      "value": 20
     },
     {
       "label": "Idraulico",
-      "value": 12
+      "value": 20
     },
     {
       "label": "Climatizzazione",
-      "value": 16
+      "value": 30
     },
     {
       "label": "Elettrico",
-      "value": 147
+      "value": 181
     },
     {
       "label": "Manutenzioni",
-      "value": 232
+      "value": 258
     },
     {
       "label": "Pulizie",
-      "value": 317
+      "value": 338
     }
   ],
   "correttive": {
-    "total": 256,
+    "total": 268,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 151,
+        "value": 155,
         "children": [
           {
             "name": "Servizi Altro",
@@ -115,15 +117,15 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 29
+            "value": 30
           },
           {
             "name": "Allestimenti",
-            "value": 20
+            "value": 21
           },
           {
             "name": "Service Desk IT",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Locker",
@@ -139,7 +141,7 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 2
+            "value": 3
           },
           {
             "name": "Stampanti",
@@ -149,11 +151,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 47,
+        "value": 49,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 43
+            "value": 45
           },
           {
             "name": "Straordinaria",
@@ -171,11 +173,25 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 18,
+        "value": 19,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 18
+            "value": 19
+          }
+        ]
+      },
+      {
+        "name": "Catering/Vending",
+        "value": 18,
+        "children": [
+          {
+            "name": "Catering/Vend.",
+            "value": 13
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 5
           }
         ]
       },
@@ -190,20 +206,6 @@
           {
             "name": "Riparazione Arredi/Infissi",
             "value": 5
-          }
-        ]
-      },
-      {
-        "name": "Catering/Vending",
-        "value": 14,
-        "children": [
-          {
-            "name": "Catering/Vend.",
-            "value": 12
-          },
-          {
-            "name": "Distr. Automatici",
-            "value": 2
           }
         ]
       },
@@ -269,6 +271,16 @@
         "children": [
           {
             "name": "Perdita acqua",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Ass. Tecn. Tririga",
+        "value": 1,
+        "children": [
+          {
+            "name": "Gestione Account",
             "value": 1
           }
         ]
