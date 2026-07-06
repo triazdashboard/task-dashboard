@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-07-04 03:01",
+  "updated_at": "2026-07-06 03:01",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1166,
-    "completed": 1047,
-    "sla_on_time_pct": 92,
-    "active": 115,
-    "late": 6
+    "total": 1203,
+    "completed": 1100,
+    "sla_on_time_pct": 91.9,
+    "active": 92,
+    "late": 10
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 924,
-      "active": 102,
-      "late": 5
+      "completed": 974,
+      "active": 73,
+      "late": 9
     },
     {
       "name": "Milano",
-      "completed": 97,
-      "active": 1,
+      "completed": 98,
+      "active": 4,
       "late": 1
     }
   ],
@@ -45,7 +45,8 @@
       "06-26",
       "06-30",
       "07-01",
-      "07-02"
+      "07-02",
+      "07-03"
     ],
     "values": [
       25,
@@ -69,7 +70,8 @@
       22,
       73,
       61,
-      47
+      47,
+      53
     ]
   },
   "programmate": [
@@ -95,27 +97,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 186
+      "value": 191
     },
     {
       "label": "Manutenzioni",
-      "value": 268
+      "value": 278
     },
     {
       "label": "Pulizie",
-      "value": 349
+      "value": 360
     }
   ],
   "correttive": {
-    "total": 283,
+    "total": 294,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 161,
+        "value": 167,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 64
+            "value": 67
           },
           {
             "name": "Badge aziendali",
@@ -123,7 +125,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Service Desk IT",
@@ -131,7 +133,7 @@
           },
           {
             "name": "Locker",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Mouse/Tastiera",
@@ -139,7 +141,7 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Facchinaggio",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 20,
+        "value": 21,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 20
+            "value": 21
           }
         ]
       },
@@ -199,21 +201,21 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 18,
+        "value": 20,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Distr. Automatici",
-            "value": 5
+            "value": 6
           }
         ]
       },
       {
         "name": "Elettrico/Dati",
-        "value": 4,
+        "value": 5,
         "children": [
           {
             "name": "Illuminazione",
@@ -221,10 +223,24 @@
           },
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 1
+            "value": 2
           },
           {
             "name": "Torrette/Prese",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Idraulico",
+        "value": 3,
+        "children": [
+          {
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 2
+          },
+          {
+            "name": "Infiltrazione/Perdita tubazione",
             "value": 1
           }
         ]
@@ -250,20 +266,6 @@
           {
             "name": "Altro",
             "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 2,
-        "children": [
-          {
-            "name": "Riparazioni WC/Rubinetterie",
-            "value": 1
-          },
-          {
-            "name": "Infiltrazione/Perdita tubazione",
-            "value": 1
           }
         ]
       },
