@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-07-13 03:01",
+  "updated_at": "2026-07-14 08:03",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1401,
-    "completed": 1320,
-    "sla_on_time_pct": 92.2,
-    "active": 73,
-    "late": 7
+    "total": 1458,
+    "completed": 1389,
+    "sla_on_time_pct": 92.5,
+    "active": 66,
+    "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1165,
+      "completed": 1232,
       "active": 61,
-      "late": 6
+      "late": 0
     },
     {
       "name": "Milano",
@@ -51,7 +51,8 @@
       "07-07",
       "07-08",
       "07-09",
-      "07-10"
+      "07-10",
+      "07-13"
     ],
     "values": [
       25,
@@ -81,7 +82,8 @@
       41,
       42,
       43,
-      21
+      33,
+      57
     ]
   },
   "programmate": [
@@ -99,7 +101,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 21
+      "value": 22
     },
     {
       "label": "Climatizzazione",
@@ -107,31 +109,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 220
+      "value": 229
     },
     {
       "label": "Manutenzioni",
-      "value": 330
+      "value": 340
     },
     {
       "label": "Pulizie",
-      "value": 428
+      "value": 454
     }
   ],
   "correttive": {
-    "total": 342,
+    "total": 353,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 193,
+        "value": 202,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 72
+            "value": 78
           },
           {
             "name": "Badge aziendali",
-            "value": 35
+            "value": 36
           },
           {
             "name": "Allestimenti",
@@ -143,11 +145,11 @@
           },
           {
             "name": "Locker",
-            "value": 11
+            "value": 12
           },
           {
             "name": "Mouse/Tastiera",
-            "value": 8
+            "value": 9
           },
           {
             "name": "Periferiche IT",
@@ -169,11 +171,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 59,
+        "value": 60,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 53
+            "value": 54
           },
           {
             "name": "Straordinaria",
@@ -250,6 +252,20 @@
         ]
       },
       {
+        "name": "Segnalazione",
+        "value": 4,
+        "children": [
+          {
+            "name": "Altro - S",
+            "value": 3
+          },
+          {
+            "name": "Clima - S",
+            "value": 1
+          }
+        ]
+      },
+      {
         "name": "Idraulico",
         "value": 3,
         "children": [
@@ -259,20 +275,6 @@
           },
           {
             "name": "Infiltrazione/Perdita tubazione",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Segnalazione",
-        "value": 3,
-        "children": [
-          {
-            "name": "Altro - S",
-            "value": 2
-          },
-          {
-            "name": "Clima - S",
             "value": 1
           }
         ]
