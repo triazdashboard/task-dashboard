@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-07-15 03:01",
+  "updated_at": "2026-07-16 03:01",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1495,
-    "completed": 1423,
-    "sla_on_time_pct": 92.7,
-    "active": 69,
+    "total": 1530,
+    "completed": 1464,
+    "sla_on_time_pct": 92.6,
+    "active": 61,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1265,
-      "active": 61,
+      "completed": 1299,
+      "active": 56,
       "late": 0
     },
     {
       "name": "Milano",
-      "completed": 121,
-      "active": 4,
+      "completed": 127,
+      "active": 1,
       "late": 1
     }
   ],
@@ -53,7 +53,8 @@
       "07-09",
       "07-10",
       "07-13",
-      "07-14"
+      "07-14",
+      "07-15"
     ],
     "values": [
       25,
@@ -85,7 +86,8 @@
       43,
       33,
       57,
-      34
+      34,
+      41
     ]
   },
   "programmate": [
@@ -111,35 +113,35 @@
     },
     {
       "label": "Elettrico",
-      "value": 234
+      "value": 239
     },
     {
       "label": "Manutenzioni",
-      "value": 350
+      "value": 360
     },
     {
       "label": "Pulizie",
-      "value": 465
+      "value": 476
     }
   ],
   "correttive": {
-    "total": 364,
+    "total": 373,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 209,
+        "value": 214,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 80
+            "value": 82
           },
           {
             "name": "Badge aziendali",
-            "value": 36
+            "value": 37
           },
           {
             "name": "Allestimenti",
-            "value": 30
+            "value": 32
           },
           {
             "name": "Service Desk IT",
@@ -195,21 +197,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 27,
+        "value": 28,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 27
+            "value": 28
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 25,
+        "value": 28,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 18
+            "value": 21
           },
           {
             "name": "Riparazione Arredi/Infissi",
