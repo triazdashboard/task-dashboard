@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-07-16 03:01",
+  "updated_at": "2026-07-17 03:01",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1530,
-    "completed": 1464,
+    "total": 1567,
+    "completed": 1508,
     "sla_on_time_pct": 92.6,
-    "active": 61,
+    "active": 56,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1299,
-      "active": 56,
+      "completed": 1338,
+      "active": 52,
       "late": 0
     },
     {
       "name": "Milano",
-      "completed": 127,
+      "completed": 130,
       "active": 1,
       "late": 1
     }
@@ -54,7 +54,8 @@
       "07-10",
       "07-13",
       "07-14",
-      "07-15"
+      "07-15",
+      "07-16"
     ],
     "values": [
       25,
@@ -87,7 +88,8 @@
       33,
       57,
       34,
-      41
+      41,
+      44
     ]
   },
   "programmate": [
@@ -113,27 +115,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 239
+      "value": 244
     },
     {
       "label": "Manutenzioni",
-      "value": 360
+      "value": 370
     },
     {
       "label": "Pulizie",
-      "value": 476
+      "value": 487
     }
   ],
   "correttive": {
-    "total": 373,
+    "total": 384,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 214,
+        "value": 223,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 82
+            "value": 90
           },
           {
             "name": "Badge aziendali",
@@ -141,7 +143,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 32
+            "value": 33
           },
           {
             "name": "Service Desk IT",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 61,
+        "value": 62,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 55
+            "value": 56
           },
           {
             "name": "Straordinaria",
@@ -197,11 +199,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 28,
+        "value": 29,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 28
+            "value": 29
           }
         ]
       },
