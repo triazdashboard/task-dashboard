@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-07-21 03:01",
+  "updated_at": "2026-07-22 03:01",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1659,
-    "completed": 1585,
-    "sla_on_time_pct": 92.7,
-    "active": 71,
-    "late": 1
+    "total": 1695,
+    "completed": 1617,
+    "sla_on_time_pct": 92.8,
+    "active": 73,
+    "late": 5
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1407,
-      "active": 67,
-      "late": 0
+      "completed": 1436,
+      "active": 64,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 137,
+      "completed": 140,
       "active": 0,
       "late": 1
     }
@@ -57,7 +57,8 @@
       "07-15",
       "07-16",
       "07-17",
-      "07-20"
+      "07-20",
+      "07-21"
     ],
     "values": [
       25,
@@ -93,7 +94,8 @@
       41,
       44,
       27,
-      50
+      50,
+      32
     ]
   },
   "programmate": [
@@ -119,23 +121,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 258
+      "value": 263
     },
     {
       "label": "Manutenzioni",
-      "value": 390
+      "value": 400
     },
     {
       "label": "Pulizie",
-      "value": 522
+      "value": 533
     }
   ],
   "correttive": {
-    "total": 406,
+    "total": 416,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 234,
+        "value": 238,
         "children": [
           {
             "name": "Servizi Altro",
@@ -147,11 +149,11 @@
           },
           {
             "name": "Allestimenti",
-            "value": 34
+            "value": 36
           },
           {
             "name": "Service Desk IT",
-            "value": 23
+            "value": 24
           },
           {
             "name": "Locker",
@@ -159,7 +161,7 @@
           },
           {
             "name": "Mouse/Tastiera",
-            "value": 11
+            "value": 12
           },
           {
             "name": "Periferiche IT",
@@ -181,11 +183,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 65,
+        "value": 66,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 59
+            "value": 60
           },
           {
             "name": "Straordinaria",
@@ -203,15 +205,15 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 33,
+        "value": 35,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 25
+            "value": 26
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Opere murarie",
@@ -221,25 +223,25 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 31,
+        "value": 32,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 31
+            "value": 32
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 25,
+        "value": 27,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 18
+            "value": 19
           },
           {
             "name": "Distr. Automatici",
-            "value": 7
+            "value": 8
           }
         ]
       },
