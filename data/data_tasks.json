@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-07-28 03:01",
+  "updated_at": "2026-07-29 03:01",
   "period_label": "Giu - Lug 2026",
   "kpi": {
-    "total": 1862,
-    "completed": 1796,
-    "sla_on_time_pct": 92.3,
-    "active": 62,
-    "late": 1
+    "total": 1896,
+    "completed": 1837,
+    "sla_on_time_pct": 92.5,
+    "active": 55,
+    "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1592,
-      "active": 60,
-      "late": 0
+      "completed": 1627,
+      "active": 52,
+      "late": 2
     },
     {
       "name": "Milano",
-      "completed": 156,
+      "completed": 160,
       "active": 0,
       "late": 1
     }
@@ -62,7 +62,8 @@
       "07-22",
       "07-23",
       "07-24",
-      "07-27"
+      "07-27",
+      "07-28"
     ],
     "values": [
       25,
@@ -101,9 +102,10 @@
       50,
       32,
       42,
-      38,
-      41,
-      58
+      39,
+      43,
+      55,
+      41
     ]
   },
   "programmate": [
@@ -129,23 +131,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 287
+      "value": 292
     },
     {
       "label": "Manutenzioni",
-      "value": 442
+      "value": 452
     },
     {
       "label": "Pulizie",
-      "value": 592
+      "value": 603
     }
   ],
   "correttive": {
-    "total": 457,
+    "total": 465,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 257,
+        "value": 260,
         "children": [
           {
             "name": "Servizi Altro",
@@ -157,15 +159,15 @@
           },
           {
             "name": "Allestimenti",
-            "value": 40
+            "value": 41
           },
           {
             "name": "Service Desk IT",
-            "value": 28
+            "value": 29
           },
           {
             "name": "Locker",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Mouse/Tastiera",
@@ -191,11 +193,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 78,
+        "value": 79,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 71
+            "value": 72
           },
           {
             "name": "Straordinaria",
@@ -208,6 +210,16 @@
           {
             "name": "Aree esterne",
             "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 37,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 37
           }
         ]
       },
@@ -230,26 +242,16 @@
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 36,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 36
-          }
-        ]
-      },
-      {
         "name": "Catering/Vending",
-        "value": 30,
+        "value": 32,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Distr. Automatici",
-            "value": 8
+            "value": 9
           }
         ]
       },
@@ -286,6 +288,16 @@
         ]
       },
       {
+        "name": "Ass. Ut. Tririga",
+        "value": 3,
+        "children": [
+          {
+            "name": "Altro",
+            "value": 3
+          }
+        ]
+      },
+      {
         "name": "Idraulico",
         "value": 3,
         "children": [
@@ -296,16 +308,6 @@
           {
             "name": "Infiltrazione/Perdita tubazione",
             "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Ass. Ut. Tririga",
-        "value": 2,
-        "children": [
-          {
-            "name": "Altro",
-            "value": 2
           }
         ]
       },
