@@ -1,49 +1,29 @@
 {
-  "updated_at": "2026-07-31 03:01",
-  "period_label": "Giu - Lug 2026",
+  "updated_at": "2026-08-01 03:01",
+  "period_label": "Lug 2026",
   "kpi": {
-    "total": 1968,
-    "completed": 1910,
-    "sla_on_time_pct": 92.7,
-    "active": 52,
-    "late": 11
+    "total": 1008,
+    "completed": 958,
+    "sla_on_time_pct": 93,
+    "active": 49,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1692,
-      "active": 39,
-      "late": 10
+      "completed": 847,
+      "active": 47,
+      "late": 2
     },
     {
       "name": "Milano",
-      "completed": 168,
+      "completed": 82,
       "active": 0,
-      "late": 1
+      "late": 0
     }
   ],
   "trend": {
     "dates": [
-      "06-01",
-      "06-03",
-      "06-04",
-      "06-05",
-      "06-08",
-      "06-09",
-      "06-10",
-      "06-11",
-      "06-12",
-      "06-15",
-      "06-16",
-      "06-17",
-      "06-18",
-      "06-19",
-      "06-22",
-      "06-23",
-      "06-24",
-      "06-25",
-      "06-26",
-      "06-30",
       "07-01",
       "07-02",
       "07-03",
@@ -65,38 +45,19 @@
       "07-27",
       "07-28",
       "07-29",
-      "07-30"
+      "07-30",
+      "07-31"
     ],
     "values": [
-      25,
       31,
-      35,
-      86,
-      51,
-      32,
-      37,
-      52,
-      79,
-      38,
-      32,
-      36,
-      49,
-      60,
-      33,
-      31,
-      63,
-      74,
-      22,
-      73,
-      61,
-      48,
-      60,
-      65,
+      46,
+      55,
+      56,
       41,
-      42,
+      39,
       43,
       33,
-      57,
+      55,
       34,
       41,
       44,
@@ -109,135 +70,126 @@
       55,
       42,
       29,
-      43
+      43,
+      38
     ]
   },
   "programmate": [
     {
       "label": "Edili",
-      "value": 2
+      "value": 1
     },
     {
       "label": "Meter Reading",
-      "value": 8
+      "value": 4
     },
     {
       "label": "Antincendio",
-      "value": 20
+      "value": 11
     },
     {
       "label": "Idraulico",
-      "value": 24
+      "value": 12
     },
     {
       "label": "Climatizzazione",
-      "value": 30
+      "value": 14
     },
     {
       "label": "Elettrico",
-      "value": 302
+      "value": 160
     },
     {
       "label": "Manutenzioni",
-      "value": 472
+      "value": 250
     },
     {
       "label": "Pulizie",
-      "value": 625
+      "value": 319
     }
   ],
   "correttive": {
-    "total": 485,
+    "total": 237,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 272,
+        "value": 124,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 107
+            "value": 44
           },
           {
             "name": "Allestimenti",
-            "value": 43
+            "value": 24
           },
           {
             "name": "Badge aziendali",
-            "value": 43
-          },
-          {
-            "name": "Service Desk IT",
-            "value": 30
-          },
-          {
-            "name": "Locker",
-            "value": 15
-          },
-          {
-            "name": "Mouse/Tastiera",
             "value": 14
           },
           {
+            "name": "Service Desk IT",
+            "value": 13
+          },
+          {
             "name": "Periferiche IT",
-            "value": 9
+            "value": 7
+          },
+          {
+            "name": "Locker",
+            "value": 7
+          },
+          {
+            "name": "Mouse/Tastiera",
+            "value": 7
           },
           {
             "name": "Facchinaggio",
-            "value": 6
-          },
-          {
-            "name": "Stampanti",
-            "value": 3
+            "value": 4
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
+            "value": 2
+          },
+          {
+            "name": "Stampanti",
             "value": 2
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 81,
+        "value": 37,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 74
-          },
-          {
-            "name": "Straordinaria",
-            "value": 3
+            "value": 34
           },
           {
             "name": "Uffici",
-            "value": 2
+            "value": 1
+          },
+          {
+            "name": "Straordinaria",
+            "value": 1
           },
           {
             "name": "Aree esterne",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Gest. Spedizioni",
-        "value": 39,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 39
+            "value": 1
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 39,
+        "value": 25,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 28
+            "value": 19
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 10
+            "value": 5
           },
           {
             "name": "Opere murarie",
@@ -246,85 +198,43 @@
         ]
       },
       {
+        "name": "Gest. Spedizioni",
+        "value": 22,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 22
+          }
+        ]
+      },
+      {
         "name": "Catering/Vending",
-        "value": 34,
+        "value": 21,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 24
+            "value": 13
           },
           {
             "name": "Distr. Automatici",
-            "value": 10
+            "value": 8
           }
         ]
       },
       {
         "name": "Elettrico/Dati",
-        "value": 7,
+        "value": 3,
         "children": [
           {
-            "name": "Illuminazione",
-            "value": 3
-          },
-          {
             "name": "Elettrico/Dati - Altro",
-            "value": 2
+            "value": 1
           },
           {
             "name": "Torrette/Prese",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Segnalazione",
-        "value": 4,
-        "children": [
-          {
-            "name": "Altro - S",
-            "value": 3
-          },
-          {
-            "name": "Clima - S",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Ass. Ut. Tririga",
-        "value": 3,
-        "children": [
-          {
-            "name": "Altro",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 3,
-        "children": [
-          {
-            "name": "Riparazioni WC/Rubinetterie",
-            "value": 2
-          },
-          {
-            "name": "Infiltrazione/Perdita tubazione",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Condizionamento",
-        "value": 2,
-        "children": [
-          {
-            "name": "Perdita acqua",
             "value": 1
           },
           {
-            "name": "Condizionamento - Altro",
+            "name": "Illuminazione",
             "value": 1
           }
         ]
@@ -335,6 +245,46 @@
         "children": [
           {
             "name": "Gestione Account",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Idraulico",
+        "value": 1,
+        "children": [
+          {
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Condizionamento",
+        "value": 1,
+        "children": [
+          {
+            "name": "Condizionamento - Altro",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Segnalazione",
+        "value": 1,
+        "children": [
+          {
+            "name": "Altro - S",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Ass. Ut. Tririga",
+        "value": 1,
+        "children": [
+          {
+            "name": "Altro",
             "value": 1
           }
         ]
