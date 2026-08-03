@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-02 03:01",
-  "period_label": "Lug 2026",
+  "updated_at": "2026-08-03 03:01",
+  "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1008,
+    "total": 1134,
     "completed": 958,
     "sla_on_time_pct": 93,
-    "active": 49,
+    "active": 175,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 847,
-      "active": 47,
+      "active": 169,
       "late": 2
     },
     {
@@ -76,36 +76,40 @@
   },
   "programmate": [
     {
-      "label": "Edili",
+      "label": "Sicurezza - Preventive",
       "value": 1
     },
     {
+      "label": "Edili",
+      "value": 2
+    },
+    {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
     },
     {
       "label": "Antincendio",
-      "value": 11
+      "value": 22
     },
     {
       "label": "Idraulico",
-      "value": 12
+      "value": 26
     },
     {
       "label": "Climatizzazione",
-      "value": 14
+      "value": 60
     },
     {
       "label": "Elettrico",
-      "value": 160
+      "value": 187
     },
     {
       "label": "Manutenzioni",
-      "value": 250
+      "value": 262
     },
     {
       "label": "Pulizie",
-      "value": 319
+      "value": 329
     }
   ],
   "correttive": {
