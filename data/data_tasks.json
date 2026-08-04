@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-08-03 03:01",
+  "updated_at": "2026-08-04 03:01",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1134,
-    "completed": 958,
-    "sla_on_time_pct": 93,
-    "active": 175,
-    "late": 2
+    "total": 1183,
+    "completed": 1034,
+    "sla_on_time_pct": 93.6,
+    "active": 147,
+    "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 847,
-      "active": 169,
-      "late": 2
+      "completed": 917,
+      "active": 144,
+      "late": 1
     },
     {
       "name": "Milano",
-      "completed": 82,
+      "completed": 85,
       "active": 0,
       "late": 0
     }
@@ -46,7 +46,8 @@
       "07-28",
       "07-29",
       "07-30",
-      "07-31"
+      "07-31",
+      "08-03"
     ],
     "values": [
       31,
@@ -69,9 +70,10 @@
       43,
       55,
       42,
-      29,
-      43,
-      38
+      31,
+      41,
+      48,
+      66
     ]
   },
   "programmate": [
@@ -93,7 +95,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 26
+      "value": 27
     },
     {
       "label": "Climatizzazione",
@@ -101,23 +103,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 187
+      "value": 196
     },
     {
       "label": "Manutenzioni",
-      "value": 262
+      "value": 272
     },
     {
       "label": "Pulizie",
-      "value": 329
+      "value": 353
     }
   ],
   "correttive": {
-    "total": 237,
+    "total": 242,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 124,
+        "value": 126,
         "children": [
           {
             "name": "Servizi Altro",
@@ -125,7 +127,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 24
+            "value": 25
           },
           {
             "name": "Badge aziendali",
@@ -137,7 +139,7 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Locker",
@@ -163,11 +165,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 37,
+        "value": 39,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 34
+            "value": 36
           },
           {
             "name": "Uffici",
@@ -203,11 +205,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 22
+            "value": 23
           }
         ]
       },
