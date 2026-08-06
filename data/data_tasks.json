@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-08-05 03:01",
+  "updated_at": "2026-08-06 03:01",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1215,
-    "completed": 1071,
-    "sla_on_time_pct": 93.8,
-    "active": 142,
+    "total": 1247,
+    "completed": 1111,
+    "sla_on_time_pct": 93.7,
+    "active": 133,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 950,
-      "active": 138,
+      "completed": 986,
+      "active": 129,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 89,
+      "completed": 92,
       "active": 0,
       "late": 0
     }
@@ -48,7 +48,8 @@
       "07-30",
       "07-31",
       "08-03",
-      "08-04"
+      "08-04",
+      "08-05"
     ],
     "values": [
       31,
@@ -75,7 +76,8 @@
       41,
       48,
       66,
-      37
+      37,
+      40
     ]
   },
   "programmate": [
@@ -105,23 +107,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 201
+      "value": 206
     },
     {
       "label": "Manutenzioni",
-      "value": 282
+      "value": 292
     },
     {
       "label": "Pulizie",
-      "value": 364
+      "value": 375
     }
   ],
   "correttive": {
-    "total": 248,
+    "total": 254,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 128,
+        "value": 130,
         "children": [
           {
             "name": "Servizi Altro",
@@ -129,7 +131,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 26
+            "value": 27
           },
           {
             "name": "Badge aziendali",
@@ -141,7 +143,7 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Locker",
@@ -167,11 +169,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 40,
+        "value": 42,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 37
+            "value": 39
           },
           {
             "name": "Uffici",
@@ -184,6 +186,16 @@
           {
             "name": "Aree esterne",
             "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Gest. Spedizioni",
+        "value": 25,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 25
           }
         ]
       },
@@ -206,22 +218,12 @@
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 24,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 24
-          }
-        ]
-      },
-      {
         "name": "Catering/Vending",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Distr. Automatici",
