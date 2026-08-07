@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-08-06 03:01",
+  "updated_at": "2026-08-07 03:01",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1247,
-    "completed": 1111,
-    "sla_on_time_pct": 93.7,
-    "active": 133,
+    "total": 1278,
+    "completed": 1145,
+    "sla_on_time_pct": 93.9,
+    "active": 130,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 986,
-      "active": 129,
+      "completed": 1016,
+      "active": 126,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 92,
+      "completed": 95,
       "active": 0,
       "late": 0
     }
@@ -49,7 +49,8 @@
       "07-31",
       "08-03",
       "08-04",
-      "08-05"
+      "08-05",
+      "08-06"
     ],
     "values": [
       31,
@@ -77,7 +78,8 @@
       48,
       66,
       37,
-      40
+      40,
+      34
     ]
   },
   "programmate": [
@@ -107,23 +109,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 206
+      "value": 211
     },
     {
       "label": "Manutenzioni",
-      "value": 292
+      "value": 302
     },
     {
       "label": "Pulizie",
-      "value": 375
+      "value": 386
     }
   ],
   "correttive": {
-    "total": 254,
+    "total": 259,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 130,
+        "value": 133,
         "children": [
           {
             "name": "Servizi Altro",
@@ -131,7 +133,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 27
+            "value": 28
           },
           {
             "name": "Badge aziendali",
@@ -143,7 +145,7 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Locker",
@@ -155,7 +157,7 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
@@ -169,11 +171,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 42,
+        "value": 43,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 39
+            "value": 40
           },
           {
             "name": "Uffici",
@@ -191,11 +193,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 25,
+        "value": 26,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 25
+            "value": 26
           }
         ]
       },
