@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-09 03:01",
+  "updated_at": "2026-08-10 03:01",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1312,
+    "total": 1314,
     "completed": 1202,
     "sla_on_time_pct": 94.2,
-    "active": 107,
+    "active": 109,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 1068,
-      "active": 104,
+      "active": 106,
       "late": 1
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "label": "Manutenzioni",
-      "value": 312
+      "value": 314
     },
     {
       "label": "Pulizie",
