@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-17 03:01",
+  "updated_at": "2026-08-18 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1466,
-    "completed": 1202,
-    "sla_on_time_pct": 94.2,
-    "active": 261,
+    "total": 1373,
+    "completed": 1251,
+    "sla_on_time_pct": 94.3,
+    "active": 119,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1068,
-      "active": 253,
+      "completed": 1112,
+      "active": 115,
       "late": 1
     },
     {
@@ -83,7 +83,7 @@
       40,
       34,
       47,
-      10
+      59
     ]
   },
   "programmate": [
@@ -105,7 +105,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 31
+      "value": 29
     },
     {
       "label": "Climatizzazione",
@@ -113,19 +113,19 @@
     },
     {
       "label": "Elettrico",
-      "value": 245
+      "value": 231
     },
     {
       "label": "Manutenzioni",
-      "value": 364
+      "value": 324
     },
     {
       "label": "Pulizie",
-      "value": 467
+      "value": 427
     }
   ],
   "correttive": {
-    "total": 266,
+    "total": 269,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -239,11 +239,11 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 3,
+        "value": 6,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 1
+            "value": 4
           },
           {
             "name": "Torrette/Prese",
