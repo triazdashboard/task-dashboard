@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-18 03:00",
+  "updated_at": "2026-08-24 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1373,
-    "completed": 1251,
-    "sla_on_time_pct": 94.3,
-    "active": 119,
+    "total": 1484,
+    "completed": 1394,
+    "sla_on_time_pct": 94.8,
+    "active": 71,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1112,
-      "active": 115,
+      "completed": 1250,
+      "active": 70,
       "late": 1
     },
     {
@@ -52,7 +52,11 @@
       "08-05",
       "08-06",
       "08-07",
-      "08-17"
+      "08-17",
+      "08-18",
+      "08-19",
+      "08-20",
+      "08-21"
     ],
     "values": [
       31,
@@ -83,7 +87,11 @@
       40,
       34,
       47,
-      59
+      59,
+      49,
+      34,
+      25,
+      35
     ]
   },
   "programmate": [
@@ -105,7 +113,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 29
+      "value": 30
     },
     {
       "label": "Climatizzazione",
@@ -113,27 +121,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 231
+      "value": 251
     },
     {
       "label": "Manutenzioni",
-      "value": 324
+      "value": 366
     },
     {
       "label": "Pulizie",
-      "value": 427
+      "value": 471
     }
   ],
   "correttive": {
-    "total": 269,
+    "total": 273,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 138,
+        "value": 141,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 45
+            "value": 47
           },
           {
             "name": "Allestimenti",
@@ -153,7 +161,7 @@
           },
           {
             "name": "Locker",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Mouse/Tastiera",
@@ -257,11 +265,11 @@
       },
       {
         "name": "Segnalazione",
-        "value": 2,
+        "value": 3,
         "children": [
           {
             "name": "Altro - S",
-            "value": 2
+            "value": 3
           }
         ]
       },
