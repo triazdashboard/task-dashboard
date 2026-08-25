@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24 03:00",
+  "updated_at": "2026-08-25 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1484,
-    "completed": 1394,
-    "sla_on_time_pct": 94.8,
-    "active": 71,
+    "total": 1529,
+    "completed": 1424,
+    "sla_on_time_pct": 94.9,
+    "active": 79,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1250,
-      "active": 70,
+      "completed": 1280,
+      "active": 78,
       "late": 1
     },
     {
@@ -56,7 +56,8 @@
       "08-18",
       "08-19",
       "08-20",
-      "08-21"
+      "08-21",
+      "08-24"
     ],
     "values": [
       31,
@@ -91,7 +92,8 @@
       49,
       34,
       25,
-      35
+      35,
+      30
     ]
   },
   "programmate": [
@@ -113,7 +115,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 30
+      "value": 31
     },
     {
       "label": "Climatizzazione",
@@ -121,23 +123,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 251
+      "value": 260
     },
     {
       "label": "Manutenzioni",
-      "value": 366
+      "value": 376
     },
     {
       "label": "Pulizie",
-      "value": 471
+      "value": 495
     }
   ],
   "correttive": {
-    "total": 273,
+    "total": 274,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 141,
+        "value": 142,
         "children": [
           {
             "name": "Servizi Altro",
@@ -149,7 +151,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Service Desk IT",
