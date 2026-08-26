@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-25 03:00",
+  "updated_at": "2026-08-26 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1529,
-    "completed": 1424,
-    "sla_on_time_pct": 94.9,
-    "active": 79,
-    "late": 1
+    "total": 1559,
+    "completed": 1446,
+    "sla_on_time_pct": 95,
+    "active": 56,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1280,
-      "active": 78,
-      "late": 1
+      "completed": 1302,
+      "active": 54,
+      "late": 2
     },
     {
       "name": "Milano",
@@ -57,7 +57,8 @@
       "08-19",
       "08-20",
       "08-21",
-      "08-24"
+      "08-24",
+      "08-25"
     ],
     "values": [
       31,
@@ -93,7 +94,8 @@
       34,
       25,
       35,
-      30
+      30,
+      22
     ]
   },
   "programmate": [
@@ -123,23 +125,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 260
+      "value": 265
     },
     {
       "label": "Manutenzioni",
-      "value": 376
+      "value": 386
     },
     {
       "label": "Pulizie",
-      "value": 495
+      "value": 506
     }
   ],
   "correttive": {
-    "total": 274,
+    "total": 278,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 142,
+        "value": 146,
         "children": [
           {
             "name": "Servizi Altro",
@@ -151,7 +153,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 15
+            "value": 19
           },
           {
             "name": "Service Desk IT",
