@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26 03:00",
+  "updated_at": "2026-08-27 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1559,
-    "completed": 1446,
-    "sla_on_time_pct": 95,
-    "active": 56,
+    "total": 1595,
+    "completed": 1487,
+    "sla_on_time_pct": 95.2,
+    "active": 45,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1302,
-      "active": 54,
+      "completed": 1343,
+      "active": 43,
       "late": 2
     },
     {
@@ -58,7 +58,8 @@
       "08-20",
       "08-21",
       "08-24",
-      "08-25"
+      "08-25",
+      "08-26"
     ],
     "values": [
       31,
@@ -95,7 +96,8 @@
       25,
       35,
       30,
-      22
+      22,
+      41
     ]
   },
   "programmate": [
@@ -125,27 +127,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 265
+      "value": 270
     },
     {
       "label": "Manutenzioni",
-      "value": 386
+      "value": 396
     },
     {
       "label": "Pulizie",
-      "value": 506
+      "value": 517
     }
   ],
   "correttive": {
-    "total": 278,
+    "total": 288,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 146,
+        "value": 156,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 47
+            "value": 51
           },
           {
             "name": "Allestimenti",
@@ -153,15 +155,15 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 19
+            "value": 23
+          },
+          {
+            "name": "Periferiche IT",
+            "value": 14
           },
           {
             "name": "Service Desk IT",
             "value": 13
-          },
-          {
-            "name": "Periferiche IT",
-            "value": 12
           },
           {
             "name": "Locker",
