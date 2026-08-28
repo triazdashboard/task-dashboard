@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-27 03:00",
+  "updated_at": "2026-08-28 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1595,
-    "completed": 1487,
+    "total": 1621,
+    "completed": 1515,
     "sla_on_time_pct": 95.2,
-    "active": 45,
+    "active": 43,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1343,
-      "active": 43,
+      "completed": 1370,
+      "active": 41,
       "late": 2
     },
     {
@@ -59,7 +59,8 @@
       "08-21",
       "08-24",
       "08-25",
-      "08-26"
+      "08-26",
+      "08-27"
     ],
     "values": [
       31,
@@ -97,7 +98,8 @@
       35,
       30,
       22,
-      41
+      41,
+      28
     ]
   },
   "programmate": [
@@ -127,15 +129,15 @@
     },
     {
       "label": "Elettrico",
-      "value": 270
+      "value": 275
     },
     {
       "label": "Manutenzioni",
-      "value": 396
+      "value": 406
     },
     {
       "label": "Pulizie",
-      "value": 517
+      "value": 528
     }
   ],
   "correttive": {
