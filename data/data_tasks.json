@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-28 03:00",
+  "updated_at": "2026-08-29 03:00",
   "period_label": "Lug - Ago 2026",
   "kpi": {
-    "total": 1621,
-    "completed": 1515,
-    "sla_on_time_pct": 95.2,
-    "active": 43,
-    "late": 2
+    "total": 1648,
+    "completed": 1537,
+    "sla_on_time_pct": 95.3,
+    "active": 40,
+    "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1370,
-      "active": 41,
-      "late": 2
+      "completed": 1392,
+      "active": 39,
+      "late": 1
     },
     {
       "name": "Milano",
@@ -60,7 +60,8 @@
       "08-24",
       "08-25",
       "08-26",
-      "08-27"
+      "08-27",
+      "08-28"
     ],
     "values": [
       31,
@@ -99,7 +100,8 @@
       30,
       22,
       41,
-      28
+      28,
+      22
     ]
   },
   "programmate": [
@@ -121,7 +123,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 31
+      "value": 32
     },
     {
       "label": "Climatizzazione",
@@ -129,15 +131,15 @@
     },
     {
       "label": "Elettrico",
-      "value": 275
+      "value": 280
     },
     {
       "label": "Manutenzioni",
-      "value": 406
+      "value": 416
     },
     {
       "label": "Pulizie",
-      "value": 528
+      "value": 539
     }
   ],
   "correttive": {
