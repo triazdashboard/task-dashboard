@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-09-01 03:00",
+  "updated_at": "2026-09-02 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 701,
-    "completed": 594,
+    "total": 876,
+    "completed": 626,
     "sla_on_time_pct": 98.7,
-    "active": 32,
+    "active": 169,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 556,
-      "active": 30,
+      "completed": 584,
+      "active": 154,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 20,
-      "active": 1,
+      "completed": 24,
+      "active": 9,
       "late": 0
     }
   ],
@@ -39,7 +39,8 @@
       "08-26",
       "08-27",
       "08-28",
-      "08-31"
+      "08-31",
+      "09-01"
     ],
     "values": [
       44,
@@ -57,53 +58,54 @@
       37,
       28,
       22,
-      56
+      56,
+      32
     ]
   },
   "programmate": [
-    {
-      "label": "Edili",
-      "value": 1
-    },
     {
       "label": "Sicurezza - Preventive",
       "value": 1
     },
     {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
     },
     {
       "label": "Antincendio",
-      "value": 11
+      "value": 15
     },
     {
       "label": "Idraulico",
-      "value": 21
+      "value": 29
+    },
+    {
+      "label": "Edili",
+      "value": 58
     },
     {
       "label": "Climatizzazione",
-      "value": 46
+      "value": 60
     },
     {
       "label": "Elettrico",
-      "value": 129
+      "value": 153
     },
     {
       "label": "Manutenzioni",
-      "value": 177
+      "value": 211
     },
     {
       "label": "Pulizie",
-      "value": 244
+      "value": 266
     }
   ],
   "correttive": {
-    "total": 67,
+    "total": 75,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 41,
+        "value": 43,
         "children": [
           {
             "name": "Badge aziendali",
@@ -114,54 +116,54 @@
             "value": 8
           },
           {
-            "name": "Servizi Altro",
+            "name": "Allestimenti",
             "value": 7
           },
           {
-            "name": "Allestimenti",
-            "value": 6
+            "name": "Servizi Altro",
+            "value": 7
           },
           {
             "name": "Locker",
             "value": 5
           },
           {
-            "name": "Facchinaggio",
-            "value": 1
+            "name": "Service Desk IT",
+            "value": 2
           },
           {
-            "name": "Service Desk IT",
+            "name": "Facchinaggio",
             "value": 1
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 9,
+        "value": 11,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 9
+            "value": 11
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 6,
+        "value": 7,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 6
+            "value": 7
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 4,
+        "value": 5,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 3
+            "value": 4
           },
           {
             "name": "Distr. Automatici",
@@ -171,11 +173,11 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 3,
+        "value": 4,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 3
+            "value": 4
           }
         ]
       },
@@ -196,6 +198,16 @@
           {
             "name": "Edili Altro",
             "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Condizionamento",
+        "value": 1,
+        "children": [
+          {
+            "name": "Perdita acqua",
+            "value": 1
           }
         ]
       }
