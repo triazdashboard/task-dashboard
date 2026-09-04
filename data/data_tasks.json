@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-03 03:00",
+  "updated_at": "2026-09-04 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 908,
-    "completed": 653,
+    "total": 941,
+    "completed": 683,
     "sla_on_time_pct": 98.8,
-    "active": 170,
+    "active": 166,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 607,
-      "active": 155,
+      "completed": 633,
+      "active": 151,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 28,
+      "completed": 32,
       "active": 9,
       "late": 0
     }
@@ -41,7 +41,8 @@
       "08-28",
       "08-31",
       "09-01",
-      "09-02"
+      "09-02",
+      "09-03"
     ],
     "values": [
       44,
@@ -61,7 +62,8 @@
       22,
       56,
       32,
-      27
+      27,
+      30
     ]
   },
   "programmate": [
@@ -91,23 +93,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 158
+      "value": 163
     },
     {
       "label": "Manutenzioni",
-      "value": 221
+      "value": 231
     },
     {
       "label": "Pulizie",
-      "value": 277
+      "value": 288
     }
   ],
   "correttive": {
-    "total": 81,
+    "total": 88,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 46,
+        "value": 49,
         "children": [
           {
             "name": "Badge aziendali",
@@ -115,11 +117,11 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 8
+            "value": 9
           },
           {
             "name": "Allestimenti",
-            "value": 8
+            "value": 9
           },
           {
             "name": "Servizi Altro",
@@ -135,37 +137,37 @@
           },
           {
             "name": "Facchinaggio",
-            "value": 1
+            "value": 2
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 12,
+        "value": 14,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 12
+            "value": 14
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 8,
+        "value": 9,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 8
+            "value": 9
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 6,
+        "value": 7,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 5
+            "value": 6
           },
           {
             "name": "Distr. Automatici",
