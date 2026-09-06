@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-09-05 03:00",
+  "updated_at": "2026-09-06 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
     "total": 979,
     "completed": 715,
     "sla_on_time_pct": 98.9,
     "active": 172,
-    "late": 1
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 660,
-      "active": 156,
-      "late": 1
+      "active": 155,
+      "late": 2
     },
     {
       "name": "Milano",
