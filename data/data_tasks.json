@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-09 03:00",
+  "updated_at": "2026-09-10 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1077,
-    "completed": 798,
-    "sla_on_time_pct": 98.9,
-    "active": 170,
-    "late": 2
+    "total": 1111,
+    "completed": 833,
+    "sla_on_time_pct": 98.8,
+    "active": 164,
+    "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 734,
-      "active": 154,
-      "late": 2
+      "completed": 765,
+      "active": 149,
+      "late": 1
     },
     {
       "name": "Milano",
-      "completed": 46,
+      "completed": 50,
       "active": 9,
       "late": 0
     }
@@ -45,7 +45,8 @@
       "09-03",
       "09-04",
       "09-07",
-      "09-08"
+      "09-08",
+      "09-09"
     ],
     "values": [
       44,
@@ -69,7 +70,8 @@
       30,
       32,
       50,
-      33
+      33,
+      35
     ]
   },
   "programmate": [
@@ -99,35 +101,35 @@
     },
     {
       "label": "Elettrico",
-      "value": 182
+      "value": 187
     },
     {
       "label": "Manutenzioni",
-      "value": 263
+      "value": 273
     },
     {
       "label": "Pulizie",
-      "value": 336
+      "value": 347
     }
   ],
   "correttive": {
-    "total": 123,
+    "total": 131,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 67,
+        "value": 73,
         "children": [
+          {
+            "name": "Servizi Altro",
+            "value": 17
+          },
           {
             "name": "Badge aziendali",
             "value": 15
           },
           {
-            "name": "Servizi Altro",
-            "value": 14
-          },
-          {
             "name": "Allestimenti",
-            "value": 12
+            "value": 13
           },
           {
             "name": "Periferiche IT",
@@ -135,7 +137,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 6
+            "value": 7
           },
           {
             "name": "Locker",
@@ -152,6 +154,10 @@
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
             "value": 1
+          },
+          {
+            "name": "Stampanti",
+            "value": 1
           }
         ]
       },
@@ -167,21 +173,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 12,
+        "value": 13,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 12
+            "value": 13
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 11,
+        "value": 12,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Distr. Automatici",
