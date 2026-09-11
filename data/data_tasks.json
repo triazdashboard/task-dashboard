@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-10 03:00",
+  "updated_at": "2026-09-11 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1111,
-    "completed": 833,
+    "total": 1143,
+    "completed": 869,
     "sla_on_time_pct": 98.8,
-    "active": 164,
+    "active": 161,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 765,
-      "active": 149,
+      "completed": 795,
+      "active": 147,
       "late": 1
     },
     {
       "name": "Milano",
-      "completed": 50,
+      "completed": 54,
       "active": 9,
       "late": 0
     }
@@ -46,7 +46,8 @@
       "09-04",
       "09-07",
       "09-08",
-      "09-09"
+      "09-09",
+      "09-10"
     ],
     "values": [
       44,
@@ -71,7 +72,8 @@
       32,
       50,
       33,
-      35
+      35,
+      36
     ]
   },
   "programmate": [
@@ -101,23 +103,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 187
+      "value": 192
     },
     {
       "label": "Manutenzioni",
-      "value": 273
+      "value": 283
     },
     {
       "label": "Pulizie",
-      "value": 347
+      "value": 358
     }
   ],
   "correttive": {
-    "total": 131,
+    "total": 137,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 73,
+        "value": 75,
         "children": [
           {
             "name": "Servizi Altro",
@@ -129,7 +131,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Periferiche IT",
@@ -137,7 +139,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Locker",
@@ -163,31 +165,31 @@
       },
       {
         "name": "Pulizia",
-        "value": 17,
+        "value": 18,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 17
+            "value": 18
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 13,
+        "value": 14,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 13
+            "value": 14
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 12,
+        "value": 13,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 11
+            "value": 12
           },
           {
             "name": "Distr. Automatici",
@@ -245,6 +247,16 @@
         "children": [
           {
             "name": "Idraulico - Altro",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Int. Esterni",
+        "value": 1,
+        "children": [
+          {
+            "name": "Manut. meccan.",
             "value": 1
           }
         ]
