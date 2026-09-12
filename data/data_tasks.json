@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-11 03:00",
+  "updated_at": "2026-09-12 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1143,
-    "completed": 869,
-    "sla_on_time_pct": 98.8,
-    "active": 161,
+    "total": 1182,
+    "completed": 906,
+    "sla_on_time_pct": 98.9,
+    "active": 158,
     "late": 1
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 795,
-      "active": 147,
+      "completed": 832,
+      "active": 143,
       "late": 1
     },
     {
@@ -47,7 +47,8 @@
       "09-07",
       "09-08",
       "09-09",
-      "09-10"
+      "09-10",
+      "09-11"
     ],
     "values": [
       44,
@@ -73,7 +74,8 @@
       50,
       33,
       35,
-      36
+      36,
+      37
     ]
   },
   "programmate": [
@@ -91,7 +93,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 31
+      "value": 32
     },
     {
       "label": "Edili",
@@ -103,27 +105,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 192
+      "value": 197
     },
     {
       "label": "Manutenzioni",
-      "value": 283
+      "value": 293
     },
     {
       "label": "Pulizie",
-      "value": 358
+      "value": 369
     }
   ],
   "correttive": {
-    "total": 137,
+    "total": 149,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 75,
+        "value": 82,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 17
+            "value": 24
           },
           {
             "name": "Badge aziendali",
@@ -165,11 +167,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 18,
+        "value": 20,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 18
+            "value": 20
           }
         ]
       },
@@ -199,11 +201,11 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 8,
+        "value": 11,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 6
+            "value": 9
           },
           {
             "name": "Riparazione Arredi/Infissi",
