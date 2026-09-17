@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-09-16 03:00",
+  "updated_at": "2026-09-17 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1269,
-    "completed": 983,
+    "total": 1311,
+    "completed": 1014,
     "sla_on_time_pct": 99,
-    "active": 152,
-    "late": 1
+    "active": 157,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 900,
+      "completed": 931,
       "active": 138,
-      "late": 1
+      "late": 2
     },
     {
       "name": "Milano",
       "completed": 63,
-      "active": 9,
+      "active": 13,
       "late": 0
     }
   ],
@@ -50,7 +50,8 @@
       "09-10",
       "09-11",
       "09-14",
-      "09-15"
+      "09-15",
+      "09-16"
     ],
     "values": [
       44,
@@ -79,7 +80,8 @@
       36,
       38,
       51,
-      25
+      25,
+      31
     ]
   },
   "programmate": [
@@ -109,23 +111,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 211
+      "value": 216
     },
     {
       "label": "Manutenzioni",
-      "value": 313
+      "value": 323
     },
     {
       "label": "Pulizie",
-      "value": 405
+      "value": 416
     }
   ],
   "correttive": {
-    "total": 165,
+    "total": 181,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 90,
+        "value": 93,
         "children": [
           {
             "name": "Servizi Altro",
@@ -133,7 +135,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 16
+            "value": 17
           },
           {
             "name": "Badge aziendali",
@@ -141,19 +143,19 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Periferiche IT",
             "value": 9
           },
           {
-            "name": "Locker",
+            "name": "Facchinaggio",
             "value": 5
           },
           {
-            "name": "Facchinaggio",
-            "value": 4
+            "name": "Locker",
+            "value": 5
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
@@ -171,31 +173,35 @@
       },
       {
         "name": "Pulizia",
-        "value": 22,
+        "value": 29,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 22
+            "value": 28
+          },
+          {
+            "name": "Aree esterne",
+            "value": 1
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 16,
+        "value": 17,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 16
+            "value": 17
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 14,
+        "value": 15,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Distr. Automatici",
@@ -205,35 +211,35 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 13,
+        "value": 15,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "name": "Elettrico/Dati",
-        "value": 4,
-        "children": [
-          {
-            "name": "Elettrico/Dati - Altro",
             "value": 4
           }
         ]
       },
       {
+        "name": "Elettrico/Dati",
+        "value": 5,
+        "children": [
+          {
+            "name": "Elettrico/Dati - Altro",
+            "value": 5
+          }
+        ]
+      },
+      {
         "name": "Segnalazione",
-        "value": 2,
+        "value": 3,
         "children": [
           {
             "name": "Altro - S",
-            "value": 2
+            "value": 3
           }
         ]
       },
