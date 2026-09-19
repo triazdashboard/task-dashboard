@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-18 03:00",
+  "updated_at": "2026-09-19 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1344,
-    "completed": 1047,
-    "sla_on_time_pct": 99,
-    "active": 148,
+    "total": 1373,
+    "completed": 1079,
+    "sla_on_time_pct": 99.1,
+    "active": 139,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 956,
-      "active": 133,
+      "completed": 988,
+      "active": 124,
       "late": 2
     },
     {
@@ -52,7 +52,8 @@
       "09-14",
       "09-15",
       "09-16",
-      "09-17"
+      "09-17",
+      "09-18"
     ],
     "values": [
       44,
@@ -83,7 +84,8 @@
       51,
       25,
       31,
-      33
+      33,
+      32
     ]
   },
   "programmate": [
@@ -101,7 +103,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 33
+      "value": 34
     },
     {
       "label": "Edili",
@@ -113,27 +115,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 221
+      "value": 226
     },
     {
       "label": "Manutenzioni",
-      "value": 333
+      "value": 343
     },
     {
       "label": "Pulizie",
-      "value": 427
+      "value": 438
     }
   ],
   "correttive": {
-    "total": 188,
+    "total": 190,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 96,
+        "value": 97,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 25
+            "value": 26
           },
           {
             "name": "Allestimenti",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 31,
+        "value": 32,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 30
+            "value": 31
           },
           {
             "name": "Aree esterne",
