@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-21 03:00",
+  "updated_at": "2026-09-22 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1373,
-    "completed": 1079,
+    "total": 1436,
+    "completed": 1129,
     "sla_on_time_pct": 99.1,
-    "active": 139,
+    "active": 144,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 988,
-      "active": 124,
+      "completed": 1033,
+      "active": 129,
       "late": 2
     },
     {
       "name": "Milano",
-      "completed": 71,
+      "completed": 76,
       "active": 9,
       "late": 0
     }
@@ -53,7 +53,8 @@
       "09-15",
       "09-16",
       "09-17",
-      "09-18"
+      "09-18",
+      "09-21"
     ],
     "values": [
       44,
@@ -85,7 +86,8 @@
       25,
       31,
       33,
-      32
+      30,
+      52
     ]
   },
   "programmate": [
@@ -103,7 +105,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 34
+      "value": 35
     },
     {
       "label": "Edili",
@@ -115,39 +117,39 @@
     },
     {
       "label": "Elettrico",
-      "value": 226
+      "value": 235
     },
     {
       "label": "Manutenzioni",
-      "value": 343
+      "value": 353
     },
     {
       "label": "Pulizie",
-      "value": 438
+      "value": 464
     }
   ],
   "correttive": {
-    "total": 190,
+    "total": 207,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 97,
+        "value": 106,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 26
+            "value": 30
           },
           {
             "name": "Allestimenti",
-            "value": 18
+            "value": 20
           },
           {
             "name": "Badge aziendali",
-            "value": 15
+            "value": 17
           },
           {
             "name": "Service Desk IT",
-            "value": 12
+            "value": 13
           },
           {
             "name": "Periferiche IT",
@@ -177,11 +179,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 32,
+        "value": 36,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 31
+            "value": 35
           },
           {
             "name": "Aree esterne",
@@ -191,25 +193,25 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 18,
+        "value": 19,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 18
+            "value": 19
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 16,
+        "value": 19,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 15
+            "value": 16
           },
           {
             "name": "Distr. Automatici",
-            "value": 1
+            "value": 3
           }
         ]
       },
