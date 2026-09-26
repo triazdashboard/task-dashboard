@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-25 03:00",
+  "updated_at": "2026-09-26 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1534,
-    "completed": 1227,
+    "total": 1559,
+    "completed": 1268,
     "sla_on_time_pct": 99,
-    "active": 117,
+    "active": 100,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1116,
-      "active": 109,
+      "completed": 1156,
+      "active": 92,
       "late": 2
     },
     {
@@ -57,7 +57,8 @@
       "09-21",
       "09-22",
       "09-23",
-      "09-24"
+      "09-24",
+      "09-25"
     ],
     "values": [
       44,
@@ -93,7 +94,8 @@
       52,
       39,
       31,
-      28
+      28,
+      41
     ]
   },
   "programmate": [
@@ -111,7 +113,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 35
+      "value": 36
     },
     {
       "label": "Edili",
@@ -123,27 +125,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 248
+      "value": 251
     },
     {
       "label": "Manutenzioni",
-      "value": 385
+      "value": 395
     },
     {
       "label": "Pulizie",
-      "value": 493
+      "value": 500
     }
   ],
   "correttive": {
-    "total": 231,
+    "total": 235,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 116,
+        "value": 118,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 33
+            "value": 34
           },
           {
             "name": "Allestimenti",
@@ -151,7 +153,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Service Desk IT",
@@ -185,14 +187,18 @@
       },
       {
         "name": "Pulizia",
-        "value": 40,
+        "value": 42,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 39
+            "value": 40
           },
           {
             "name": "Aree esterne",
+            "value": 1
+          },
+          {
+            "name": "Serv. igienici",
             "value": 1
           }
         ]
