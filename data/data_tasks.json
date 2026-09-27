@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-26 03:00",
+  "updated_at": "2026-09-27 03:00",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1559,
-    "completed": 1268,
+    "total": 1527,
+    "completed": 1269,
     "sla_on_time_pct": 99,
-    "active": 100,
+    "active": 67,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1156,
-      "active": 92,
+      "completed": 1157,
+      "active": 59,
       "late": 2
     },
     {
@@ -58,7 +58,8 @@
       "09-22",
       "09-23",
       "09-24",
-      "09-25"
+      "09-25",
+      "09-28"
     ],
     "values": [
       44,
@@ -95,7 +96,8 @@
       39,
       31,
       28,
-      41
+      41,
+      1
     ]
   },
   "programmate": [
@@ -112,12 +114,12 @@
       "value": 15
     },
     {
-      "label": "Idraulico",
-      "value": 36
+      "label": "Edili",
+      "value": 27
     },
     {
-      "label": "Edili",
-      "value": 58
+      "label": "Idraulico",
+      "value": 35
     },
     {
       "label": "Climatizzazione",
