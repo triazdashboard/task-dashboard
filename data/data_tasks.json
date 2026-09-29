@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-28 15:02",
+  "updated_at": "2026-09-29 03:01",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1527,
-    "completed": 1269,
+    "total": 1567,
+    "completed": 1310,
     "sla_on_time_pct": 99,
-    "active": 67,
+    "active": 66,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1157,
-      "active": 59,
+      "completed": 1193,
+      "active": 58,
       "late": 2
     },
     {
       "name": "Milano",
-      "completed": 91,
+      "completed": 95,
       "active": 6,
       "late": 0
     }
@@ -96,8 +96,8 @@
       39,
       31,
       28,
-      41,
-      1
+      40,
+      42
     ]
   },
   "programmate": [
@@ -119,7 +119,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 35
+      "value": 36
     },
     {
       "label": "Climatizzazione",
@@ -127,23 +127,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 251
+      "value": 258
     },
     {
       "label": "Manutenzioni",
-      "value": 395
+      "value": 401
     },
     {
       "label": "Pulizie",
-      "value": 500
+      "value": 521
     }
   ],
   "correttive": {
-    "total": 235,
+    "total": 240,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 118,
+        "value": 121,
         "children": [
           {
             "name": "Servizi Altro",
@@ -151,7 +151,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 23
+            "value": 24
           },
           {
             "name": "Badge aziendali",
@@ -163,15 +163,15 @@
           },
           {
             "name": "Periferiche IT",
-            "value": 11
+            "value": 12
+          },
+          {
+            "name": "Facchinaggio",
+            "value": 6
           },
           {
             "name": "Locker",
             "value": 6
-          },
-          {
-            "name": "Facchinaggio",
-            "value": 5
           },
           {
             "name": "Stampanti",
@@ -189,11 +189,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 42,
+        "value": 43,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 40
+            "value": 41
           },
           {
             "name": "Aree esterne",
@@ -207,11 +207,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 22
+            "value": 23
           }
         ]
       },
