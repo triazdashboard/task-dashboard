@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-09-29 03:01",
+  "updated_at": "2026-09-30 03:01",
   "period_label": "Ago - Set 2026",
   "kpi": {
-    "total": 1567,
-    "completed": 1310,
-    "sla_on_time_pct": 99,
-    "active": 66,
-    "late": 2
+    "total": 1591,
+    "completed": 1366,
+    "sla_on_time_pct": 97.1,
+    "active": 33,
+    "late": 10
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1193,
-      "active": 58,
-      "late": 2
+      "completed": 1248,
+      "active": 23,
+      "late": 4
     },
     {
       "name": "Milano",
       "completed": 95,
-      "active": 6,
-      "late": 0
+      "active": 0,
+      "late": 6
     }
   ],
   "trend": {
@@ -59,7 +59,8 @@
       "09-23",
       "09-24",
       "09-25",
-      "09-28"
+      "09-28",
+      "09-29"
     ],
     "values": [
       44,
@@ -97,7 +98,8 @@
       31,
       28,
       40,
-      42
+      43,
+      55
     ]
   },
   "programmate": [
@@ -127,23 +129,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 258
+      "value": 261
     },
     {
       "label": "Manutenzioni",
-      "value": 401
+      "value": 407
     },
     {
       "label": "Pulizie",
-      "value": 521
+      "value": 528
     }
   ],
   "correttive": {
-    "total": 240,
+    "total": 248,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 121,
+        "value": 122,
         "children": [
           {
             "name": "Servizi Altro",
@@ -155,7 +157,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 18
+            "value": 19
           },
           {
             "name": "Service Desk IT",
@@ -189,11 +191,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 43,
+        "value": 46,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 41
+            "value": 44
           },
           {
             "name": "Aree esterne",
@@ -217,7 +219,7 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 22,
+        "value": 23,
         "children": [
           {
             "name": "Catering/Vend.",
@@ -225,21 +227,21 @@
           },
           {
             "name": "Distr. Automatici",
-            "value": 3
+            "value": 4
           }
         ]
       },
       {
         "name": "Manut. Edili",
-        "value": 19,
+        "value": 22,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 15
+            "value": 17
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 4
+            "value": 5
           }
         ]
       },
