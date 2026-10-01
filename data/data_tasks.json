@@ -1,45 +1,29 @@
 {
-  "updated_at": "2026-09-30 03:01",
-  "period_label": "Ago - Set 2026",
+  "updated_at": "2026-10-01 03:01",
+  "period_label": "Set 2026",
   "kpi": {
-    "total": 1591,
-    "completed": 1366,
-    "sla_on_time_pct": 97.1,
-    "active": 33,
-    "late": 10
+    "total": 917,
+    "completed": 768,
+    "sla_on_time_pct": 96.1,
+    "active": 35,
+    "late": 8
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1248,
-      "active": 23,
-      "late": 4
+      "completed": 687,
+      "active": 24,
+      "late": 2
     },
     {
       "name": "Milano",
-      "completed": 95,
-      "active": 0,
+      "completed": 75,
+      "active": 3,
       "late": 6
     }
   ],
   "trend": {
     "dates": [
-      "08-03",
-      "08-04",
-      "08-05",
-      "08-06",
-      "08-07",
-      "08-17",
-      "08-18",
-      "08-19",
-      "08-20",
-      "08-21",
-      "08-24",
-      "08-25",
-      "08-26",
-      "08-27",
-      "08-28",
-      "08-31",
       "09-01",
       "09-02",
       "09-03",
@@ -60,120 +44,98 @@
       "09-24",
       "09-25",
       "09-28",
-      "09-29"
+      "09-29",
+      "09-30"
     ],
     "values": [
-      44,
-      36,
+      25,
+      27,
+      28,
+      26,
       40,
       33,
-      47,
-      59,
-      48,
       34,
-      25,
-      34,
-      29,
-      22,
-      37,
-      28,
-      22,
-      56,
-      32,
-      27,
-      30,
-      32,
-      50,
-      33,
-      35,
       36,
-      38,
+      37,
       51,
       25,
       31,
       33,
       30,
-      52,
+      51,
       39,
       31,
       28,
-      40,
+      39,
       43,
-      55
+      55,
+      24
     ]
   },
   "programmate": [
     {
-      "label": "Sicurezza - Preventive",
-      "value": 1
+      "label": "Antincendio",
+      "value": 4
     },
     {
       "label": "Meter Reading",
-      "value": 8
+      "value": 4
     },
     {
-      "label": "Antincendio",
+      "label": "Climatizzazione",
+      "value": 14
+    },
+    {
+      "label": "Idraulico",
       "value": 15
     },
     {
       "label": "Edili",
-      "value": 27
-    },
-    {
-      "label": "Idraulico",
-      "value": 36
-    },
-    {
-      "label": "Climatizzazione",
-      "value": 60
+      "value": 26
     },
     {
       "label": "Elettrico",
-      "value": 261
+      "value": 135
     },
     {
       "label": "Manutenzioni",
-      "value": 407
+      "value": 237
     },
     {
       "label": "Pulizie",
-      "value": 528
+      "value": 291
     }
   ],
   "correttive": {
-    "total": 248,
+    "total": 191,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 122,
+        "value": 88,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 34
+            "value": 29
           },
           {
             "name": "Allestimenti",
-            "value": 24
-          },
-          {
-            "name": "Badge aziendali",
             "value": 19
           },
           {
             "name": "Service Desk IT",
-            "value": 14
+            "value": 13
           },
           {
-            "name": "Periferiche IT",
-            "value": 12
+            "name": "Badge aziendali",
+            "value": 7
           },
           {
             "name": "Facchinaggio",
             "value": 6
           },
           {
-            "name": "Locker",
-            "value": 6
+            "name": "Periferiche IT",
+            "value": 5
           },
           {
             "name": "Stampanti",
@@ -186,16 +148,20 @@
           {
             "name": "Mouse/Tastiera",
             "value": 2
+          },
+          {
+            "name": "Locker",
+            "value": 2
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 46,
+        "value": 38,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 44
+            "value": 36
           },
           {
             "name": "Aree esterne",
@@ -208,36 +174,12 @@
         ]
       },
       {
-        "name": "Gest. Spedizioni",
-        "value": 23,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 23
-          }
-        ]
-      },
-      {
-        "name": "Catering/Vending",
-        "value": 23,
-        "children": [
-          {
-            "name": "Catering/Vend.",
-            "value": 19
-          },
-          {
-            "name": "Distr. Automatici",
-            "value": 4
-          }
-        ]
-      },
-      {
         "name": "Manut. Edili",
-        "value": 22,
+        "value": 21,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 17
+            "value": 16
           },
           {
             "name": "Riparazione Arredi/Infissi",
@@ -246,22 +188,36 @@
         ]
       },
       {
-        "name": "Elettrico/Dati",
-        "value": 5,
+        "name": "Catering/Vending",
+        "value": 19,
         "children": [
           {
-            "name": "Elettrico/Dati - Altro",
-            "value": 5
+            "name": "Catering/Vend.",
+            "value": 16
+          },
+          {
+            "name": "Distr. Automatici",
+            "value": 3
           }
         ]
       },
       {
-        "name": "Segnalazione",
-        "value": 3,
+        "name": "Gest. Spedizioni",
+        "value": 18,
         "children": [
           {
-            "name": "Altro - S",
-            "value": 3
+            "name": "Sped./Ric. IT",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "name": "Elettrico/Dati",
+        "value": 2,
+        "children": [
+          {
+            "name": "Elettrico/Dati - Altro",
+            "value": 2
           }
         ]
       },
@@ -291,6 +247,16 @@
         "children": [
           {
             "name": "Manut. meccan.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Segnalazione",
+        "value": 1,
+        "children": [
+          {
+            "name": "Altro - S",
             "value": 1
           }
         ]
