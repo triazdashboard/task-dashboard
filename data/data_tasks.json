@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-10-01 03:01",
-  "period_label": "Set 2026",
+  "updated_at": "2026-10-02 03:01",
+  "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 917,
-    "completed": 768,
-    "sla_on_time_pct": 96.1,
-    "active": 35,
-    "late": 8
+    "total": 996,
+    "completed": 794,
+    "sla_on_time_pct": 96.2,
+    "active": 86,
+    "late": 9
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 687,
-      "active": 24,
-      "late": 2
+      "completed": 709,
+      "active": 73,
+      "late": 3
     },
     {
       "name": "Milano",
-      "completed": 75,
-      "active": 3,
+      "completed": 78,
+      "active": 0,
       "late": 6
     }
   ],
@@ -45,7 +45,8 @@
       "09-25",
       "09-28",
       "09-29",
-      "09-30"
+      "09-30",
+      "10-01"
     ],
     "values": [
       25,
@@ -69,45 +70,46 @@
       39,
       43,
       55,
-      24
+      24,
+      26
     ]
   },
   "programmate": [
     {
       "label": "Antincendio",
-      "value": 4
+      "value": 7
     },
     {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
     },
     {
       "label": "Climatizzazione",
-      "value": 14
+      "value": 22
     },
     {
       "label": "Idraulico",
-      "value": 15
+      "value": 23
     },
     {
       "label": "Edili",
-      "value": 26
+      "value": 27
     },
     {
       "label": "Elettrico",
-      "value": 135
+      "value": 149
     },
     {
       "label": "Manutenzioni",
-      "value": 237
+      "value": 259
     },
     {
       "label": "Pulizie",
-      "value": 291
+      "value": 308
     }
   ],
   "correttive": {
-    "total": 191,
+    "total": 193,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -157,11 +159,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 38,
+        "value": 39,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 36
+            "value": 37
           },
           {
             "name": "Aree esterne",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 21,
+        "value": 22,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 16
+            "value": 17
           },
           {
             "name": "Riparazione Arredi/Infissi",
