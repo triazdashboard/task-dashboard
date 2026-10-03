@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-02 17:23",
+  "updated_at": "2026-10-03 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 996,
-    "completed": 794,
-    "sla_on_time_pct": 96.2,
-    "active": 86,
+    "total": 1019,
+    "completed": 825,
+    "sla_on_time_pct": 96.4,
+    "active": 80,
     "late": 9
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 709,
-      "active": 73,
+      "completed": 736,
+      "active": 67,
       "late": 3
     },
     {
       "name": "Milano",
-      "completed": 78,
+      "completed": 81,
       "active": 0,
       "late": 6
     }
@@ -46,7 +46,8 @@
       "09-28",
       "09-29",
       "09-30",
-      "10-01"
+      "10-01",
+      "10-02"
     ],
     "values": [
       25,
@@ -71,7 +72,8 @@
       43,
       55,
       24,
-      26
+      26,
+      31
     ]
   },
   "programmate": [
@@ -89,7 +91,7 @@
     },
     {
       "label": "Idraulico",
-      "value": 23
+      "value": 24
     },
     {
       "label": "Edili",
@@ -97,35 +99,35 @@
     },
     {
       "label": "Elettrico",
-      "value": 149
+      "value": 152
     },
     {
       "label": "Manutenzioni",
-      "value": 259
+      "value": 265
     },
     {
       "label": "Pulizie",
-      "value": 308
+      "value": 315
     }
   ],
   "correttive": {
-    "total": 193,
+    "total": 199,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 88,
+        "value": 92,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 29
+            "value": 30
           },
           {
             "name": "Allestimenti",
-            "value": 19
+            "value": 20
           },
           {
             "name": "Service Desk IT",
-            "value": 13
+            "value": 14
           },
           {
             "name": "Badge aziendali",
@@ -140,15 +142,15 @@
             "value": 5
           },
           {
+            "name": "Mouse/Tastiera",
+            "value": 3
+          },
+          {
             "name": "Stampanti",
             "value": 3
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
-            "value": 2
-          },
-          {
-            "name": "Mouse/Tastiera",
             "value": 2
           },
           {
@@ -190,6 +192,16 @@
         ]
       },
       {
+        "name": "Gest. Spedizioni",
+        "value": 19,
+        "children": [
+          {
+            "name": "Sped./Ric. IT",
+            "value": 19
+          }
+        ]
+      },
+      {
         "name": "Catering/Vending",
         "value": 19,
         "children": [
@@ -200,16 +212,6 @@
           {
             "name": "Distr. Automatici",
             "value": 3
-          }
-        ]
-      },
-      {
-        "name": "Gest. Spedizioni",
-        "value": 18,
-        "children": [
-          {
-            "name": "Sped./Ric. IT",
-            "value": 18
           }
         ]
       },
@@ -259,6 +261,16 @@
         "children": [
           {
             "name": "Altro - S",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Ass. Ut. Tririga",
+        "value": 1,
+        "children": [
+          {
+            "name": "Altro",
             "value": 1
           }
         ]
