@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allianz Trade · Dashboard Correttive</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard-theme.css">
+<style>
+.content{display:grid;grid-template-columns:148px minmax(0,1fr);gap:8px;min-height:0}
+.card-sede{background:var(--panel);border:1px solid var(--panel-border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden;min-height:0}
+.sede-body{flex:1;min-height:0;padding:8px}
+.main-area{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-height:0}
+.right-col{display:grid;grid-template-rows:1fr 1fr;gap:8px;min-height:0}
+.card{display:flex;flex-direction:column;min-height:0}
+.card-body{flex:1;min-height:0;z-index:1}
+.chart{width:100%;height:100%}
+.kpi.c .kpi-value{color:var(--cyan)}.kpi.g .kpi-value{color:var(--green)}.kpi.y .kpi-value{color:var(--yellow)}.kpi.r .kpi-value{color:var(--red)}
+.error{display:none;position:absolute;top:86px;left:12%;right:12%;padding:20px;background:#241629;border:1px solid var(--red);border-radius:12px;z-index:20;color:var(--text);text-align:center}
+.error button{background:var(--cyan);padding:7px 14px;border:0;border-radius:7px;cursor:pointer;margin-top:12px}
+@media(max-width:900px){html,body{height:auto;min-height:100%;overflow:auto}body{height:auto;min-height:100vh;grid-template-rows:68px auto auto}.content{grid-template-columns:1fr}.card-sede{height:240px}.main-area{grid-template-columns:1fr}.main-area>.card{height:340px}.right-col{grid-template-rows:300px 320px}.t-footer{min-height:90px;flex-wrap:wrap;padding:10px}.t-kpis{flex-wrap:wrap}.t-sub{white-space:normal}}
+</style>
+</head>
+<body>
+<header class="t-header">
+ <div class="t-brand"><div class="t-titles"><div class="t-title">Allianz Trade - Statistiche Correttive</div><div class="t-sub" id="tSub">Manutenzioni e servizi su richiesta · Caricamento…</div></div></div>
+ <div class="t-clock"><div class="t-clock-time" id="tTime">--:--</div><div class="t-clock-date" id="tDate">--</div></div>
+</header>
+<main class="content">
+ <section class="card-sede"><div class="card-head"><span class="card-title">Per sede</span></div><div class="sede-body"><div class="chart" id="ch-sede"></div></div><div class="legend" style="flex-direction:column;align-items:flex-start;gap:6px;padding:8px 13px"><div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span>Concluse</div><div class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span>Attive</div></div></section>
+ <div class="main-area">
+  <section class="card"><div class="card-head"><span class="card-title">Interventi correttivi</span><div class="card-meta" id="meta-corr"></div></div><div class="card-body"><div class="chart" id="ch-corr"></div></div></section>
+  <div class="right-col">
+   <section class="card"><div class="card-head"><span class="card-title">Completamenti giornalieri</span><div class="card-meta" id="meta-trend"></div></div><div class="card-body"><div class="chart" id="ch-trend"></div></div></section>
+   <section class="card"><div class="card-head"><span class="card-title">Correttive ancora aperte</span><div class="card-meta" id="meta-open"></div></div><div class="card-body"><div class="chart" id="ch-open"></div></div></section>
+  </div>
+ </div>
+</main>
+<footer class="t-footer"><div class="t-update" id="tUpdate">Caricamento dati da correttive_data.json…</div><div class="t-kpis">
+ <div class="kpi c"><span class="kpi-value" id="kTotal">—</span><span class="kpi-label">Task totali</span></div>
+ <div class="kpi g"><span class="kpi-value" id="kDone">—</span><span class="kpi-label">Concluse</span></div>
+ <div class="kpi g"><span class="kpi-value" id="kSla">—</span><span class="kpi-label">SLA puntuale</span></div>
+ <div class="kpi y"><span class="kpi-value" id="kOpen">—</span><span class="kpi-label">Da risolvere</span></div>
+</div></footer>
+<div id="error" class="error" role="alert"><div id="errorText"></div><button onclick="location.reload()">Riprova</button></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5"></script>
+<script>
+const CY='#45d4ff',GR='#33d17a',YL='#f6c344',RE='#ff5f6d',TX='#f4f8ff',MU='#b2c3de',GD='rgba(255,255,255,.08)',PN='#081224';
+const el=id=>document.getElementById(id);
+const nf=new Intl.NumberFormat('it-IT');
+const fmtDate=(s,withTime=false)=>{if(!s)return 'n.d.';const d=new Date(s);return isNaN(d)?s:d.toLocaleString('it-IT',withTime?{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}:{day:'2-digit',month:'2-digit',year:'numeric'})};
+const badge=(label,value)=>'<span class="badge">'+label+' <strong>'+nf.format(value)+'</strong></span>';
+const palette=['#a78bfa','#f6c344','#45d4ff','#94a3b8','#ff9f43','#33d17a','#60a5fa','#ff5f6d','#34d399','#c084fc','#f472b6'];
+const opts={animationDuration:600,backgroundColor:'transparent',tooltip:{backgroundColor:PN,borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:12}}};
+const charts={};
+function chart(id,option){if(!charts[id])charts[id]=echarts.init(el(id));charts[id].setOption({...opts,...option},true)}
+window.addEventListener('resize',()=>Object.values(charts).forEach(c=>c.resize()));
+function clock(){const d=new Date();el('tTime').textContent=d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});el('tDate').textContent=d.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}clock();setInterval(clock,1000);
+function render(d){
+ const k=d.kpi||{};const tasks=Array.isArray(d.tasks)?d.tasks:[];const meta=d.meta||{};
+ el('tSub').textContent='Manutenzioni e servizi su richiesta · '+fmtDate(meta.period_start)+' – '+fmtDate(meta.period_end);
+ el('tUpdate').textContent='Estrazione dati: '+fmtDate(meta.exported_at||meta.as_of,true)+' · Fotografia dell’export';
+ el('kTotal').textContent=nf.format(k.total??tasks.length);el('kDone').textContent=nf.format(k.done??0);
+ el('kOpen').textContent=nf.format(k.unresolved??0);el('kSla').textContent=k.sla_pct==null?'n.d.':Number(k.sla_pct).toFixed(1).replace('.',',')+'%';
+ el('meta-corr').innerHTML=badge('Totale',k.total??tasks.length);
+ const buildings=(d.by_building||[]).filter(b=>b.total>0).sort((a,b)=>b.total-a.total);
+ const shorten=n=>n.replace(/^EH /,'').replace(/ Roma [AB]$/,' Roma').replace(/^Roma Roma$/,'Roma');
+ chart('ch-sede',{tooltip:{...opts.tooltip,trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:12,right:10,top:18,bottom:45,containLabel:true},xAxis:{type:'category',data:buildings.map(b=>shorten(b.name)),axisLabel:{color:TX,rotate:55,fontSize:10,fontWeight:600},axisLine:{show:false},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{color:MU,fontSize:9},splitLine:{lineStyle:{color:GD}}},series:[{name:'Concluse',type:'bar',stack:'sede',barWidth:'55%',data:buildings.map(b=>b.done||0),itemStyle:{color:GR},label:{show:true,position:'inside',color:PN,fontWeight:700,formatter:p=>p.value>=8?p.value:''}},{name:'Attive',type:'bar',stack:'sede',data:buildings.map(b=>b.unresolved||0),itemStyle:{color:CY,borderRadius:[3,3,0,0]},label:{show:true,position:'top',color:CY,formatter:p=>p.value?p.value:''}}]});
+ const cats=(d.by_category||[]).filter(c=>c.total>0).sort((a,b)=>b.total-a.total);
+ chart('ch-corr',{tooltip:{...opts.tooltip,formatter:p=>p.name+': <b>'+nf.format(p.value)+'</b>'},series:[{type:'pie',radius:['24%','78%'],center:['50%','50%'],minAngle:1,avoidLabelOverlap:true,label:{show:true,position:'inside',color:TX,fontSize:10,fontWeight:600,formatter:p=>p.percent>=5?p.name:''},labelLine:{show:false},itemStyle:{borderColor:'#091426',borderWidth:2},data:cats.map((c,i)=>({name:c.name,value:c.total,itemStyle:{color:palette[i%palette.length]}}))}]});
+ const completed=tasks.filter(t=>['completed','closed'].includes(String(t.status||'').toLowerCase())&&t.actual_end);
+ const start=meta.period_start,end=meta.period_end;
+ const counts={};completed.forEach(t=>{const date=String(t.actual_end).slice(0,10);if((!start||date>=start)&&(!end||date<=end))counts[date]=(counts[date]||0)+1});
+ let keys=Object.keys(counts).sort();
+ // Mostra i giorni di calendario del periodo, anche senza completamenti.
+ if(start&&end){const a=new Date(start+'T12:00:00Z'),b=new Date(end+'T12:00:00Z');if(!isNaN(a)&&!isNaN(b)&&b-a<=1000*86400*100){keys=[];for(let x=new Date(a);x<=b;x.setUTCDate(x.getUTCDate()+1))keys.push(x.toISOString().slice(0,10))}}
+ const vals=keys.map(x=>counts[x]||0),peak=Math.max(0,...vals),avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
+ el('meta-trend').innerHTML=badge('Picco',peak)+badge('Media',Math.round(avg))+badge('Giorni',keys.length);
+ chart('ch-trend',{tooltip:{...opts.tooltip,trigger:'axis'},grid:{left:40,right:36,top:17,bottom:25},xAxis:{type:'category',boundaryGap:false,data:keys.map(x=>x.slice(8,10)+'/'+x.slice(5,7)),axisLine:{lineStyle:{color:GD}},axisTick:{show:false},axisLabel:{color:MU,fontSize:10,interval:Math.max(0,Math.floor(keys.length/7)-1)}},yAxis:{type:'value',min:0,axisLabel:{color:MU,fontSize:9},splitLine:{lineStyle:{color:GD}}},series:[{name:'Concluse',type:'line',data:vals,smooth:.28,symbol:'circle',symbolSize:4,lineStyle:{color:CY,width:2.5},itemStyle:{color:CY},areaStyle:{color:'rgba(69,212,255,.10)'},markPoint:peak?[{name:'Picco',coord:[keys.map(x=>counts[x]||0).indexOf(peak),peak],value:peak,itemStyle:{color:YL},label:{color:PN},symbolSize:32}]:[],markLine:keys.length?[{yAxis:avg,lineStyle:{color:YL,type:'dashed',opacity:.6},label:{formatter:'Media: '+avg.toFixed(1),color:YL}}]:[]} ]});
+ const openCats=cats.filter(c=>c.unresolved>0).sort((a,b)=>b.unresolved-a.unresolved).slice(0,8);
+ el('meta-open').innerHTML=badge('Residue',k.unresolved||0)+badge('Oltre SLA',k.active_late||0);
+ const labels=openCats.map(c=>c.name.length>23?c.name.slice(0,21)+'…':c.name).reverse();
+ chart('ch-open',{tooltip:{...opts.tooltip,trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:16,right:45,top:8,bottom:10,containLabel:true},xAxis:{type:'value',show:false},yAxis:{type:'category',data:labels,axisLabel:{color:MU,fontSize:11},axisLine:{show:false},axisTick:{show:false}},series:[{type:'bar',barWidth:17,showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:5},data:openCats.reverse().map(c=>({value:c.unresolved,itemStyle:{color:CY,borderRadius:[0,4,4,0]}})),label:{show:true,position:'right',color:TX,fontWeight:700}}],graphic:openCats.length?[]:[{type:'text',left:'center',top:'middle',style:{text:'Nessuna richiesta aperta',fill:GR,fontSize:16}}]});
+}
+async function load(){try{if(typeof echarts==='undefined')throw Error('Libreria grafici non disponibile');const r=await fetch('correttive_data.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status+' durante il caricamento del JSON');const d=await r.json();if(!Array.isArray(d.tasks)||!d.kpi)throw Error('Formato correttive_data.json non riconosciuto');render(d)}catch(e){console.error(e);el('errorText').textContent='Impossibile caricare la dashboard: '+e.message;el('error').style.display='block';el('tUpdate').textContent='Errore di caricamento dati'}}
+load();setInterval(load,5*60*1000);
+</script>
+</body></html>
