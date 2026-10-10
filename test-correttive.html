@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allianz Trade · Dashboard Correttive</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard-theme.css">
+<style>
+/* ── CONTENT ── */
+.content{display:grid;grid-template-columns:148px 1fr;gap:8px;min-height:0;}
+
+/* ── CARD SEDE ── */
+.card-sede{
+  background:var(--panel);border:1px solid var(--panel-border);border-radius:var(--radius);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;overflow:hidden;position:relative;
+}
+.card-sede::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at top right,rgba(69,212,255,.05) 0%,transparent 50%);
+  pointer-events:none;z-index:0;}
+.sede-body{flex:1;position:relative;z-index:1;overflow:hidden;padding:6px 8px 4px;}
+.sede-cw{width:100%;height:100%;}
+
+/* ── MAIN AREA ── */
+.main-area{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-height:0;}
+.right-col{display:grid;grid-template-rows:1fr 1fr;gap:8px;min-height:0;}
+
+/* ── GENERIC CARD ── */
+.card{ display:flex;flex-direction:column;min-height:0; }
+
+/* ── CARD BODY ── */
+.card-body{flex:1;position:relative;z-index:1;overflow:hidden;min-height:0;}
+.chart{width:100%;height:100%;}
+
+/* ── KPI colors ── */
+.kpi.c .kpi-value{color:var(--cyan);}
+.kpi.g .kpi-value{color:var(--green);}
+.kpi.y .kpi-value{color:var(--yellow);}
+.kpi.r .kpi-value{color:var(--red);}
+
+/* Responsive layout e messaggio di errore specifici delle correttive */
+.error{display:none;position:absolute;top:86px;left:12%;right:12%;padding:20px;background:#241629;border:1px solid var(--red);border-radius:12px;z-index:20;color:var(--text);text-align:center}
+.error button{background:var(--cyan);padding:7px 14px;border:0;border-radius:7px;cursor:pointer;margin-top:12px}
+@media(max-width:900px){html,body{height:auto;min-height:100%;overflow:auto}body{height:auto;min-height:100vh;grid-template-rows:68px auto auto}.content{grid-template-columns:1fr}.card-sede{height:240px}.main-area{grid-template-columns:1fr}.main-area>.card{height:340px}.right-col{grid-template-rows:300px 320px}.t-footer{min-height:90px;flex-wrap:wrap;padding:10px}.t-kpis{flex-wrap:wrap}.t-sub{white-space:normal}}
+</style>
+</head>
+<body>
+<header class="t-header">
+ <div class="t-brand"><div class="t-dot"></div><div class="t-titles"><div class="t-title">Allianz Trade - Statistiche Manutenzioni Straordinarie</div><div class="t-sub" id="tSub">Manutenzioni e servizi su richiesta · Caricamento…</div></div></div>
+ <div class="t-clock"><div class="t-clock-time" id="tTime">--:--</div><div class="t-clock-date" id="tDate">--</div></div>
+</header>
+<main class="content">
+ <section class="card-sede"><div class="card-head" style="height:34px;padding:0 10px"><span class="card-title">Per Sede</span></div><div class="sede-body"><div class="sede-cw" id="ch-sede"></div></div><div class="legend" style="flex-direction:column;align-items:flex-start;gap:6px;padding:6px 14px 10px"><div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span>Completate</div><div class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span>Attive</div></div></section>
+ <div class="main-area">
+  <section class="card"><div class="card-head"><span class="card-title">CATEGORIE</span><div class="card-meta" id="meta-corr"></div></div><div class="card-body"><div class="chart" id="ch-corr"></div></div></section>
+  <div class="right-col">
+   <section class="card"><div class="card-head"><span class="card-title">Completamenti Giornalieri</span><div class="card-meta" id="meta-trend"></div></div><div class="card-body"><div class="chart" id="ch-trend"></div></div></section>
+   <section class="card"><div class="card-head"><span class="card-title">INTERVENTI NELL'ULTIMO MESE</span><div class="card-meta" id="meta-open"></div></div><div class="card-body"><div class="chart" id="ch-open"></div></div></section>
+  </div>
+ </div>
+</main>
+<footer class="t-footer"><div class="t-update" id="tUpdate">Caricamento dati da correttive_data.json…</div><div class="t-kpis">
+ <div class="kpi c"><span class="kpi-value" id="kTotal">—</span><span class="kpi-label">Task totali</span></div>
+ <div class="kpi g"><span class="kpi-value" id="kDone">—</span><span class="kpi-label">Concluse</span></div>
+ <div class="kpi g"><span class="kpi-value" id="kSla">—</span><span class="kpi-label">SLA puntuale</span></div>
+ <div class="kpi y"><span class="kpi-value" id="kOpen">—</span><span class="kpi-label">Da risolvere</span></div>
+</div></footer>
+<div id="error" class="error" role="alert"><div id="errorText"></div><button onclick="location.reload()">Riprova</button></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5"></script>
+<script>
+const CY='#45d4ff',GR='#33d17a',YL='#f6c344',RE='#ff5f6d',TX='#f4f8ff',MU='#b2c3de',GD='rgba(255,255,255,.08)',PN='#081224';
+const el=id=>document.getElementById(id);
+const nf=new Intl.NumberFormat('it-IT');
+const fmtDate=(s,withTime=false)=>{if(!s)return 'n.d.';const d=new Date(s);return isNaN(d)?s:d.toLocaleString('it-IT',withTime?{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}:{day:'2-digit',month:'2-digit',year:'numeric'})};
+const badge=(label,value)=>'<span class="badge">'+label+' <strong>'+nf.format(value)+'</strong></span>';
+const palette=['#a78bfa','#f6c344','#45d4ff','#94a3b8','#ff9f43','#33d17a','#60a5fa','#ff5f6d','#34d399','#c084fc','#f472b6'];
+const opts={animationDuration:600,backgroundColor:'transparent',tooltip:{backgroundColor:PN,borderColor:'rgba(69,212,255,.3)',textStyle:{color:TX,fontSize:12}}};
+const charts={};
+function chart(id,option){if(!charts[id])charts[id]=echarts.init(el(id));charts[id].setOption({...opts,...option},true)}
+window.addEventListener('resize',()=>Object.values(charts).forEach(c=>c.resize()));
+function clock(){const d=new Date();el('tTime').textContent=d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});el('tDate').textContent=d.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}clock();setInterval(clock,1000);
+function render(d){
+ const k=d.kpi||{};const tasks=Array.isArray(d.tasks)?d.tasks:[];const meta=d.meta||{};
+ el('tSub').textContent='Manutenzioni e servizi su richiesta · '+fmtDate(meta.period_start)+' – '+fmtDate(meta.period_end);
+ el('tUpdate').textContent='Estrazione dati: '+fmtDate(meta.exported_at||meta.as_of,true)+' · Fotografia dell’export';
+ el('kTotal').textContent=nf.format(k.total??tasks.length);el('kDone').textContent=nf.format(k.done??0);
+ el('kOpen').textContent=nf.format(k.unresolved??0);el('kSla').textContent=k.sla_pct==null?'n.d.':Number(k.sla_pct).toFixed(1).replace('.',',')+'%';
+ el('meta-corr').innerHTML=badge('Totale',k.total??tasks.length);
+ const buildings=(d.by_building||[]).filter(b=>b.total>0).sort((a,b)=>b.total-a.total);
+ const shorten=n=>n.replace(/^EH /,'').replace(/ Roma [AB]$/,' Roma').replace(/^Roma Roma$/,'Roma');
+ chart('ch-sede',{tooltip:{...opts.tooltip,trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:12,right:10,top:18,bottom:45,containLabel:true},xAxis:{type:'category',data:buildings.map(b=>shorten(b.name)),axisLabel:{color:TX,rotate:55,fontSize:10,fontWeight:600},axisLine:{show:false},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{color:MU,fontSize:9},splitLine:{lineStyle:{color:GD}}},series:[{name:'Concluse',type:'bar',stack:'sede',barWidth:'55%',data:buildings.map(b=>b.done||0),itemStyle:{color:GR},label:{show:true,position:'inside',color:PN,fontWeight:700,formatter:p=>p.value>=8?p.value:''}},{name:'Attive',type:'bar',stack:'sede',data:buildings.map(b=>b.unresolved||0),itemStyle:{color:CY,borderRadius:[3,3,0,0]},label:{show:true,position:'top',color:CY,formatter:p=>p.value?p.value:''}}]});
+ const cats=(d.by_category||[]).filter(c=>c.total>0).sort((a,b)=>b.total-a.total);
+ chart('ch-corr',{tooltip:{...opts.tooltip,formatter:p=>p.name+': '+p.value},series:[{type:'sunburst',radius:['18%','86%'],center:['50%','50%'],sort:null,nodeClick:false,data:cats.map((c,i)=>{const names={'Gestione Spedizioni':'Spedizioni','Manutenzioni Edili':'Edilizia','Catering/Vending':'Catering','Assistenza Utente Tririga':'Tririga Utenza'};const colors=['rgba(120,90,210,.42)','rgba(165,128,15,.42)','rgba(80,100,128,.42)','rgba(185,80,15,.42)','rgba(20,140,170,.42)'];const colorByName={'Servizi Ufficio':colors[0],'Pulizia':colors[1],'Manutenzioni Edili':colors[2],'Catering/Vending':colors[3],'Gestione Spedizioni':colors[4]};return{name:names[c.name]||c.name,value:c.total,itemStyle:{color:colorByName[c.name]||'rgba(90,120,155,.42)',borderColor:'rgba(170,195,225,.32)',borderWidth:1.5}}}),levels:[{},{r0:'20%',r:'84%',label:{rotate:'radial',fontSize:10,fontWeight:600,color:TX,minAngle:10},itemStyle:{borderWidth:2,borderColor:'rgba(6,16,30,.7)'}}]}]});
+ const completed=tasks.filter(t=>['completed','closed'].includes(String(t.status||'').toLowerCase())&&t.actual_end);
+ const start=meta.period_start,end=meta.period_end;
+ const counts={};completed.forEach(t=>{const date=String(t.actual_end).slice(0,10);if((!start||date>=start)&&(!end||date<=end))counts[date]=(counts[date]||0)+1});
+ const keys=Object.keys(counts).filter(x=>counts[x]>0).sort();
+ const vals=keys.map(x=>counts[x]);
+ const peak=Math.max(0,...vals),avg=vals.length?vals.reduce((sum,v)=>sum+v,0)/vals.length:0;
+ el('meta-trend').innerHTML=badge('Picco',peak)+badge('Media',Math.round(avg))+badge('Giorni',keys.length);
+ chart('ch-trend',{tooltip:{...opts.tooltip,trigger:'axis'},grid:{left:34,right:72,top:12,bottom:28},
+ xAxis:{type:'category',data:keys.map(x=>x.slice(8,10)+'/'+x.slice(5,7)),axisLine:{lineStyle:{color:GD}},axisTick:{show:false},axisLabel:{color:MU,fontSize:9,interval:Math.floor(keys.length/8)}},
+ yAxis:{type:'value',min:0,splitLine:{lineStyle:{color:GD}},axisLabel:{color:MU,fontSize:9}},
+ series:[{type:'line',data:vals,smooth:0.38,symbol:'circle',symbolSize:4,
+ lineStyle:{width:2.5,color:CY},itemStyle:{color:CY,borderColor:'#06101e',borderWidth:2},
+ areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(69,212,255,.28)'},{offset:.65,color:'rgba(69,212,255,.05)'},{offset:1,color:'rgba(69,212,255,0)'}]}},
+ markPoint:peak?{data:[{type:'max',name:'Picco'}],label:{color:'#06101e',fontSize:11,fontWeight:700},itemStyle:{color:YL},symbolSize:36}:undefined,
+ markLine:keys.length?{silent:true,symbol:'none',data:[{type:'average',lineStyle:{color:'rgba(246,195,68,.45)',type:'dashed',width:1.5},label:{color:YL,fontSize:9,formatter:'Media: {c}',position:'end'}}]}:undefined}]});
+ const display={'Gestione Spedizioni':'Spedizioni','Manutenzioni Edili':'Edilizia','Catering/Vending':'Catering','Assistenza Utente Tririga':'Tririga Utenza','Condizionamento':'Climatizzazione'};
+ const bars=cats.slice().reverse(),max=Math.max(1,...cats.map(c=>c.total));
+ el('meta-open').innerHTML=badge('Correttive',k.total??tasks.length);
+ chart('ch-open',{tooltip:{...opts.tooltip,trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:20,right:50,top:6,bottom:6,containLabel:true},
+ xAxis:{type:'value',show:false},yAxis:{type:'category',data:bars.map(c=>display[c.name]||c.name),axisLine:{show:false},axisTick:{show:false},axisLabel:{color:MU,fontSize:10,fontWeight:500,align:'right',margin:12}},
+ series:[{type:'bar',barWidth:12,showBackground:true,backgroundStyle:{color:'rgba(255,255,255,.04)',borderRadius:[0,5,5,0]},
+ data:bars.map(c=>{const t=c.total/max;return{value:c.total,itemStyle:{color:'rgba('+Math.round(8+t*61)+','+Math.round(80+t*132)+','+Math.round(110+t*145)+',.9)',borderRadius:[0,5,5,0]}}}),label:{show:true,position:'right',color:TX,fontSize:12,fontWeight:700}}]});
+
+}
+async function load(){try{if(typeof echarts==='undefined')throw Error('Libreria grafici non disponibile');const r=await fetch('correttive_data.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status+' durante il caricamento del JSON');const d=await r.json();if(!Array.isArray(d.tasks)||!d.kpi)throw Error('Formato correttive_data.json non riconosciuto');render(d)}catch(e){console.error(e);el('errorText').textContent='Impossibile caricare la dashboard: '+e.message;el('error').style.display='block';el('tUpdate').textContent='Errore di caricamento dati'}}
+load();setInterval(load,5*60*1000);
+</script>
+</body></html>
