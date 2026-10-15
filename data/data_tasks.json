@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-14 04:56",
+  "updated_at": "2026-10-15 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1237,
-    "completed": 1049,
-    "sla_on_time_pct": 93.6,
+    "total": 1261,
+    "completed": 1073,
+    "sla_on_time_pct": 93.8,
     "active": 74,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 923,
+      "completed": 946,
       "active": 68,
       "late": 2
     },
@@ -54,7 +54,8 @@
       "10-08",
       "10-09",
       "10-12",
-      "10-13"
+      "10-13",
+      "10-14"
     ],
     "values": [
       25,
@@ -87,7 +88,8 @@
       20,
       46,
       51,
-      43
+      43,
+      24
     ]
   },
   "programmate": [
@@ -113,27 +115,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 181
+      "value": 184
     },
     {
       "label": "Manutenzioni",
-      "value": 309
+      "value": 315
     },
     {
       "label": "Pulizie",
-      "value": 393
+      "value": 400
     }
   ],
   "correttive": {
-    "total": 263,
+    "total": 271,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 112,
+        "value": 116,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 33
+            "value": 35
           },
           {
             "name": "Allestimenti",
@@ -145,7 +147,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Facchinaggio",
@@ -157,7 +159,7 @@
           },
           {
             "name": "Mouse/Tastiera",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Stampanti",
@@ -175,11 +177,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 51,
+        "value": 52,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 48
+            "value": 49
           },
           {
             "name": "Aree esterne",
@@ -197,11 +199,11 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 31,
+        "value": 33,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 21
+            "value": 23
           },
           {
             "name": "Riparazione Arredi/Infissi",
@@ -215,7 +217,7 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 26,
+        "value": 27,
         "children": [
           {
             "name": "Catering/Vend.",
@@ -223,7 +225,7 @@
           },
           {
             "name": "Distr. Automatici",
-            "value": 4
+            "value": 5
           }
         ]
       },
