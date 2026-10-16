@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-15 03:01",
+  "updated_at": "2026-10-16 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1261,
-    "completed": 1073,
-    "sla_on_time_pct": 93.8,
-    "active": 74,
+    "total": 1281,
+    "completed": 1099,
+    "sla_on_time_pct": 93.9,
+    "active": 68,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 946,
-      "active": 68,
+      "completed": 967,
+      "active": 62,
       "late": 2
     },
     {
       "name": "Milano",
-      "completed": 111,
+      "completed": 115,
       "active": 0,
       "late": 0
     }
@@ -55,7 +55,8 @@
       "10-09",
       "10-12",
       "10-13",
-      "10-14"
+      "10-14",
+      "10-15"
     ],
     "values": [
       25,
@@ -89,7 +90,8 @@
       46,
       51,
       43,
-      24
+      24,
+      26
     ]
   },
   "programmate": [
@@ -115,23 +117,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 184
+      "value": 187
     },
     {
       "label": "Manutenzioni",
-      "value": 315
+      "value": 321
     },
     {
       "label": "Pulizie",
-      "value": 400
+      "value": 407
     }
   ],
   "correttive": {
-    "total": 271,
+    "total": 275,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 116,
+        "value": 118,
         "children": [
           {
             "name": "Servizi Altro",
@@ -139,11 +141,11 @@
           },
           {
             "name": "Allestimenti",
-            "value": 26
+            "value": 27
           },
           {
             "name": "Service Desk IT",
-            "value": 19
+            "value": 20
           },
           {
             "name": "Badge aziendali",
@@ -217,11 +219,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 27,
+        "value": 28,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Distr. Automatici",
@@ -231,11 +233,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 25,
+        "value": 26,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 25
+            "value": 26
           }
         ]
       },
