@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-16 03:01",
+  "updated_at": "2026-10-17 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1281,
-    "completed": 1099,
-    "sla_on_time_pct": 93.9,
-    "active": 68,
-    "late": 2
+    "total": 1301,
+    "completed": 1121,
+    "sla_on_time_pct": 94,
+    "active": 66,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 967,
-      "active": 62,
-      "late": 2
+      "completed": 988,
+      "active": 58,
+      "late": 4
     },
     {
       "name": "Milano",
@@ -56,7 +56,8 @@
       "10-12",
       "10-13",
       "10-14",
-      "10-15"
+      "10-15",
+      "10-16"
     ],
     "values": [
       25,
@@ -91,7 +92,8 @@
       51,
       43,
       24,
-      26
+      26,
+      22
     ]
   },
   "programmate": [
@@ -108,28 +110,28 @@
       "value": 22
     },
     {
-      "label": "Idraulico",
-      "value": 27
-    },
-    {
       "label": "Edili",
       "value": 27
     },
     {
+      "label": "Idraulico",
+      "value": 28
+    },
+    {
       "label": "Elettrico",
-      "value": 187
+      "value": 190
     },
     {
       "label": "Manutenzioni",
-      "value": 321
+      "value": 327
     },
     {
       "label": "Pulizie",
-      "value": 407
+      "value": 414
     }
   ],
   "correttive": {
-    "total": 275,
+    "total": 278,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -179,11 +181,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 52,
+        "value": 53,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 49
+            "value": 50
           },
           {
             "name": "Aree esterne",
@@ -201,11 +203,11 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 33,
+        "value": 34,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 23
+            "value": 24
           },
           {
             "name": "Riparazione Arredi/Infissi",
@@ -261,18 +263,18 @@
       },
       {
         "name": "Idraulico",
-        "value": 6,
+        "value": 7,
         "children": [
           {
             "name": "Idraulico - Altro",
             "value": 4
           },
           {
-            "name": "Infiltrazione/Perdita tubazione",
-            "value": 1
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 2
           },
           {
-            "name": "Riparazioni WC/Rubinetterie",
+            "name": "Infiltrazione/Perdita tubazione",
             "value": 1
           }
         ]
