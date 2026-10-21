@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-10-20 03:01",
+  "updated_at": "2026-10-21 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1339,
-    "completed": 1151,
-    "sla_on_time_pct": 94.2,
+    "total": 1365,
+    "completed": 1175,
+    "sla_on_time_pct": 94.3,
     "active": 74,
     "late": 5
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1017,
-      "active": 65,
+      "completed": 1034,
+      "active": 66,
       "late": 5
     },
     {
       "name": "Milano",
-      "completed": 115,
-      "active": 0,
+      "completed": 119,
+      "active": 1,
       "late": 0
     }
   ],
@@ -58,7 +58,8 @@
       "10-14",
       "10-15",
       "10-16",
-      "10-19"
+      "10-19",
+      "10-20"
     ],
     "values": [
       25,
@@ -95,7 +96,8 @@
       24,
       26,
       22,
-      30
+      30,
+      24
     ]
   },
   "programmate": [
@@ -121,23 +123,23 @@
     },
     {
       "label": "Elettrico",
-      "value": 197
+      "value": 200
     },
     {
       "label": "Manutenzioni",
-      "value": 333
+      "value": 339
     },
     {
       "label": "Pulizie",
-      "value": 436
+      "value": 443
     }
   ],
   "correttive": {
-    "total": 280,
+    "total": 290,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 120,
+        "value": 123,
         "children": [
           {
             "name": "Servizi Altro",
@@ -145,7 +147,7 @@
           },
           {
             "name": "Allestimenti",
-            "value": 27
+            "value": 28
           },
           {
             "name": "Service Desk IT",
@@ -156,16 +158,16 @@
             "value": 12
           },
           {
+            "name": "Periferiche IT",
+            "value": 7
+          },
+          {
             "name": "Facchinaggio",
             "value": 6
           },
           {
-            "name": "Periferiche IT",
-            "value": 6
-          },
-          {
             "name": "Mouse/Tastiera",
-            "value": 5
+            "value": 6
           },
           {
             "name": "Stampanti",
@@ -205,11 +207,11 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 34,
+        "value": 35,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 24
+            "value": 25
           },
           {
             "name": "Riparazione Arredi/Infissi",
@@ -223,25 +225,47 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 28,
+        "value": 31,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 23
+            "value": 24
           },
           {
             "name": "Distr. Automatici",
-            "value": 5
+            "value": 7
           }
         ]
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 26,
+        "value": 27,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 26
+            "value": 27
+          }
+        ]
+      },
+      {
+        "name": "Idraulico",
+        "value": 9,
+        "children": [
+          {
+            "name": "Idraulico - Altro",
+            "value": 5
+          },
+          {
+            "name": "Riparazioni WC/Rubinetterie",
+            "value": 2
+          },
+          {
+            "name": "Infiltrazione/Perdita tubazione",
+            "value": 1
+          },
+          {
+            "name": "Mancanza acqua calda",
+            "value": 1
           }
         ]
       },
@@ -259,24 +283,6 @@
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Idraulico",
-        "value": 7,
-        "children": [
-          {
-            "name": "Idraulico - Altro",
-            "value": 4
-          },
-          {
-            "name": "Riparazioni WC/Rubinetterie",
-            "value": 2
-          },
-          {
-            "name": "Infiltrazione/Perdita tubazione",
             "value": 1
           }
         ]
