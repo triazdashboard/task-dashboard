@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-10-21 03:01",
+  "updated_at": "2026-10-22 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1365,
-    "completed": 1175,
-    "sla_on_time_pct": 94.3,
-    "active": 74,
+    "total": 1387,
+    "completed": 1207,
+    "sla_on_time_pct": 94.4,
+    "active": 65,
     "late": 5
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1034,
-      "active": 66,
+      "completed": 1060,
+      "active": 60,
       "late": 5
     },
     {
       "name": "Milano",
-      "completed": 119,
-      "active": 1,
+      "completed": 122,
+      "active": 0,
       "late": 0
     }
   ],
@@ -59,7 +59,8 @@
       "10-15",
       "10-16",
       "10-19",
-      "10-20"
+      "10-20",
+      "10-21"
     ],
     "values": [
       25,
@@ -97,7 +98,8 @@
       26,
       22,
       30,
-      24
+      24,
+      32
     ]
   },
   "programmate": [
@@ -123,31 +125,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 200
+      "value": 203
     },
     {
       "label": "Manutenzioni",
-      "value": 339
+      "value": 345
     },
     {
       "label": "Pulizie",
-      "value": 443
+      "value": 450
     }
   ],
   "correttive": {
-    "total": 290,
+    "total": 296,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 123,
+        "value": 125,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 36
+            "value": 37
           },
           {
             "name": "Allestimenti",
-            "value": 28
+            "value": 29
           },
           {
             "name": "Service Desk IT",
@@ -185,18 +187,18 @@
       },
       {
         "name": "Pulizia",
-        "value": 53,
+        "value": 54,
         "children": [
           {
             "name": "Cleaning Altro",
             "value": 50
           },
           {
-            "name": "Aree esterne",
-            "value": 1
+            "name": "Serv. igienici",
+            "value": 2
           },
           {
-            "name": "Serv. igienici",
+            "name": "Aree esterne",
             "value": 1
           },
           {
@@ -207,7 +209,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 35,
+        "value": 36,
         "children": [
           {
             "name": "Edili Altro",
@@ -215,7 +217,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Opere murarie",
@@ -239,11 +241,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 27,
+        "value": 28,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 27
+            "value": 28
           }
         ]
       },
@@ -271,7 +273,7 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 7,
+        "value": 8,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
@@ -283,6 +285,10 @@
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
+            "value": 1
+          },
+          {
+            "name": "Illuminazione",
             "value": 1
           }
         ]
