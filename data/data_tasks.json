@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-22 03:01",
+  "updated_at": "2026-10-23 03:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1387,
-    "completed": 1207,
-    "sla_on_time_pct": 94.4,
-    "active": 65,
-    "late": 5
+    "total": 1413,
+    "completed": 1235,
+    "sla_on_time_pct": 94.5,
+    "active": 63,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1060,
-      "active": 60,
-      "late": 5
+      "completed": 1084,
+      "active": 59,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 122,
+      "completed": 125,
       "active": 0,
       "late": 0
     }
@@ -60,7 +60,8 @@
       "10-16",
       "10-19",
       "10-20",
-      "10-21"
+      "10-21",
+      "10-22"
     ],
     "values": [
       25,
@@ -99,7 +100,8 @@
       22,
       30,
       24,
-      32
+      32,
+      28
     ]
   },
   "programmate": [
@@ -125,31 +127,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 203
+      "value": 206
     },
     {
       "label": "Manutenzioni",
-      "value": 345
+      "value": 353
     },
     {
       "label": "Pulizie",
-      "value": 450
+      "value": 457
     }
   ],
   "correttive": {
-    "total": 296,
+    "total": 304,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 125,
+        "value": 130,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 37
+            "value": 38
           },
           {
             "name": "Allestimenti",
-            "value": 29
+            "value": 31
           },
           {
             "name": "Service Desk IT",
@@ -164,16 +166,16 @@
             "value": 7
           },
           {
+            "name": "Mouse/Tastiera",
+            "value": 7
+          },
+          {
             "name": "Facchinaggio",
             "value": 6
           },
           {
-            "name": "Mouse/Tastiera",
-            "value": 6
-          },
-          {
             "name": "Stampanti",
-            "value": 3
+            "value": 4
           },
           {
             "name": "Locker",
@@ -187,11 +189,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 54,
+        "value": 55,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 50
+            "value": 51
           },
           {
             "name": "Serv. igienici",
@@ -241,11 +243,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 28,
+        "value": 29,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 28
+            "value": 29
           }
         ]
       },
@@ -294,22 +296,26 @@
         ]
       },
       {
+        "name": "Condizionamento",
+        "value": 2,
+        "children": [
+          {
+            "name": "Perdita acqua",
+            "value": 1
+          },
+          {
+            "name": "Regolazione bocchette",
+            "value": 1
+          }
+        ]
+      },
+      {
         "name": "Int. Esterni",
         "value": 2,
         "children": [
           {
             "name": "Manut. meccan.",
             "value": 2
-          }
-        ]
-      },
-      {
-        "name": "Condizionamento",
-        "value": 1,
-        "children": [
-          {
-            "name": "Perdita acqua",
-            "value": 1
           }
         ]
       },
