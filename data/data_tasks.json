@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-10-26 04:01",
+  "updated_at": "2026-10-27 04:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1434,
-    "completed": 1263,
-    "sla_on_time_pct": 94.5,
-    "active": 56,
+    "total": 1478,
+    "completed": 1296,
+    "sla_on_time_pct": 94.7,
+    "active": 67,
     "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1111,
-      "active": 53,
+      "completed": 1143,
+      "active": 64,
       "late": 3
     },
     {
@@ -62,7 +62,8 @@
       "10-20",
       "10-21",
       "10-22",
-      "10-23"
+      "10-23",
+      "10-26"
     ],
     "values": [
       25,
@@ -103,7 +104,8 @@
       24,
       32,
       28,
-      28
+      28,
+      33
     ]
   },
   "programmate": [
@@ -125,31 +127,31 @@
     },
     {
       "label": "Idraulico",
-      "value": 30
+      "value": 31
     },
     {
       "label": "Elettrico",
-      "value": 209
+      "value": 216
     },
     {
       "label": "Manutenzioni",
-      "value": 359
+      "value": 365
     },
     {
       "label": "Pulizie",
-      "value": 464
+      "value": 485
     }
   ],
   "correttive": {
-    "total": 308,
+    "total": 317,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 130,
+        "value": 132,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 38
+            "value": 39
           },
           {
             "name": "Allestimenti",
@@ -161,7 +163,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 12
+            "value": 13
           },
           {
             "name": "Periferiche IT",
@@ -191,11 +193,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 57,
+        "value": 60,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 53
+            "value": 56
           },
           {
             "name": "Serv. igienici",
@@ -231,7 +233,7 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 31,
+        "value": 32,
         "children": [
           {
             "name": "Catering/Vend.",
@@ -239,7 +241,7 @@
           },
           {
             "name": "Distr. Automatici",
-            "value": 7
+            "value": 8
           }
         ]
       },
@@ -255,11 +257,11 @@
       },
       {
         "name": "Idraulico",
-        "value": 9,
+        "value": 10,
         "children": [
           {
             "name": "Idraulico - Altro",
-            "value": 5
+            "value": 6
           },
           {
             "name": "Riparazioni WC/Rubinetterie",
@@ -277,11 +279,11 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 8,
+        "value": 9,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Torrette/Prese",
@@ -322,21 +324,25 @@
         ]
       },
       {
-        "name": "Segnalazione",
-        "value": 1,
+        "name": "Ass. Ut. Tririga",
+        "value": 2,
         "children": [
           {
-            "name": "Altro - S",
+            "name": "Altro",
+            "value": 1
+          },
+          {
+            "name": "Reservation",
             "value": 1
           }
         ]
       },
       {
-        "name": "Ass. Ut. Tririga",
+        "name": "Segnalazione",
         "value": 1,
         "children": [
           {
-            "name": "Altro",
+            "name": "Altro - S",
             "value": 1
           }
         ]
