@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-10-27 04:01",
+  "updated_at": "2026-10-28 04:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1478,
-    "completed": 1296,
-    "sla_on_time_pct": 94.7,
-    "active": 67,
+    "total": 1496,
+    "completed": 1324,
+    "sla_on_time_pct": 94.8,
+    "active": 57,
     "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1143,
-      "active": 64,
+      "completed": 1170,
+      "active": 54,
       "late": 3
     },
     {
@@ -63,7 +63,8 @@
       "10-21",
       "10-22",
       "10-23",
-      "10-26"
+      "10-26",
+      "10-27"
     ],
     "values": [
       25,
@@ -105,7 +106,8 @@
       32,
       28,
       28,
-      33
+      33,
+      28
     ]
   },
   "programmate": [
@@ -131,19 +133,19 @@
     },
     {
       "label": "Elettrico",
-      "value": 216
+      "value": 219
     },
     {
       "label": "Manutenzioni",
-      "value": 365
+      "value": 371
     },
     {
       "label": "Pulizie",
-      "value": 485
+      "value": 492
     }
   ],
   "correttive": {
-    "total": 317,
+    "total": 319,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -193,11 +195,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 60,
+        "value": 63,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 56
+            "value": 59
           },
           {
             "name": "Serv. igienici",
@@ -324,25 +326,21 @@
         ]
       },
       {
-        "name": "Ass. Ut. Tririga",
-        "value": 2,
-        "children": [
-          {
-            "name": "Altro",
-            "value": 1
-          },
-          {
-            "name": "Reservation",
-            "value": 1
-          }
-        ]
-      },
-      {
         "name": "Segnalazione",
         "value": 1,
         "children": [
           {
             "name": "Altro - S",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Ass. Ut. Tririga",
+        "value": 1,
+        "children": [
+          {
+            "name": "Altro",
             "value": 1
           }
         ]
