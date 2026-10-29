@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-28 04:01",
+  "updated_at": "2026-10-29 04:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1496,
-    "completed": 1324,
-    "sla_on_time_pct": 94.8,
-    "active": 57,
-    "late": 3
+    "total": 1523,
+    "completed": 1368,
+    "sla_on_time_pct": 94.7,
+    "active": 40,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1170,
-      "active": 54,
-      "late": 3
+      "completed": 1213,
+      "active": 38,
+      "late": 2
     },
     {
       "name": "Milano",
@@ -64,7 +64,8 @@
       "10-22",
       "10-23",
       "10-26",
-      "10-27"
+      "10-27",
+      "10-28"
     ],
     "values": [
       25,
@@ -107,7 +108,8 @@
       28,
       28,
       33,
-      28
+      28,
+      44
     ]
   },
   "programmate": [
@@ -133,27 +135,27 @@
     },
     {
       "label": "Elettrico",
-      "value": 219
+      "value": 222
     },
     {
       "label": "Manutenzioni",
-      "value": 371
+      "value": 377
     },
     {
       "label": "Pulizie",
-      "value": 492
+      "value": 499
     }
   ],
   "correttive": {
-    "total": 319,
+    "total": 330,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 132,
+        "value": 135,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 39
+            "value": 40
           },
           {
             "name": "Allestimenti",
@@ -165,7 +167,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 13
+            "value": 15
           },
           {
             "name": "Periferiche IT",
@@ -195,11 +197,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 63,
+        "value": 66,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 59
+            "value": 62
           },
           {
             "name": "Serv. igienici",
@@ -217,15 +219,15 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 38,
+        "value": 41,
         "children": [
           {
             "name": "Edili Altro",
-            "value": 27
+            "value": 29
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Opere murarie",
@@ -259,7 +261,7 @@
       },
       {
         "name": "Idraulico",
-        "value": 10,
+        "value": 11,
         "children": [
           {
             "name": "Idraulico - Altro",
@@ -267,7 +269,7 @@
           },
           {
             "name": "Riparazioni WC/Rubinetterie",
-            "value": 2
+            "value": 3
           },
           {
             "name": "Infiltrazione/Perdita tubazione",
@@ -281,11 +283,11 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 9,
+        "value": 10,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
-            "value": 5
+            "value": 6
           },
           {
             "name": "Torrette/Prese",
