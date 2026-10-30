@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-29 04:01",
+  "updated_at": "2026-10-30 04:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1523,
-    "completed": 1368,
+    "total": 1556,
+    "completed": 1404,
     "sla_on_time_pct": 94.7,
-    "active": 40,
-    "late": 2
+    "active": 37,
+    "late": 4
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1213,
-      "active": 38,
-      "late": 2
+      "completed": 1246,
+      "active": 32,
+      "late": 4
     },
     {
       "name": "Milano",
-      "completed": 125,
+      "completed": 128,
       "active": 0,
       "late": 0
     }
@@ -65,7 +65,8 @@
       "10-23",
       "10-26",
       "10-27",
-      "10-28"
+      "10-28",
+      "10-29"
     ],
     "values": [
       25,
@@ -109,7 +110,8 @@
       28,
       33,
       28,
-      44
+      44,
+      36
     ]
   },
   "programmate": [
@@ -135,31 +137,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 222
+      "value": 225
     },
     {
       "label": "Manutenzioni",
-      "value": 377
+      "value": 383
     },
     {
       "label": "Pulizie",
-      "value": 499
+      "value": 506
     }
   ],
   "correttive": {
-    "total": 330,
+    "total": 347,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 135,
+        "value": 145,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 40
+            "value": 42
           },
           {
             "name": "Allestimenti",
-            "value": 31
+            "value": 33
           },
           {
             "name": "Service Desk IT",
@@ -170,11 +172,11 @@
             "value": 15
           },
           {
-            "name": "Periferiche IT",
-            "value": 7
+            "name": "Mouse/Tastiera",
+            "value": 10
           },
           {
-            "name": "Mouse/Tastiera",
+            "name": "Periferiche IT",
             "value": 7
           },
           {
@@ -182,12 +184,12 @@
             "value": 6
           },
           {
-            "name": "Stampanti",
-            "value": 4
+            "name": "Locker",
+            "value": 6
           },
           {
-            "name": "Locker",
-            "value": 3
+            "name": "Stampanti",
+            "value": 4
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
@@ -197,11 +199,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 66,
+        "value": 69,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 62
+            "value": 65
           },
           {
             "name": "Serv. igienici",
@@ -219,7 +221,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 41,
+        "value": 43,
         "children": [
           {
             "name": "Edili Altro",
@@ -227,7 +229,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 11
+            "value": 13
           },
           {
             "name": "Opere murarie",
@@ -251,11 +253,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 29,
+        "value": 30,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 29
+            "value": 30
           }
         ]
       },
@@ -328,21 +330,21 @@
         ]
       },
       {
+        "name": "Ass. Ut. Tririga",
+        "value": 2,
+        "children": [
+          {
+            "name": "Altro",
+            "value": 2
+          }
+        ]
+      },
+      {
         "name": "Segnalazione",
         "value": 1,
         "children": [
           {
             "name": "Altro - S",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Ass. Ut. Tririga",
-        "value": 1,
-        "children": [
-          {
-            "name": "Altro",
             "value": 1
           }
         ]
