@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-10-30 04:01",
+  "updated_at": "2026-10-31 04:01",
   "period_label": "Set - Ott 2026",
   "kpi": {
-    "total": 1556,
-    "completed": 1404,
+    "total": 1582,
+    "completed": 1440,
     "sla_on_time_pct": 94.7,
-    "active": 37,
-    "late": 4
+    "active": 27,
+    "late": 3
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1246,
-      "active": 32,
-      "late": 4
+      "completed": 1281,
+      "active": 21,
+      "late": 3
     },
     {
       "name": "Milano",
       "completed": 128,
-      "active": 0,
+      "active": 2,
       "late": 0
     }
   ],
@@ -66,7 +66,8 @@
       "10-26",
       "10-27",
       "10-28",
-      "10-29"
+      "10-29",
+      "10-30"
     ],
     "values": [
       25,
@@ -111,6 +112,7 @@
       33,
       28,
       44,
+      36,
       36
     ]
   },
@@ -133,35 +135,35 @@
     },
     {
       "label": "Idraulico",
-      "value": 31
+      "value": 32
     },
     {
       "label": "Elettrico",
-      "value": 225
+      "value": 228
     },
     {
       "label": "Manutenzioni",
-      "value": 383
+      "value": 389
     },
     {
       "label": "Pulizie",
-      "value": 506
+      "value": 513
     }
   ],
   "correttive": {
-    "total": 347,
+    "total": 356,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 145,
+        "value": 152,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 42
+            "value": 45
           },
           {
             "name": "Allestimenti",
-            "value": 33
+            "value": 35
           },
           {
             "name": "Service Desk IT",
@@ -169,7 +171,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 15
+            "value": 17
           },
           {
             "name": "Mouse/Tastiera",
@@ -199,11 +201,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 69,
+        "value": 71,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 65
+            "value": 67
           },
           {
             "name": "Serv. igienici",
