@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-01 04:01",
-  "period_label": "Ott 2026",
+  "updated_at": "2026-11-02 04:01",
+  "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 665,
+    "total": 681,
     "completed": 637,
     "sla_on_time_pct": 95.6,
-    "active": 27,
+    "active": 43,
     "late": 3
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 568,
-      "active": 21,
+      "active": 37,
       "late": 3
     },
     {
@@ -79,11 +79,11 @@
     },
     {
       "label": "Antincendio",
-      "value": 3
+      "value": 7
     },
     {
       "label": "Meter Reading",
-      "value": 4
+      "value": 8
     },
     {
       "label": "Climatizzazione",
@@ -99,7 +99,7 @@
     },
     {
       "label": "Manutenzioni",
-      "value": 152
+      "value": 160
     },
     {
       "label": "Pulizie",
