@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-02 04:01",
+  "updated_at": "2026-11-03 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 681,
-    "completed": 637,
-    "sla_on_time_pct": 95.6,
-    "active": 43,
-    "late": 3
+    "total": 834,
+    "completed": 639,
+    "sla_on_time_pct": 95.5,
+    "active": 194,
+    "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 568,
-      "active": 37,
-      "late": 3
+      "completed": 570,
+      "active": 186,
+      "late": 2
     },
     {
       "name": "Milano",
@@ -45,7 +45,8 @@
       "10-27",
       "10-28",
       "10-29",
-      "10-30"
+      "10-30",
+      "11-03"
     ],
     "values": [
       20,
@@ -69,14 +70,11 @@
       27,
       43,
       36,
-      36
+      36,
+      2
     ]
   },
   "programmate": [
-    {
-      "label": "Edili",
-      "value": 1
-    },
     {
       "label": "Antincendio",
       "value": 7
@@ -86,24 +84,32 @@
       "value": 8
     },
     {
+      "label": "Edili",
+      "value": 12
+    },
+    {
+      "label": "Sicurezza - Preventive",
+      "value": 15
+    },
+    {
       "label": "Climatizzazione",
-      "value": 8
+      "value": 24
     },
     {
       "label": "Idraulico",
-      "value": 17
+      "value": 64
     },
     {
       "label": "Elettrico",
-      "value": 93
+      "value": 110
     },
     {
       "label": "Manutenzioni",
-      "value": 160
+      "value": 175
     },
     {
       "label": "Pulizie",
-      "value": 222
+      "value": 254
     }
   ],
   "correttive": {
