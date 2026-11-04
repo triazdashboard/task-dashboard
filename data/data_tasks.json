@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-03 04:01",
+  "updated_at": "2026-11-04 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 834,
-    "completed": 639,
+    "total": 846,
+    "completed": 685,
     "sla_on_time_pct": 95.5,
-    "active": 194,
+    "active": 159,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 570,
-      "active": 186,
+      "completed": 613,
+      "active": 153,
       "late": 2
     },
     {
@@ -71,7 +71,7 @@
       43,
       36,
       36,
-      2
+      48
     ]
   },
   "programmate": [
@@ -97,27 +97,27 @@
     },
     {
       "label": "Idraulico",
-      "value": 64
+      "value": 65
     },
     {
       "label": "Elettrico",
-      "value": 110
+      "value": 111
     },
     {
       "label": "Manutenzioni",
-      "value": 175
+      "value": 176
     },
     {
       "label": "Pulizie",
-      "value": 254
+      "value": 259
     }
   ],
   "correttive": {
-    "total": 165,
+    "total": 169,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 64,
+        "value": 67,
         "children": [
           {
             "name": "Allestimenti",
@@ -141,7 +141,7 @@
           },
           {
             "name": "Locker",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Periferiche IT",
@@ -149,17 +149,21 @@
           },
           {
             "name": "Stampanti",
+            "value": 2
+          },
+          {
+            "name": "Facchinaggio",
             "value": 1
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 33,
+        "value": 34,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 31
+            "value": 32
           },
           {
             "name": "Straordinaria",
