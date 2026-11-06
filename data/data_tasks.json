@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-11-05 04:01",
+  "updated_at": "2026-11-06 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 876,
-    "completed": 717,
-    "sla_on_time_pct": 95.5,
-    "active": 158,
+    "total": 903,
+    "completed": 743,
+    "sla_on_time_pct": 95.6,
+    "active": 157,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 637,
-      "active": 154,
+      "completed": 662,
+      "active": 147,
       "late": 2
     },
     {
       "name": "Milano",
       "completed": 51,
-      "active": 0,
+      "active": 6,
       "late": 0
     }
   ],
@@ -47,7 +47,8 @@
       "10-29",
       "10-30",
       "11-03",
-      "11-04"
+      "11-04",
+      "11-05"
     ],
     "values": [
       20,
@@ -73,7 +74,8 @@
       36,
       36,
       48,
-      32
+      32,
+      26
     ]
   },
   "programmate": [
@@ -103,31 +105,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 114
+      "value": 117
     },
     {
       "label": "Manutenzioni",
-      "value": 182
+      "value": 188
     },
     {
       "label": "Pulizie",
-      "value": 266
+      "value": 273
     }
   ],
   "correttive": {
-    "total": 183,
+    "total": 194,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 77,
+        "value": 82,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Allestimenti",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Badge aziendali",
@@ -139,7 +141,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 7
+            "value": 8
           },
           {
             "name": "Locker",
@@ -150,22 +152,26 @@
             "value": 3
           },
           {
+            "name": "Facchinaggio",
+            "value": 3
+          },
+          {
             "name": "Stampanti",
             "value": 2
           },
           {
-            "name": "Facchinaggio",
-            "value": 2
+            "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
+            "value": 1
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 34,
+        "value": 38,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 32
+            "value": 35
           },
           {
             "name": "Straordinaria",
@@ -173,6 +179,10 @@
           },
           {
             "name": "Serv. igienici",
+            "value": 1
+          },
+          {
+            "name": "Reintegro consumabili",
             "value": 1
           }
         ]
@@ -197,21 +207,21 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 13,
+        "value": 14,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 13
+            "value": 14
           }
         ]
       },
       {
         "name": "Catering/Vending",
-        "value": 13,
+        "value": 14,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 8
+            "value": 9
           },
           {
             "name": "Distr. Automatici",
