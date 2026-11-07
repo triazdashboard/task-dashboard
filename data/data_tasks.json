@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-11-06 04:01",
+  "updated_at": "2026-11-07 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 903,
-    "completed": 743,
-    "sla_on_time_pct": 95.6,
-    "active": 157,
+    "total": 923,
+    "completed": 787,
+    "sla_on_time_pct": 95.7,
+    "active": 135,
     "late": 2
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 662,
-      "active": 147,
+      "completed": 702,
+      "active": 128,
       "late": 2
     },
     {
       "name": "Milano",
-      "completed": 51,
-      "active": 6,
+      "completed": 54,
+      "active": 3,
       "late": 0
     }
   ],
@@ -48,7 +48,8 @@
       "10-30",
       "11-03",
       "11-04",
-      "11-05"
+      "11-05",
+      "11-06"
     ],
     "values": [
       20,
@@ -75,7 +76,8 @@
       36,
       48,
       32,
-      26
+      27,
+      43
     ]
   },
   "programmate": [
@@ -101,31 +103,31 @@
     },
     {
       "label": "Idraulico",
-      "value": 65
+      "value": 66
     },
     {
       "label": "Elettrico",
-      "value": 117
+      "value": 120
     },
     {
       "label": "Manutenzioni",
-      "value": 188
+      "value": 195
     },
     {
       "label": "Pulizie",
-      "value": 273
+      "value": 280
     }
   ],
   "correttive": {
-    "total": 194,
+    "total": 196,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 82,
+        "value": 84,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 22
+            "value": 23
           },
           {
             "name": "Allestimenti",
@@ -133,7 +135,7 @@
           },
           {
             "name": "Badge aziendali",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Mouse/Tastiera",
