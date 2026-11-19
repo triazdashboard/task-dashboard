@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-18 04:01",
+  "updated_at": "2026-11-19 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 1138,
-    "completed": 1025,
+    "total": 1159,
+    "completed": 1063,
     "sla_on_time_pct": 95.9,
-    "active": 110,
-    "late": 7
+    "active": 93,
+    "late": 9
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 931,
-      "active": 102,
-      "late": 4
+      "completed": 967,
+      "active": 84,
+      "late": 6
     },
     {
       "name": "Milano",
@@ -56,7 +56,8 @@
       "11-12",
       "11-13",
       "11-16",
-      "11-17"
+      "11-17",
+      "11-18"
     ],
     "values": [
       20,
@@ -91,7 +92,8 @@
       32,
       40,
       21,
-      39
+      39,
+      38
     ]
   },
   "programmate": [
@@ -121,31 +123,31 @@
     },
     {
       "label": "Elettrico",
-      "value": 149
+      "value": 152
     },
     {
       "label": "Manutenzioni",
-      "value": 238
+      "value": 244
     },
     {
       "label": "Pulizie",
-      "value": 358
+      "value": 365
     }
   ],
   "correttive": {
-    "total": 258,
+    "total": 263,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 109,
+        "value": 113,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 41
+            "value": 44
           },
           {
             "name": "Allestimenti",
-            "value": 19
+            "value": 20
           },
           {
             "name": "Badge aziendali",
@@ -291,14 +293,14 @@
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 3,
+        "value": 4,
         "children": [
           {
-            "name": "Reservation",
-            "value": 1
+            "name": "Gestione Account",
+            "value": 2
           },
           {
-            "name": "Gestione Account",
+            "name": "Reservation",
             "value": 1
           },
           {
