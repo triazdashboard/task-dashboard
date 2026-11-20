@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-19 04:01",
+  "updated_at": "2026-11-20 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 1159,
-    "completed": 1063,
-    "sla_on_time_pct": 95.9,
-    "active": 93,
+    "total": 1178,
+    "completed": 1090,
+    "sla_on_time_pct": 95.5,
+    "active": 84,
     "late": 9
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 967,
-      "active": 84,
+      "completed": 993,
+      "active": 75,
       "late": 6
     },
     {
@@ -57,7 +57,8 @@
       "11-13",
       "11-16",
       "11-17",
-      "11-18"
+      "11-18",
+      "11-19"
     ],
     "values": [
       20,
@@ -93,7 +94,8 @@
       40,
       21,
       39,
-      38
+      38,
+      27
     ]
   },
   "programmate": [
@@ -123,19 +125,19 @@
     },
     {
       "label": "Elettrico",
-      "value": 152
+      "value": 155
     },
     {
       "label": "Manutenzioni",
-      "value": 244
+      "value": 249
     },
     {
       "label": "Pulizie",
-      "value": 365
+      "value": 372
     }
   ],
   "correttive": {
-    "total": 263,
+    "total": 267,
     "items": [
       {
         "name": "Servizi Ufficio",
@@ -185,11 +187,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 51,
+        "value": 52,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 46
+            "value": 47
           },
           {
             "name": "Straordinaria",
@@ -207,7 +209,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 37,
+        "value": 38,
         "children": [
           {
             "name": "Edili Altro",
@@ -215,7 +217,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 14
+            "value": 15
           },
           {
             "name": "Opere murarie",
@@ -249,7 +251,7 @@
       },
       {
         "name": "Idraulico",
-        "value": 11,
+        "value": 12,
         "children": [
           {
             "name": "Idraulico - Altro",
@@ -257,7 +259,7 @@
           },
           {
             "name": "Riparazioni WC/Rubinetterie",
-            "value": 4
+            "value": 5
           },
           {
             "name": "Infiltrazione/Perdita tubazione",
@@ -320,21 +322,25 @@
         ]
       },
       {
-        "name": "Int. Esterni",
-        "value": 1,
+        "name": "Condizionamento",
+        "value": 2,
         "children": [
           {
-            "name": "Manut. meccan.",
+            "name": "Regolazione bocchette",
+            "value": 1
+          },
+          {
+            "name": "Troppo freddo/caldo",
             "value": 1
           }
         ]
       },
       {
-        "name": "Condizionamento",
+        "name": "Int. Esterni",
         "value": 1,
         "children": [
           {
-            "name": "Regolazione bocchette",
+            "name": "Manut. meccan.",
             "value": 1
           }
         ]
