@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-11-20 04:01",
+  "updated_at": "2026-11-22 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 1178,
-    "completed": 1090,
+    "total": 1207,
+    "completed": 1143,
     "sla_on_time_pct": 95.5,
-    "active": 84,
-    "late": 9
+    "active": 60,
+    "late": 7
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 993,
-      "active": 75,
-      "late": 6
+      "completed": 1039,
+      "active": 52,
+      "late": 7
     },
     {
       "name": "Milano",
-      "completed": 55,
+      "completed": 62,
       "active": 0,
-      "late": 3
+      "late": 0
     }
   ],
   "trend": {
@@ -58,7 +58,8 @@
       "11-16",
       "11-17",
       "11-18",
-      "11-19"
+      "11-19",
+      "11-20"
     ],
     "values": [
       20,
@@ -95,7 +96,8 @@
       21,
       39,
       38,
-      27
+      27,
+      53
     ]
   },
   "programmate": [
@@ -121,27 +123,27 @@
     },
     {
       "label": "Idraulico",
-      "value": 69
+      "value": 70
     },
     {
       "label": "Elettrico",
-      "value": 155
+      "value": 158
     },
     {
       "label": "Manutenzioni",
-      "value": 249
+      "value": 255
     },
     {
       "label": "Pulizie",
-      "value": 372
+      "value": 379
     }
   ],
   "correttive": {
-    "total": 267,
+    "total": 279,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 113,
+        "value": 118,
         "children": [
           {
             "name": "Servizi Altro",
@@ -149,11 +151,11 @@
           },
           {
             "name": "Allestimenti",
-            "value": 20
+            "value": 21
           },
           {
             "name": "Badge aziendali",
-            "value": 12
+            "value": 13
           },
           {
             "name": "Mouse/Tastiera",
@@ -161,18 +163,18 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 8
+            "value": 9
           },
           {
             "name": "Locker",
             "value": 7
           },
           {
-            "name": "Periferiche IT",
-            "value": 4
+            "name": "Facchinaggio",
+            "value": 5
           },
           {
-            "name": "Facchinaggio",
+            "name": "Periferiche IT",
             "value": 4
           },
           {
@@ -181,17 +183,17 @@
           },
           {
             "name": "Riparazione Stampanti, Fotocopiatrici, Fax, Reintegro carta, cambio toner",
-            "value": 1
+            "value": 2
           }
         ]
       },
       {
         "name": "Pulizia",
-        "value": 52,
+        "value": 54,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 47
+            "value": 49
           },
           {
             "name": "Straordinaria",
@@ -209,7 +211,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 38,
+        "value": 40,
         "children": [
           {
             "name": "Edili Altro",
@@ -217,7 +219,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 15
+            "value": 17
           },
           {
             "name": "Opere murarie",
@@ -227,11 +229,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 18,
+        "value": 19,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Distr. Automatici",
@@ -322,6 +324,20 @@
         ]
       },
       {
+        "name": "Int. Esterni",
+        "value": 2,
+        "children": [
+          {
+            "name": "Manut. meccan.",
+            "value": 1
+          },
+          {
+            "name": "Altro",
+            "value": 1
+          }
+        ]
+      },
+      {
         "name": "Condizionamento",
         "value": 2,
         "children": [
@@ -336,21 +352,15 @@
         ]
       },
       {
-        "name": "Int. Esterni",
-        "value": 1,
-        "children": [
-          {
-            "name": "Manut. meccan.",
-            "value": 1
-          }
-        ]
-      },
-      {
         "name": "Segnalazione",
-        "value": 1,
+        "value": 2,
         "children": [
           {
             "name": "Clima - S",
+            "value": 1
+          },
+          {
+            "name": "Altro - S",
             "value": 1
           }
         ]
