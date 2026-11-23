@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-22 09:51",
+  "updated_at": "2026-11-23 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 1207,
+    "total": 1208,
     "completed": 1143,
     "sla_on_time_pct": 95.5,
-    "active": 60,
+    "active": 61,
     "late": 7
   },
   "sede": [
     {
       "name": "Roma",
       "completed": 1039,
-      "active": 52,
+      "active": 53,
       "late": 7
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "label": "Manutenzioni",
-      "value": 255
+      "value": 256
     },
     {
       "label": "Pulizie",
