@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-23 04:01",
+  "updated_at": "2026-11-24 04:01",
   "period_label": "Ott - Nov 2026",
   "kpi": {
-    "total": 1208,
-    "completed": 1143,
+    "total": 1257,
+    "completed": 1180,
     "sla_on_time_pct": 95.5,
-    "active": 61,
-    "late": 7
+    "active": 73,
+    "late": 16
   },
   "sede": [
     {
       "name": "Roma",
-      "completed": 1039,
-      "active": 53,
-      "late": 7
+      "completed": 1071,
+      "active": 56,
+      "late": 16
     },
     {
       "name": "Milano",
-      "completed": 62,
+      "completed": 66,
       "active": 0,
       "late": 0
     }
@@ -59,7 +59,8 @@
       "11-17",
       "11-18",
       "11-19",
-      "11-20"
+      "11-20",
+      "11-23"
     ],
     "values": [
       20,
@@ -97,7 +98,8 @@
       39,
       38,
       27,
-      53
+      53,
+      37
     ]
   },
   "programmate": [
@@ -123,35 +125,35 @@
     },
     {
       "label": "Idraulico",
-      "value": 70
+      "value": 71
     },
     {
       "label": "Elettrico",
-      "value": 158
+      "value": 165
     },
     {
       "label": "Manutenzioni",
-      "value": 256
+      "value": 262
     },
     {
       "label": "Pulizie",
-      "value": 379
+      "value": 400
     }
   ],
   "correttive": {
-    "total": 279,
+    "total": 293,
     "items": [
       {
         "name": "Servizi Ufficio",
-        "value": 118,
+        "value": 124,
         "children": [
           {
             "name": "Servizi Altro",
-            "value": 44
+            "value": 48
           },
           {
             "name": "Allestimenti",
-            "value": 21
+            "value": 22
           },
           {
             "name": "Badge aziendali",
@@ -163,7 +165,7 @@
           },
           {
             "name": "Service Desk IT",
-            "value": 9
+            "value": 10
           },
           {
             "name": "Locker",
@@ -189,11 +191,11 @@
       },
       {
         "name": "Pulizia",
-        "value": 54,
+        "value": 57,
         "children": [
           {
             "name": "Cleaning Altro",
-            "value": 49
+            "value": 52
           },
           {
             "name": "Straordinaria",
@@ -211,7 +213,7 @@
       },
       {
         "name": "Manut. Edili",
-        "value": 40,
+        "value": 41,
         "children": [
           {
             "name": "Edili Altro",
@@ -219,7 +221,7 @@
           },
           {
             "name": "Riparazione Arredi/Infissi",
-            "value": 17
+            "value": 18
           },
           {
             "name": "Opere murarie",
@@ -229,11 +231,11 @@
       },
       {
         "name": "Catering/Vending",
-        "value": 19,
+        "value": 20,
         "children": [
           {
             "name": "Catering/Vend.",
-            "value": 10
+            "value": 11
           },
           {
             "name": "Distr. Automatici",
@@ -243,11 +245,11 @@
       },
       {
         "name": "Gest. Spedizioni",
-        "value": 14,
+        "value": 15,
         "children": [
           {
             "name": "Sped./Ric. IT",
-            "value": 14
+            "value": 15
           }
         ]
       },
@@ -275,7 +277,7 @@
       },
       {
         "name": "Elettrico/Dati",
-        "value": 10,
+        "value": 11,
         "children": [
           {
             "name": "Elettrico/Dati - Altro",
@@ -287,7 +289,7 @@
           },
           {
             "name": "Cavi elettrici/dati danneggiati",
-            "value": 1
+            "value": 2
           },
           {
             "name": "Illuminazione",
@@ -297,11 +299,11 @@
       },
       {
         "name": "Ass. Tecn. Tririga",
-        "value": 4,
+        "value": 5,
         "children": [
           {
             "name": "Gestione Account",
-            "value": 2
+            "value": 3
           },
           {
             "name": "Reservation",
